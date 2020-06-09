@@ -1,0 +1,52 @@
+.modal-dialog {
+    max-width: 750px;
+    padding-left: 17px;
+    border-radius: 0;
+    .modal-header,
+    .modal-footer {
+        border: none;
+    }
+    .modal-body {
+        padding: 0 30px;
+        .h5 {
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 41px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+    .close {
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $rs-grey-13;
+        padding: 0;
+        margin: 16px 16px 0 auto;
+    }
+
+    .btn-close {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: $rs-black;
+        opacity: 0.5;
+        transition: 0.4s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
