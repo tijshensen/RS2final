@@ -4,9 +4,9 @@
 	<div class="container">
 		<div class="section-header" >
 			<div class="logo-icon">
-				<?php include('./img/blue-logo.svg');?> 
+				<i class="icon-blue-logo"></i><span>Read stories</span>
 			</div>
-			<h2 class="h2">Get The Latest <span> News in Healthcare</span></h2>
+			<h2 class="h2">Healing Stories From <span>People Like You</span></h2>
 		</div>
 
 		
@@ -15,7 +15,7 @@
 				<a href="#" class="fire-link">
 					<img src="./img/Fire.png" alt="">
 					Trending topics</a>
-				<div class="d-flex">
+				<div class="d-flex scroll-btn">
 					<a href="#"  class="grey-link active">Covid 19</a>
 					<a href="#" class="grey-link">Women’s health</a>
 					<a href="#" class="grey-link">Men’s Health</a>
@@ -33,7 +33,15 @@
 					<a href="#" class="card card-news">
 						<div class="row">
 							<div class="col-md-12 col-4 card-img-block">
-								<img src="./img/<?php echo $rs_news_card['news_img']; ?>" alt="" class="news-image">
+							<img srcset="
+								./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg 3019w,
+								./img/<?php echo $rs_news_card['news_img']; ?>x2.jpg 2013w,
+								./img/<?php echo $rs_news_card['news_img']; ?>x1.jpg 1006w
+								"
+								src="./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg"
+								alt="" class="news-image"
+							>
+								<!-- <img src="./img/</?php echo $rs_news_card['news_img']; ?>" alt="" class="news-image"> -->
 							<!-- <div class="col-12"> -->
 								<!-- <div class="news-image" style="background-image: url('img/article-main.jpg') "></div> -->
 							</div>

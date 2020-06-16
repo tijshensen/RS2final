@@ -2,7 +2,9 @@ var $ = jQuery;
 
 jQuery(document).ready(function ($) {
 
-
+    $('#dropdownSearchMenuButton').click(function () {
+        $("#menuInput").focus();
+    });
 
     // $(".owl-carousel").owlCarousel();
     //SEARCH FUNCTION 
@@ -11,12 +13,130 @@ jQuery(document).ready(function ($) {
     });
 
     // TOGGLE FILTERS
+    function countSelectedElements() {
+        $('.filter-item-mobile').each(function() {
+            console.log($('.dropdown-item input:checkbox', $(this)).length);
+            console.log($('.dropdown-item input:checkbox:checked', $(this)).length);
+        });
+    }
+
+    function clearAllCheckBoxes() {
+        console.log($('.dropdown-item input:checkbox', $('#filters-items')).length);
+        $('.dropdown-item input:checkbox', $('#filters-items')).prop('checked', false);
+    }
+
     $('#toggle-filter').click(function () {
-        $("#filters-container").toggle("fast");
+        $("#filters-container").toggle("slow");
+        countSelectedElements();
+        $("#filters-container-mobile").toggle();
+        $('body').addClass('no-scroll');
     });
 
+    $('.filter-item-wrap').on('click', function() {
+        $('.filters-buttons').hide();
+        recalculateHeightOfCheckedFilters();
+        let filtersSearch = $('#filters-search');
+        filtersSearch.val('');
+        let target = $(this).data('target');
+        $('.'+target).show();
+        filtersSearch.attr('data-target', target);
+        $('#filters-go-back-button').show();
+        $('.filters-mobile-heading #top-title').html($(this).data('title') + ' <span class="count"></span>');
+        $('#filters-items').show();
+    });
 
+    function goBack() {
+        $('#filters-items').hide();
+        $('#filters-go-back-button').hide();
+        $('.filters-checked-elements').html('');
+        $('#top-title').html('FILTERS');
+        $('.filter-item-mobile').hide();
+        $('.filters-buttons').show();
+    }
 
+    $('#filters-go-back-button').on('click', function () {
+        goBack();
+    });
+
+    $('#top-title').on('click', function () {
+        goBack();
+    });
+
+    $('#close-mobile-filters').on('click', () => {
+        $("#filters-container-mobile").hide();
+        $('body').removeClass('no-scroll');
+    });
+
+    let typingTimer;
+
+    $('#filters-search').on('input', function () {
+        clearTimeout(typingTimer);
+
+        typingTimer = setTimeout(() => {
+            if($('#filters-search').val() !== '') {
+                $('.' + $('#filters-search').data('target') + ' input').filter(function (index, obj) {
+                    var myRe = new RegExp($('#filters-search').val().toLowerCase(), "g");
+                    var myArray = myRe.exec($(obj).data('filter-title').toLowerCase());
+                    if (myArray === null || !myArray.length) {
+                        $(obj).parent().hide();
+                    }
+                });
+            } else {
+                $('.' + $('#filters-search').data('target') + ' input').parent().show();
+            }
+        }, 500);
+    });
+
+    function recalculateHeightOfCheckedFilters() {
+        $('#filters-items').css('height', screen.height - 60 - 76 - $('.filters-mobile-footer').height() - 26 + 'px');
+    }
+
+    function updateTitlesWithCounts(listId, countElemSelected, countElemSum) {
+        $('.filter-button-mobile-' + listId + ' .count').html('(' + countElemSelected + '/' + countElemSum + ')');
+        $('.filters-mobile-heading #top-title .count').html('(' + countElemSelected + '/' + countElemSum + ')');
+    }
+
+    $('.filters-container-mobile .dropdown-item').on('click', function () {
+        $('.filters-checked-elements').html('');
+        let countElemSum = 0;
+        let countElemSelected = 0;
+        let listId = $(this).parents('.filter-item-mobile').data('id');
+
+        $(this).parent().children().each(function () {
+            countElemSum++;
+            let elem = $(this).children(".check").children('input:checked');
+            if(elem.length) {
+                countElemSelected++;
+                let btnClose = $("<span></span>");
+                $(btnClose).addClass('btn-close');
+                let uniqCounter = Math.floor(Math.random() * Math.floor(505050)) + new Date().getTime();
+                $(btnClose).attr('data-list-element', uniqCounter);
+                $(btnClose).attr('data-parent-id', listId);
+                $(elem).addClass('el-' + uniqCounter)
+                let elemChecked = $("<span></span>").text($(elem).siblings('.filter').html());
+                $(elemChecked).addClass('filters-checked-elem');
+                $(elemChecked).append(btnClose);
+                $('.filters-checked-elements').append(elemChecked);
+            }
+        });
+
+        updateTitlesWithCounts(listId, countElemSelected, countElemSum);
+        recalculateHeightOfCheckedFilters();
+    });
+
+    $('body').on('click', '.filters-checked-elem .btn-close', function () {
+        $('.el-' + $(this).data('list-element')).prop("checked", false);
+        let parentId = $(this).data('parent-id');
+        let countElemSum = $('.filter-item-mobile-2 .dropdown-list .dropdown-item').length;
+        $(this).parent().remove();
+        let countElemSelected = $("[data-parent-id='" + $(this).data('parent-id') + "']").length;
+        updateTitlesWithCounts(parentId, countElemSelected, countElemSum);
+        recalculateHeightOfCheckedFilters();
+    });
+
+    $('.filters-mobile-footer-button--clear').on('click', function() {
+        clearAllCheckBoxes();
+    });
     // $(".news-slider").owlCarousel({
     //     items: 2,
     //     loop: true,
@@ -95,7 +215,7 @@ jQuery(document).ready(function ($) {
         jQuery('.filters-container').find('.dropdown').each(function () {
             var rs_checkedFilters = 0;
 
-            jQuery(this).find('input[type=checkbox]:checked').each(function () {
+            jQuery(this).find('input[type=checkbox]:checked, input[type=radio]:checked').each(function () {
                 var rs_filterID = jQuery(this).data('filter-id');
                 var rs_filterTitle = jQuery(this).data('filter-title');
 
@@ -125,16 +245,16 @@ jQuery(document).ready(function ($) {
         var $rs_providers_list = jQuery('.result-list');
 
         if (rs_filter_class != '') {
-            $rs_providers_list.find('.card-container').hide();
-            $rs_providers_list.find('.card-container' + rs_filter_class).show();
+            $rs_providers_list.find('.provider-item').hide();
+            $rs_providers_list.find('.provider-item' + rs_filter_class).show();
         } else {
-            $rs_providers_list.find('.card-container').show();
+            $rs_providers_list.find('.provider-item').show();
         }
 
         // TODO: filter based on search words
         if (jQuery("#myInput").length) {
             var value = jQuery("#myInput").val().toLowerCase();
-            $rs_providers_list.find('.card-container:visible').each(function () {
+            $rs_providers_list.find('.provider-item:visible').each(function () {
                 if (jQuery(this).text().toLowerCase().indexOf(value) > -1) {
                     jQuery(this).show();
                 } else {
@@ -145,13 +265,13 @@ jQuery(document).ready(function ($) {
 
         // hide letters if empty
         $rs_providers_list.find('li.alphabet-section').show().each(function () {
-            if (!jQuery(this).find('.card-container').is(":visible")) {
+            if (!jQuery(this).find('.provider-item').is(":visible")) {
                 jQuery(this).hide();
             }
         });
 
         // update search result count - Not needed?
-        //jQuery('.search-container').find('.result').html($rs_providers_list.find('.card-container:visible').length + ' Results');
+        //jQuery('.search-container').find('.result').html($rs_providers_list.find('.provider-item:visible').length + ' Results');
     }
 
     //Run the filter ones on page load
@@ -172,7 +292,7 @@ jQuery(document).ready(function ($) {
 
     if ( $.isFunction($.fn.owlCarousel) ) {
         // var owl = $('.owl-carousel');
-        $('.providercarousel').owlCarousel({
+        $('.provider-carousel').owlCarousel({
             margin: 0,
             loop: true,
             nav: true,
@@ -197,6 +317,7 @@ jQuery(document).ready(function ($) {
             }
         })
     }
+
 });
 
 //SEARCH FUNCTION FOR FILTERS BLOCK

@@ -43,7 +43,7 @@
 				width:14px;
 				text-align: center;
 				vertical-align: middle;
-				background: url('../img/star.svg');
+				background: url('../svg/star.svg');
 			}
 		}
 		.provider-more{
@@ -76,14 +76,8 @@
 /*Text block*/
 
 .text-block{
-	padding: 0 20px 40px 20px;
+	padding: 0 30px;
 	p{
 		line-height: 1.6;
-	}
-}
-
-@include media-breakpoint-up(md){
-	.text-block{
-		padding: 0 60px 60px 60px;
 	}
 }

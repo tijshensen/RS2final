@@ -2,9 +2,10 @@
 /*Providers*/
 $rs_providers_cards = array(
     array(
+		'provider_filters' => 'filter-anxiety filter-cellulitus filter-sleep',
         'provider_logo' => 'logo-lemonaid.png',
         'provider_label' => '20% OFF FIRST PURCHASE',
-        'provider_label_class' => 'purple',
+        'provider_label_class' => 'bg-purple',
         'provider_title' => 'Lemonaid Health',
         'provider_doctor' => "Online Doctor",
         'provider_category' => "Online pharmacy",
@@ -15,9 +16,10 @@ $rs_providers_cards = array(
         'provider_old' => '$95'
     ),
     array(
-        'provider_logo' => 'talk.png',
+		'provider_filters' => '',
+        'provider_logo' => 'logo-talkspace.png',
         'provider_label' => 'First visit free',
-        'provider_label_class' => 'pink',
+        'provider_label_class' => 'bg-pink',
         'provider_title' => 'Talkspace',
         'provider_doctor' => "Online Doctor",
         'provider_category' => "Online pharmacy",
@@ -28,10 +30,39 @@ $rs_providers_cards = array(
         'provider_old' => '$95'
     ),
     array(
+		'provider_filters' => '',
         'provider_logo' => 'logo-help.png',
         'provider_label' => 'First visit free',
-        'provider_label_class' => 'pink',
+        'provider_label_class' => 'bg-pink',
         'provider_title' => 'Betterhelp',
+        'provider_doctor' => "Online Doctor",
+        'provider_category' => "Online pharmacy",
+		'provider_why' => "Finally have a team that helps you improve your health without following a no-carb diet or tracking calories.",
+		'provider_spec' => "Erectile Dysfnction, Stop Smoking, Hot Flashes, Anxiety",
+        'provider_price' => '$20 OFF',
+        'provider_promo' => 'Summer',
+        'provider_old' => '$95'
+    ),
+    array(
+		'provider_filters' => '',
+        'provider_logo' => 'logo-hims.png',
+        'provider_label' => 'First visit free',
+        'provider_label_class' => 'bg-pink',
+        'provider_title' => 'Hims',
+        'provider_doctor' => "Online Doctor",
+        'provider_category' => "Online pharmacy",
+		'provider_why' => "Finally have a team that helps you improve your health without following a no-carb diet or tracking calories.",
+		'provider_spec' => "Erectile Dysfnction, Stop Smoking, Hot Flashes, Anxiety",
+        'provider_price' => '$20 OFF',
+        'provider_promo' => 'Summer',
+        'provider_old' => '$95'
+    ),
+    array(
+		'provider_filters' => '',
+        'provider_logo' => 'logo-keeps.png',
+        'provider_label' => 'First visit free',
+        'provider_label_class' => 'bg-pink',
+        'provider_title' => 'Keeps',
         'provider_doctor' => "Online Doctor",
         'provider_category' => "Online pharmacy",
 		'provider_why' => "Finally have a team that helps you improve your health without following a no-carb diet or tracking calories.",
@@ -47,7 +78,7 @@ $rs_providers_cards = array(
 
 $rs_news_cards = array(
     array(
-        'news_img' => 'family3.jpg',
+        'news_img' => 'news01',
         'news_label' => 'for new moms',
         'news_label_class' => 'purple',
         'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
@@ -57,7 +88,7 @@ $rs_news_cards = array(
         'news_time' => 'March 25th, 2020  06:45 ET'
     ),
     array(
-        'news_img' => 'family2.jpg',
+        'news_img' => 'news02',
         'news_label' => 'for new dads',
         'news_label_class' => 'red',
         'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
@@ -67,7 +98,7 @@ $rs_news_cards = array(
         'news_time' => 'March 25th, 2020  06:45 ET'
     ),
     array(
-        'news_img' => 'family1.jpg',
+        'news_img' => 'news03',
         'news_label' => 'Menopause',
         'news_label_class' => 'green',
         'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
@@ -77,7 +108,7 @@ $rs_news_cards = array(
         'news_time' => 'March 25th, 2020  06:45 ET'
     ),
     array(
-        'news_img' => 'family3.jpg',
+        'news_img' => 'news01',
         'news_label' => 'Menopause',
         'news_label_class' => 'green',
         'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
@@ -87,7 +118,7 @@ $rs_news_cards = array(
         'news_time' => 'March 25th, 2020  06:45 ET'
     ),
     array(
-        'news_img' => 'family2.jpg',
+        'news_img' => 'news02',
         'news_label' => 'Menopause',
         'news_label_class' => 'green',
         'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',

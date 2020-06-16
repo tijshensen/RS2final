@@ -13,6 +13,14 @@
 	            $(".slide-open").toggleClass("down"); 
 	        });
 	    });
+		
+		//SEARCH FUNCTION FOR MENU
+	    function filterFunction() {
+			var value = $("#menuInput").val().toLowerCase();
+			$("#myDropdown li a").filter(function () {
+	            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+	        });
+		}
 	</script>
 
 

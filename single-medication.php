@@ -38,8 +38,8 @@
                         
                         <ul class="medication-list col-lg-11 mx-auto">
                             <li class="col-12 medication-item">
-                                <span class="info sale">20% OFF FIRST PURCHASE</span>
-                                <img src="./img/1.svg" alt=""  class="number">
+                                <span class="info green">20% OFF FIRST PURCHASE</span>
+                                <img src="./svg/1.svg" alt=""  class="number">
                                 <div class="row align-items-center">
                                     <div class="col-lg-2 col-xl-3 provider-logo-block">
                                         <img src="./img/logo-lemonaid.png" alt="" class="provider-logo">
@@ -74,10 +74,7 @@
                                                 title="1/2 star"></label>
                                         </fieldset>
 
-                                        <a href="#" class="review-link">Read the review <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.6666 4.78208L7.6919 0.20108C7.57837 0.0722193 7.42546 0 7.26616 0C7.10687 0 6.95396 0.0722193 6.84042 0.20108L6.47971 0.617081C6.42413 0.681661 6.38018 0.758301 6.35042 0.842575C6.32065 0.926849 6.30566 1.01709 6.3063 1.10808C6.30515 1.2005 6.31988 1.29226 6.34965 1.37808C6.37941 1.4639 6.42362 1.54207 6.47971 1.60808L8.79744 4.28708H1.43586C1.35808 4.28615 1.2809 4.30304 1.20882 4.33676C1.13674 4.37048 1.07117 4.42036 1.01592 4.48352C0.960678 4.54668 0.916849 4.62185 0.886977 4.70469C0.857106 4.78752 0.841785 4.87637 0.841904 4.96608V5.55208C0.838883 5.7374 0.899717 5.91654 1.01106 6.0502C1.12241 6.18386 1.27518 6.26114 1.43586 6.26508H8.82519L6.47798 8.96008C6.42232 9.024 6.37816 9.09997 6.34802 9.18363C6.31789 9.26729 6.30237 9.35699 6.30237 9.44758C6.30237 9.53817 6.31789 9.62787 6.34802 9.71153C6.37816 9.79519 6.42232 9.87116 6.47798 9.93508L6.83869 10.3501C6.95222 10.4789 7.10513 10.5512 7.26443 10.5512C7.42372 10.5512 7.57663 10.4789 7.69017 10.3501L11.6632 5.76808C11.776 5.63697 11.8392 5.45977 11.8392 5.27508C11.8392 5.0904 11.776 4.91319 11.6632 4.78208H11.6666Z"/>
-                                            </svg>
-                                        </a>
+                                        <a href="#" class="review-link">Read review <i class="icon-arrow-right"></i></a>
 
                                     </div>
                                     <div class="col-lg-4 col-xl-3 list-block">
@@ -94,7 +91,7 @@
                                 </div>
                             </li>
                             <li class="col-12 medication-item">
-                                <img src="./img/2.svg" alt="" class="number">
+                                <img src="./svg/2.svg" alt="" class="number">
                                 <div class="row align-items-center">
                                     <div class="col-lg-2 col-xl-3 provider-logo-block">
                                         <img src="./img/talk.png" alt="" class="provider-logo">
@@ -129,10 +126,7 @@
                                                 title="1/2 star"></label>
                                         </fieldset>
 
-                                        <a href="#"  class="review-link">Read the review <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.6666 4.78208L7.6919 0.20108C7.57837 0.0722193 7.42546 0 7.26616 0C7.10687 0 6.95396 0.0722193 6.84042 0.20108L6.47971 0.617081C6.42413 0.681661 6.38018 0.758301 6.35042 0.842575C6.32065 0.926849 6.30566 1.01709 6.3063 1.10808C6.30515 1.2005 6.31988 1.29226 6.34965 1.37808C6.37941 1.4639 6.42362 1.54207 6.47971 1.60808L8.79744 4.28708H1.43586C1.35808 4.28615 1.2809 4.30304 1.20882 4.33676C1.13674 4.37048 1.07117 4.42036 1.01592 4.48352C0.960678 4.54668 0.916849 4.62185 0.886977 4.70469C0.857106 4.78752 0.841785 4.87637 0.841904 4.96608V5.55208C0.838883 5.7374 0.899717 5.91654 1.01106 6.0502C1.12241 6.18386 1.27518 6.26114 1.43586 6.26508H8.82519L6.47798 8.96008C6.42232 9.024 6.37816 9.09997 6.34802 9.18363C6.31789 9.26729 6.30237 9.35699 6.30237 9.44758C6.30237 9.53817 6.31789 9.62787 6.34802 9.71153C6.37816 9.79519 6.42232 9.87116 6.47798 9.93508L6.83869 10.3501C6.95222 10.4789 7.10513 10.5512 7.26443 10.5512C7.42372 10.5512 7.57663 10.4789 7.69017 10.3501L11.6632 5.76808C11.776 5.63697 11.8392 5.45977 11.8392 5.27508C11.8392 5.0904 11.776 4.91319 11.6632 4.78208H11.6666Z"/>
-                                            </svg>
-                                        </a>
+                                        <a href="#" class="review-link">Read review <i class="icon-arrow-right"></i></a>
 
                                     </div>
                                     <div class="col-lg-4 col-xl-3 list-block">
@@ -150,7 +144,7 @@
                             </li>
                             <li class="col-12 medication-item">
                                 <span class="info promotion">MEDICATION + THERAPY</span>
-                                <img src="./img/3.svg" alt="" class="number">
+                                <img src="./svg/3.svg" alt="" class="number">
                                 <div class="row align-items-center">
                                     <div class="col-lg-2 col-xl-3 provider-logo-block">
                                         <div class="medication-name">BetterHelp</div>
@@ -184,10 +178,7 @@
                                                 title="1/2 star"></label>
                                         </fieldset>
 
-                                        <a href="#"  class="review-link">Read the review <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.6666 4.78208L7.6919 0.20108C7.57837 0.0722193 7.42546 0 7.26616 0C7.10687 0 6.95396 0.0722193 6.84042 0.20108L6.47971 0.617081C6.42413 0.681661 6.38018 0.758301 6.35042 0.842575C6.32065 0.926849 6.30566 1.01709 6.3063 1.10808C6.30515 1.2005 6.31988 1.29226 6.34965 1.37808C6.37941 1.4639 6.42362 1.54207 6.47971 1.60808L8.79744 4.28708H1.43586C1.35808 4.28615 1.2809 4.30304 1.20882 4.33676C1.13674 4.37048 1.07117 4.42036 1.01592 4.48352C0.960678 4.54668 0.916849 4.62185 0.886977 4.70469C0.857106 4.78752 0.841785 4.87637 0.841904 4.96608V5.55208C0.838883 5.7374 0.899717 5.91654 1.01106 6.0502C1.12241 6.18386 1.27518 6.26114 1.43586 6.26508H8.82519L6.47798 8.96008C6.42232 9.024 6.37816 9.09997 6.34802 9.18363C6.31789 9.26729 6.30237 9.35699 6.30237 9.44758C6.30237 9.53817 6.31789 9.62787 6.34802 9.71153C6.37816 9.79519 6.42232 9.87116 6.47798 9.93508L6.83869 10.3501C6.95222 10.4789 7.10513 10.5512 7.26443 10.5512C7.42372 10.5512 7.57663 10.4789 7.69017 10.3501L11.6632 5.76808C11.776 5.63697 11.8392 5.45977 11.8392 5.27508C11.8392 5.0904 11.776 4.91319 11.6632 4.78208H11.6666Z"/>
-                                            </svg>
-                                        </a>
+                                        <a href="#" class="review-link">Read review <i class="icon-arrow-right"></i></a>
 
                                     </div>
                                     <div class="col-lg-4 col-xl-3 list-block">
@@ -214,7 +205,7 @@
                         <ul class="medication-list col-lg-11 mx-auto">
                            
                             <li class="col-12 medication-item">
-                                <img src="./img/2.svg" alt="" class="number">
+                                <img src="./svg/2.svg" alt="" class="number">
                                 <div class="row align-items-center">
                                     <div class="col-lg-2 col-xl-3 provider-logo-block">
                                         <img src="./img/talk.png" alt="" class="provider-logo">
@@ -249,10 +240,7 @@
                                                 title="1/2 star"></label>
                                         </fieldset>
 
-                                        <a href="#"  class="review-link">Read the review <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.6666 4.78208L7.6919 0.20108C7.57837 0.0722193 7.42546 0 7.26616 0C7.10687 0 6.95396 0.0722193 6.84042 0.20108L6.47971 0.617081C6.42413 0.681661 6.38018 0.758301 6.35042 0.842575C6.32065 0.926849 6.30566 1.01709 6.3063 1.10808C6.30515 1.2005 6.31988 1.29226 6.34965 1.37808C6.37941 1.4639 6.42362 1.54207 6.47971 1.60808L8.79744 4.28708H1.43586C1.35808 4.28615 1.2809 4.30304 1.20882 4.33676C1.13674 4.37048 1.07117 4.42036 1.01592 4.48352C0.960678 4.54668 0.916849 4.62185 0.886977 4.70469C0.857106 4.78752 0.841785 4.87637 0.841904 4.96608V5.55208C0.838883 5.7374 0.899717 5.91654 1.01106 6.0502C1.12241 6.18386 1.27518 6.26114 1.43586 6.26508H8.82519L6.47798 8.96008C6.42232 9.024 6.37816 9.09997 6.34802 9.18363C6.31789 9.26729 6.30237 9.35699 6.30237 9.44758C6.30237 9.53817 6.31789 9.62787 6.34802 9.71153C6.37816 9.79519 6.42232 9.87116 6.47798 9.93508L6.83869 10.3501C6.95222 10.4789 7.10513 10.5512 7.26443 10.5512C7.42372 10.5512 7.57663 10.4789 7.69017 10.3501L11.6632 5.76808C11.776 5.63697 11.8392 5.45977 11.8392 5.27508C11.8392 5.0904 11.776 4.91319 11.6632 4.78208H11.6666Z"/>
-                                            </svg>
-                                        </a>
+                                        <a href="#" class="review-link">Read review <i class="icon-arrow-right"></i></a>
 
                                     </div>
                                     <div class="col-lg-4 col-xl-3 list-block">
@@ -288,7 +276,7 @@
                             <tbody>
                                 <tr>
                                     <td class="fixed"><div class="td column"></div></td>
-                                    <td><div class="td"></div></td>
+                                    <td class="transparent"><div class="td"></div></td>
                                     <td><div class="td"></div></td>
                                     <td><div class="td">CIALIS (DAILY) </div></td>
                                     <td><div class="td">CIALIS (DAILY) 10MG </div></td>
@@ -299,7 +287,7 @@
                                 </tr>
                                 <tr>
                                     <td class="fixed"><div class="td column"><img class="logo-company" src="./img/logo-lemonaid.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
-                                    <td><div class="td column"><img class="logo-company" src="./img/logo-lemonaid.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
+                                    <td class="transparent"><div class="td column"><img class="logo-company" src="./img/logo-lemonaid.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
                                     <td><div class="td"></div></td>
                                     <td><div class="td"><span class="na">N/A</span></div></td>
                                     <td><div class="td"><span class="price">$3</span><span class="count">/PILL</span></div></td>
@@ -310,7 +298,7 @@
                                 </tr>
                                 <tr>
                                     <td class="fixed"><div class="td column"><img class="logo-company" src="./img/logo-hims.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
-                                    <td><div class="td column"><img class="logo-company" src="./img/logo-hims.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
+                                    <td class="transparent"><div class="td column"><img class="logo-company" src="./img/logo-hims.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
                                     <td><div class="td"></div></td>
                                     <td><div class="td"><span class="price">$3</span><span class="count">/PILL</span></div></td>
                                     <td><div class="td"><span class="price">$2</span><span class="count">/PILL</span></div></td>
@@ -321,7 +309,7 @@
                                 </tr>
                                 <tr>
                                     <td class="fixed"><div class="td column"><img class="logo-company" src="./img/logo-help.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
-                                    <td><div class="td column"><img class="logo-company" src="./img/logo-help.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
+                                    <td class="transparent"><div class="td column"><img class="logo-company" src="./img/logo-help.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
                                     <td><div class="td"></div></td>
                                     <td><div class="td"><span class="price">$2</span><span class="count">/PILL</span></div></td>
                                     <td><div class="td"><span class="price">$3</span><span class="count">/PILL</span></div></td>
@@ -332,7 +320,7 @@
                                 </tr>
                                 <tr>
                                     <td class="fixed"><div class="td column"><img class="logo-company" src="./img/talk.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
-                                    <td><div class="td column"><img class="logo-company" src="./img/talk.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
+                                    <td class="transparent"><div class="td column"><img class="logo-company" src="./img/talk.png" alt=""> <span class="name">Lemonaid Health</span> </div></td>
                                     <td><div class="td"></div></td>
                                     <td><div class="td"><span class="price">$3</span><span class="count">/PILL</span></div></td>
                                     <td><div class="td"><span class="price">$2</span><span class="count">/PILL</span></div></td>

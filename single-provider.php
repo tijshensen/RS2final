@@ -11,7 +11,7 @@
                 <span class="price">$65 OFF</span>
                 <span class="old-price">$95 <span>/VISIT</span></span>
                 <div class="yellow-dashed-label">MAYSALE</div>
-                <a href="#" class="btn-purple-arw">Visit<img src="./img/arrow-right-white.svg"></a>
+                <a href="#" class="btn-purple-arw">Visit <i class="icon-arrow-right-white"></i></a>
             </div>
             <div class="col-12 lg-hide">
                 <div class="breadcrumb-container">
@@ -58,74 +58,47 @@
                 </div>
                 <div class="number-lable-block">
                     <a href="#" class="simple-card-block">
-                        <span class="block-nomber"><img src="./img/icon-check.svg" alt=""></span>
+                        <span class="block-number"><img src="./svg/icon-check.svg" alt=""></span>
                         <span class="block-description">Online doctor</span>
                     </a>
                     <a href="#" class="simple-card-block">
-                        <span class="block-nomber"><img src="./img/icon-check.svg" alt=""></span>
+                        <span class="block-number"><img src="./svg/icon-check.svg" alt=""></span>
                         <span class="block-description">Digital Clinic</span>
                     </a>
                     <a href="#" class="simple-card-block">
-                        <span class="block-nomber"><img src="./img/icon-check.svg" alt=""></span>
+                        <span class="block-number"><img src="./svg/icon-check.svg" alt=""></span>
                         <span class="block-description">ONline therapy</span>
                     </a>
                 </div>   
             </div>
             <div class="col-lg-4 col-md-9 col-sm-10 sticky-block">
-                <div class="provider-item single-small ">
-                    <div class="provider-logo-block">
-                        <div class="logo-block">
-                            <img src="./img/logo-roman.png" alt="" class="provider-logo">
-                        </div>
-                        <div class="provider-name">Roman</div>
-                        <div class="online-info-content">
-                            <div class="info-block">
-                                <span>Digital Clinic</span>
-                            </div>
-                        </div>
-                        <div class="rating">
-                            <ul class="star-list">
-                                <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                                <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                                <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                                <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                                <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="provider-info-block">
-                        <div class="description-block">
-                            <h5 class="h5 color-black">Why We Like Them</h5>
-                            <span class="text">
-                                Roman is a digital clinic revolutionizing  men’s healthcare. See a doctor, get a ‘scrip, and have it mailed to you right now.                        
-                            </span>
-                        </div>
-                        <div class="description-block">
-                            <h5 class="h5 color-black">Specialities</h5>
-                            <span class="text">Erectile Dysfnction    Stop Smoking    Hot Flashes    Anxiety</span>
-                        </div>
-                    </div>
-                    
-                    <div class="provider-price-block provider-row">
-                        <!-- <a href="#" class="promo-code">Promo Code</a> -->
-                        <span class="price">$65 OFF</span>
-                        <div class="yellow-dashed-label">MAYSALE</div>
-                        <span class="old-price">$95 <span>/VISIT</span></span>
-                        <a href="#" class="btn-purple-arw">Visit<img src="./img/arrow-right-white.svg"></a>
-                    </div>
-                </div>
+				
+				
+                <?php
+				$x =0;
+				$divlist = 'div';
+				$style = 'provider-item-vertical';
+				foreach ($rs_providers_cards as $rs_providers_card) 
+				{ 
+					include('_card-provider.php'); 
+				$x++;
+				if($x==1) break;
+				} 
+				?>
+				
+				
             </div>
             <div class="col-lg-8 collapse-section">
                 <h3 class="h3">Conditions Treated at <span>Roman</span></h3>
-                <div class="search-input-block col-md-6 ">
+                <div class="search-input-block col-md-8">
                     <input class="search-input" id="myInput" type="text" placeholder="">
-                    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"></path></svg>
+                    <i class="icon-icon-search"></i>
                 </div>
                 <div class="collapse-card">
                     <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
                         <div class="collapse-name">Anxiety <div class="collapse-label green">new</div></div>
                         <div class="collapse-description"><span>5 </span> Treatments at Roman</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg>
+                        <i class="icon-prev"></i>
                     </button>
                     <div class="collapse col-12" id="multiCollapseExample1">         
                         <div class="card card-body">
@@ -199,7 +172,7 @@
                     <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
                         <div class="collapse-name">Acne </div>
                         <div class="collapse-description"><span>5 </span> Treatments at Roman</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg>
+                        <i class="icon-prev"></i>
                     </button>
                     <div class="collapse col-12" id="multiCollapseExample2">         
                         <div class="card card-body">
@@ -273,7 +246,7 @@
                     <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">
                         <div class="collapse-name">A.d.D./A.D.H.D. </div>
                         <div class="collapse-description"><span>5 </span> Treatments at Roman</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg>
+                        <i class="icon-prev"></i>
                     </button>
                     <div class="collapse col-12" id="multiCollapseExample4">         
                         <div class="card card-body">
@@ -347,7 +320,7 @@
                     <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">
                         <div class="collapse-name">Acid Reflux </div>
                         <div class="collapse-description"><span>5 </span> Treatments at Roman</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg>
+                        <i class="icon-prev"></i>
                     </button>
                     <div class="collapse col-12" id="multiCollapseExample5">         
                         <div class="card card-body">
@@ -421,7 +394,7 @@
                     <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">
                         <div class="collapse-name">Concussion </div>
                         <div class="collapse-description"><span>5 </span> Treatments at Roman</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg>
+                        <i class="icon-prev"></i>
                     </button>
                     <div class="collapse col-12" id="multiCollapseExample6">         
                         <div class="card card-body">
@@ -495,7 +468,7 @@
                     <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#multiCollapseExample7" aria-expanded="false" aria-controls="multiCollapseExample7">
                         <div class="collapse-name">Cellulitis</div>
                         <div class="collapse-description"><span>5 </span> Treatments at Roman</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg>
+                        <i class="icon-prev"></i>
                     </button>
                     <div class="collapse col-12" id="multiCollapseExample7">         
                         <div class="card card-body">
@@ -569,7 +542,7 @@
                     <button class="collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#multiCollapseExample8" aria-expanded="false" aria-controls="multiCollapseExample8">
                         <div class="collapse-name">Confusion </div>
                         <div class="collapse-description"><span>5 </span> Treatments at Roman</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"></path></svg>
+                        <i class="icon-prev"></i>
                     </button>
                     <div class="collapse col-12" id="multiCollapseExample8">         
                         <div class="card card-body">
@@ -642,7 +615,7 @@
             </div>
             <div class="col-lg-8 content-section">
                 <div class="caption-block">
-                    <img src="./img/blue-logo.svg">
+					<i class="icon-blue-logo"></i>
                     <h3 class="h3">More about Roman</h3>
                 </div>
              <ul class="list-block">

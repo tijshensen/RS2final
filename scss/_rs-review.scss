@@ -13,7 +13,7 @@
         text-align: left;
         padding: 0;
         padding-left: 20px;
-        background-image: url(../img/arrow-white.svg);
+        background-image: url(../svg/arrow-white.svg);
     }
     .h3 {
         font-size: 18px;
@@ -93,7 +93,7 @@
                     .item {
                         font-size: 14px;
                         line-height: 27px;
-                        list-style-image: url(../img/mini-checkbox.svg);
+                        list-style-image: url(../svg/mini-checkbox.svg);
                     }
                 }
                 .price-block {
@@ -160,7 +160,7 @@
                             // max-width: 50%;
                             // width: max-content;
                             &::before {
-                                content: url(../img/doctor.svg);
+                                content: url(../svg/doctor.svg);
                                 margin-right: 10px;
                             }
                             // &:nth-child(even) {
@@ -620,12 +620,12 @@
         }
         &.true {
             &:before {
-                content: url(../img/green-check.png);
+                content: url(../svg/green-check.png);
             }
         }
         &.false {
             &:before {
-                content: url(../img/red-cros.png);
+                content: url(../svg/red-cros.png);
             }
             &.mr {
                 margin-right: 48px;
@@ -691,12 +691,12 @@
         }
         &.true {
             &:before {
-                content: url(../img/green-check.png);
+                content: url(../svg/green-check.png);
             }
         }
         &.false {
             &:before {
-                content: url(../img/red-cros.png);
+                content: url(../svg/red-cros.png);
             }
         }
         &:nth-child(odd) {

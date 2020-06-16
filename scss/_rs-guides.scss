@@ -8,6 +8,7 @@
         font-size: 26px;
         line-height: 130%;
         padding: 25px 15px 15px;
+		margin: 4px auto;
         @media (min-width: 768px) {
             font-size: 50px;
             line-height: 60px;
@@ -15,6 +16,7 @@
     }
 
     .banner-description {
+		padding: 10px 60px;
         font-size: 16px;
         line-height: 26px;
         margin-bottom: 0;
@@ -91,7 +93,7 @@
         display: none;
         @media (min-width: 768px) {
             display: block;
-            img {
+            img, svg {
                 object-fit: contain;
             }
         }
@@ -129,15 +131,16 @@
         outline: none;
         background: transparent;
         padding: 12px 0;
-        margin: 0 auto;
+        margin: 0 0 0 auto;
         width: 100%;
-        @media (min-width: 992px) {
+        text-align: right;
+        // @media (min-width: 992px) {
             // position: absolute;
             // left: 50%;
-            width: max-content;
-            margin-right: 0;
+            // width: max-content;
+            // margin-right: 0;
             // transform: translate(-50%, 0);
-        }
+        // }
     }
 }
 

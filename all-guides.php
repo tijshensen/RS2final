@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-10 text-center header-block">
-                <img src="./img/price.svg" alt="">
+                <img src="./svg/price.svg" alt="">
 				<h1 class="h1"><span>Telehealth</span> Guides <span>May 2020</span></h1>
 				<p class="banner-description">Review the Ultimate Telehealth Guides to Find the Best Online Treatments</p>
 			</div>
@@ -36,7 +36,7 @@
 							<div class="description-block">
 								<div class="simple-card-description"><?php echo $rs_guides_card['guide_title']; ?></div>
 								<div class="simple-card-block">
-									<span class="block-nomber"><?php echo $rs_guides_card['guide_counts']; ?></span>
+									<span class="block-number"><?php echo $rs_guides_card['guide_counts']; ?></span>
 									<span class="block-description">Providers</span>
 								</div>
 							</div>
@@ -60,7 +60,7 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-md-7 section-header">
                 <div class="logo-icon">
-                    <img src="./img/blue-logo.svg" />
+					<i class="icon-blue-logo"></i>
                 </div>
                 <h2 class="h2 mb">Finding You the Best Treatments in Healthcare & Wellness <span>Online</span></h2>
             </div>

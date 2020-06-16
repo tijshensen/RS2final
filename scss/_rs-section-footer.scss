@@ -36,7 +36,7 @@
 			padding: 20px 40px;
 			color: transparent;
 			background-color: $rs-white;
-			background-image: url("../img/arrow-black.svg");
+			background-image: url("../svg/arrow-black.svg");
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 			transition: all 200ms ease;
@@ -130,14 +130,19 @@
 			margin-right: 12px;
 			a {
 				color: $rs-white;
+				text-decoration: none;
 				transition: 0.4s ease-in-out;
-				svg {
-					fill: $rs-white;
+				i {
+					font-size: 24px;
+					color: $rs-white;
 					transition: 0.4s ease-in-out;
+					&::before {
+						color: unset;
+					}
 				}
 				&:hover {
-					svg {
-						fill: $rs-blue;
+					i {
+						color: $rs-blue;
 					}
 				}
 			}

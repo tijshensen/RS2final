@@ -42,16 +42,25 @@
         .price {
             font-size: 22px;
             line-height: 1;
+            color: #8CC740;
+            font-weight: bold;
         }
         .old-price {
             font-size: 18px;
             line-height: 1;
+            font-weight: bold;
+            display: none;
             span {
+                font-weight: normal;
                 font-size: 10px;
                 line-height: 1;
             }
+            @media (min-width: 375px) {
+                display: block;
+            }
         }
         .yellow-dashed-label {
+            display: flex;
             font-size: 12px;
             line-height: 16px;
             width: max-content;
@@ -88,46 +97,38 @@
             padding: 0;
         }
 
+
         .provider-item {
-            margin: 20px 15px;
-            padding-top: 40px;
+            margin: 0 15px;
             @media (min-width: 992px) {
-                margin: 25px 0 15px 30px;
+                margin: 25px 0 15px;
             }
             @media (min-width: 1200px) {
                 margin: 25px 0 15px 17%;
             }
-
             .provider-logo-block {
                 .logo-block {
                     top: unset;
-                    // margin-top: 25px;
                     height: 35px;
                 }
-                .rating {
-                    margin: 5px 0;
-                    .star-list .star img {
-                        width: 14px;
-                    }
-                }
-            }
-            .provider-name {
-                margin-top: 10px;
             }
             .online-info-content .info-block:last-of-type {
                 padding: 0;
             }
         }
+
     }
     .providers-banner-card {
         padding: 0 30px;
         order: 2;
+        margin-top: 40px;
         @media (min-width: 576px) {
             padding: 0 15px;
         }
         @media (min-width: 992px) {
             order: unset;
             padding: 0 43px;
+            margin-top: 0;
         }
         .breadcrumb-container {
             display: none;
@@ -201,9 +202,12 @@
                 .star {
                     padding-left: 3px;
                     list-style: none;
-                    img {
-                        object-fit: contain;
-                        height: 22px;
+                    // img {
+                    //     object-fit: contain;
+                    //     height: 22px;
+                    // }
+                    i {
+                        font-size: 22px;
                     }
                     &:first-of-type {
                         padding-left: 0;
@@ -248,9 +252,8 @@
 
             @media (min-width: 992px) {
                 padding-top: 45px;
-                padding-right: 10%;
+                // padding-right: 10%;
                 .simple-card-block {
-                    // padding: 5px 40px 5px 5px;
                     padding: 5px 15px 5px 5px;
                 }
             }
@@ -286,7 +289,7 @@
     }
 
     .collapse-section {
-        padding-top: 45px;
+
         .h3 {
             font-weight: 800;
             font-size: 26px;
@@ -303,15 +306,17 @@
         .search-input-block {
             height: 56px;
             margin-bottom: 45px;
-            max-width: calc(100% - 30px);
+            // max-width: calc(100% - 30px);
             @media (min-width: 768px) {
+                margin: 0;
                 margin-bottom: 50px;
             }
         }
 
         .collapse-card {
             border-radius: 30px;
-            box-shadow: $box-shadow-light;
+            // box-shadow: $box-shadow-light;
+            box-shadow: 3px 3px 17px 6px rgba(0, 0, 0, 0.06);
             margin-bottom: 30px;
             .collapse-btn {
                 position: relative;
@@ -375,21 +380,21 @@
                         }
                     }
                 }
-                svg {
+                i {
                     position: absolute;
                     right: 25px;
-                    width: 12px;
+                    font-size: 12px;
                     object-fit: contain;
                     transition: 0.4s;
-                    transform: rotate(-180deg);
+                    transform: rotate(-90deg);
                     top: 35%;
                     @media (min-width: 768px) {
                         right: 40px;
                     }
                 }
                 &.collapsed {
-                    svg {
-                        transform: rotate(0);
+                    i {
+                        transform: rotate(90deg);
                     }
                 }
             }
@@ -434,10 +439,11 @@
         display: flex;
         align-items: center;
         margin-bottom: 30px;
+        font-size: 32px;
         @media (min-width: 768px) {
             margin-bottom: 60px;
         }
-        img {
+        i {
             margin-right: 15px;
             @media (min-width: 768px) {
                 margin-right: 38px;

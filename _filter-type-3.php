@@ -6,10 +6,10 @@ include('_dataset.php');
 
 ?>		
 
-<div class="col-md-6 filters-container" id="filters-container">
+<div class="col-md-7 filters-container single" id="filters-container">
 	<div class="dropdown">
 		<button class="dropdown-toggle btn-filter-search"  type="button" id="dropdownFilter4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Treatment type<img src="./img/arr-down.svg" alt="arrow">
+			Treatment type<i class="icon-arr-down"></i> 
 		</button>
 		<div class="dropdown-search dropdown-menu" aria-labelledby="dropdownFilter4">
 			<ul class="dropdown-list filter-list filter-3" >
@@ -32,7 +32,7 @@ include('_dataset.php');
 	
 	<div class="dropdown">
 		<button class="dropdown-toggle btn-filter-search"  type="button" id="dropdownFilter1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Category<img src="./img/arr-down.svg" alt="arrow">
+			Category<i class="icon-arr-down"></i> 
 		</button>
 		<div class="dropdown-search dropdown-menu" aria-labelledby="dropdownFilter1">
 			<ul class="dropdown-list filter-list filter-4">
@@ -57,7 +57,7 @@ include('_dataset.php');
 </div>
 
 
-<div class="col-md-10 ">
+<div class="col-md-10 clear-filters-block">
 <span class="filters-span" >Selection:</span>
 <span class="clear" style="padding-left: 20px;">Clear All Filters</span>
 </div>

@@ -25,19 +25,19 @@
 		<div class="row">
 			<div class="footer-logo col-12">
 				<a class="footer-logo-link" href="homepage.php">
-					<?php include('./img/logo-white.svg');?>
+					<?php include('svg/logo-white.svg');?>
 				</a>
 			</div>
 			<div class="col-md-12">
 				<ul class="social-links-list">
 					<li class="social-link" >
-						<a href="#"><?php include('svg/icon-twitter.svg');?></a>
+						<a href="#"><i class="icon-twitter"></i></a>
 					</li>
 					<li class="social-link">
-						<a href="#"><?php include('svg/icon-facebook.svg');?></a>
+						<a href="#"><i class="icon-icon-facebook"></i></a>
 					</li>
 					<li class="social-link">
-						<a href="#"><?php include('svg/icon-instagram.svg');?></a>
+						<a href="#"><i class="icon-icon-instagram"></i></a>
 					</li>
 				</ul>
 			</div>

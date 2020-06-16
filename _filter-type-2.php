@@ -3,7 +3,7 @@ include('_dataset.php');
 ?>		
 
 <div class="btn btn-toggle-filter" id="toggle-filter">
-	<img src="./img/filter.svg" alt="">
+	<i class="icon-filter"></i>
 	Filter By
 </div>
 
@@ -11,7 +11,7 @@ include('_dataset.php');
 
 	<div class="dropdown">
 		<button class="dropdown-toggle btn-filter-search"  type="button" id="dropdownFilter2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Search Condition <img src="./img/arr-down.svg" alt="arrow">
+			Search Condition <i class="icon-arr-down"></i> 
 		</button>
 		<div class="dropdown-search dropdown-menu" aria-labelledby="dropdownFilter2">
 			<svg width="24" height="24" viewBox="0 0 24 24"><path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"/></svg>
@@ -37,7 +37,7 @@ include('_dataset.php');
 	
 	<div class="dropdown">
 		<button class="dropdown-toggle btn-filter-search"  type="button" id="dropdownFilter3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Search treatment<img src="./img/arr-down.svg" alt="arrow">
+			Search treatment<i class="icon-arr-down"></i> 
 		</button>
 		<div class="dropdown-search dropdown-menu" aria-labelledby="dropdownFilter3">
 			<svg width="24" height="24" viewBox="0 0 24 24"><path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"/></svg>
@@ -63,7 +63,7 @@ include('_dataset.php');
 	
 	<div class="dropdown">
 		<button class="dropdown-toggle btn-filter-search"  type="button" id="dropdownFilter4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Treatment type<img src="./img/arr-down.svg" alt="arrow">
+			Treatment type<i class="icon-arr-down"></i> 
 		</button>
 		<div class="dropdown-search dropdown-menu" aria-labelledby="dropdownFilter4">
 			<ul class="dropdown-list filter-list filter-3" >
@@ -86,19 +86,19 @@ include('_dataset.php');
 
 	<div class="dropdown">
 		<button class="dropdown-toggle btn-filter-search"  type="button" id="dropdownFilter1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Insurance<img src="./img/arr-down.svg" alt="arrow">
+			Insurance<i class="icon-arr-down"></i> 
 		</button>
 		<div class="dropdown-search dropdown-menu" aria-labelledby="dropdownFilter1">
 			<ul class="dropdown-list filter-list">
 				<li class="dropdown-item">							
 					<label class="check">
-						<input type="radio" name="insurance" data-filter-id="filter-prescription" data-filter-title="Prescription">
+						<input type="radio" name="insurance" data-filter-id="filter-insurance-yes" data-filter-title="Accepts Insurance">
 						<span class="filter">Accepts Insurance</span>
 					</label>
 				</li>
 				<li class="dropdown-item">
 					<label class="check">
-						<input type="radio" name="insurance" data-filter-id="filter-supplements" data-filter-title="Supplements">
+						<input type="radio" name="insurance" data-filter-id="filter-insurance-no" data-filter-title="Not Accepted">
 						<span class="filter">Not Accepted</span>
 					</label>
 				</li>
@@ -109,8 +109,8 @@ include('_dataset.php');
 
 
 <div class="col-md-10 ">
-<span class="filters-span" >Selection:</span>
-<span class="clear" style="padding-left: 20px;">Clear All Filters</span>
+    <span class="filters-span">Selection:</span>
+    <a href="#" class="clear-filter" style="padding-left: 20px;">Clear All Filters</a>
 </div>
 
 <div class="col-md-10 ">

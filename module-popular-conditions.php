@@ -11,15 +11,15 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-12">
 				<div class="btn btn-condtion">
-					<?php include('./img/icon-body.svg');?>
+					<?php include('./svg/icon-body.svg');?>
 					<span>Erectile Dysfunction</span>
 				</div>
 				<div class="btn btn-condtion">
-					<?php include('./img/icon-body.svg');?>
+					<?php include('./svg/icon-body.svg');?>
 					<span>Hair Loss</span>
 				</div>
 				<div class="btn btn-condtion">
-					<?php include('./img/icon-mind.svg');?>
+					<?php include('./svg/icon-mind.svg');?>
 					<span>Online Therapy</span>
 				</div>
 			</div>	
@@ -27,15 +27,15 @@
 
 			<div class="col-lg-4 col-md-4 col-12">
 				<div class="btn btn-condtion">
-					<?php include('./img/icon-body.svg');?>
+					<?php include('./svg/icon-body.svg');?>
 					<span>Birth Control</span>
 				</div>
 				<div class="btn btn-condtion">
-					<?php include('./img/icon-heart.svg');?>
+					<?php include('./svg/icon-heart.svg');?>
 					<span>Hot Flashes</span>
 				</div>
 				<div class="btn btn-condtion">
-					<?php include('./img/icon-eye.svg');?>
+					<?php include('./svg/icon-eye.svg');?>
 					<span>Anxiety</span>
 				</div>
 			</div>	

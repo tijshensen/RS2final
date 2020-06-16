@@ -17,13 +17,11 @@
                 <div class="row justify-content-center">
                    
                     <!-- <div class="col-12 search-container"> -->
-                    <div class="search-input-block col-md-10 col-lg-4 ml-md-5">
+                    <div class="search-input-block col-md-12 col-lg-4">
                         <input class="search-input" id="myInput" type="text" placeholder="">
-                        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"></path></svg>
+                        <i class="icon-icon-search"></i>
                     </div>
-                    <div class="col-lg-6 col-md-6 dr-right-block">
-                        <img src="./img/dr-finger.svg" alt="" class="img-dr-right">
-                    </div>
+                   
                     <!-- </div> -->
 
                     <div class="col-lg-10 col-sm-11">
@@ -50,10 +48,10 @@
                                         <span class="block-name"><?php echo $rs_condition['condition_name']; ?></span>
                                     </div>
                                     <div class="numb-block">
-                                        <span class="block-nomber">12</span>
+                                        <span class="block-number">12</span>
                                         <span class="block-description">Treatment Providers</span>
                                     </div>
-                                    <img src="./img/blueArrow.svg" alt="" class="arw-right">
+                                    <i class="icon-blueArrow arw-right"></i>
                                 </a>
 								</li>
 								<?php	

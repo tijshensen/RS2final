@@ -104,9 +104,6 @@
             }
         }
         .description-heading {
-            font-family: "Catamaran";
-            font-style: normal;
-            font-weight: 800;
             font-size: 18px;
             line-height: 29px;
             color: $rs-blue;
@@ -125,16 +122,18 @@
         }
     }
     .alphabet-container {
-        padding: 0 54px;
-
+        @media (min-width: 768px) {
+            // overflow: hidden;
+            min-height: 800px;
+            padding: 0 50px;
+        }
+       
         .p-relative {
             position: relative;
         }
         .btn-filters-container {
             display: flex;
             flex-wrap: wrap;
-
-            // justify-content: space-between;
             .btn-filter {
                 display: flex;
                 justify-content: center;
@@ -270,7 +269,6 @@
                     border: none;
                     padding-left: 69px;
                     padding-right: 42px;
-                    font-family: "Open Sans", sans-serif;
                     font-style: normal;
                     font-weight: 700;
                     font-size: 12px;
@@ -329,7 +327,6 @@
             }
 
             .result {
-                font-family: "Open Sans", sans-serif;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 22px;
@@ -343,12 +340,7 @@
             }
         }
 
-        @media (max-width: 992px) {
-            padding: 0 30px;
-        }
-        @media (max-width: 768px) {
-            padding: 0 8px;
-        }
+
     }
 
     .dr-right-block {
@@ -375,33 +367,33 @@
         border-radius: 20px;
         box-shadow: $box-shadow-light;
         transition: 0.4s;
-        // align-items: flex-start;
         text-decoration: none;
 		border: none;
         align-items: center;
+        color: $rs-black;
         * {
             cursor: pointer;
         }
         &:hover {
-            box-shadow: $box-shadow-heavy;
+            box-shadow: $box-shadow-light;
         }
         .simple-flex {
             display: flex;
             align-items: center;
         }
-        @media (min-width: 992px) {
-            width: calc(100% - 75px);
-            margin-left: auto;
-            padding: 0 39px;
-        }
         @media (min-width: 768px) {
             width: calc(100% - 65px);
             margin-left: auto;
-            padding: 0 25px;
+            padding: 0 40px;
             border-radius: 40px;
-            // flex-direction: row;
-            // align-items: center;
         }
+		
+        @media (min-width: 992px) {
+            width: calc(100% - 75px);
+            margin-left: auto;
+            padding: 0 40px;
+        }
+
         .block-name {
             // margin-right: auto;
             font-weight: bold;
@@ -436,32 +428,18 @@
                 background: $rs-green;
             }
         }
-        .block-nomber {
-            font-weight: bold;
-            font-size: 14px;
-            background: transparent;
-            font-weight: 800;
-            font-size: 12px;
-            border-radius: 0;
-            width: max-content;
-            height: auto;
-            color: $rs-grey-19;
-            height: unset;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
 
-            @media (min-width: 768px) {
-                background: $rs-green;
-                font-weight: 800;
-                font-size: 12px;
-                border-radius: 50%;
-                width: 32px;
-                height: 32px;
-                color: $rs-white;
-            }
-        }
+		.block-number {
+			color: $rs-blue;
+			font-size: 12px;
+			font-weight: 800;
+			@media(min-width: 768px)
+			{
+				font-size: 18px;
+			}
+		}
+			
+		
         .numb-block {
             display: flex;
             align-items: center;
@@ -491,7 +469,7 @@
             right: 27px;
             top: 50%;
             transform: translate(0, -50%);
-            height: 15px;
+            font-size: 15px;
             @media (min-width: 768px) {
                 height: unset;
                 position: relative;
@@ -796,7 +774,7 @@
             border-radius: 50px;
             padding: 0 16px;
             height: 24px;
-            font-family: "Catamaran";
+ 
             font-style: normal;
             font-weight: 800;
             font-size: 10px;
@@ -804,120 +782,29 @@
             text-transform: uppercase;
             color: $rs-white;
             margin-left: 25px;
-            &.updated {
-                background: $rs-pink;
-            }
-            &.new {
-                background: $rs-green;
-            }
+            
             &.rating {
                 background: $rs-orange;
             }
-        }
 
-        .providers-card {
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;
-            min-height: 200px;
-            justify-content: space-between;
-            padding: 20px 15px;
-            border-radius: 30px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
-            @media (min-width: 992px) {
-                padding: 39px 15px 20px 20px;
-            }
-            @media (min-width: 1200px) {
-                padding: 39px 20px 20px 29px;
-            }
-            img {
-                width: max-content;
-                max-height: 35px;
-                max-width: 100%;
-                object-fit: contain;
-            }
-            .h6 {
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 33px;
-                margin-bottom: 0;
-            }
-            .description {
-                font-size: 14px;
-                line-height: 19px;
-                color: $rs-grey-10;
-                margin-bottom: 9px;
-            }
-            .label {
-                margin-left: 0;
-            }
-            .review-link {
-                margin-left: auto;
-                font-weight: 700;
-                font-size: 12px;
-                line-height: 16px;
-                color: $rs-blue-4;
-                text-decoration: none;
-                position: relative;
-                padding: 0;
-                margin-top: 10px;
-                text-transform: uppercase;
-                padding-right: 30px;
-                svg {
-                    width: 10px;
-                    transform: translate(-50%, -50%);
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    transition: 0.4s;
-                    fill: $rs-blue-4;
-                }
-                &:hover {
-                    svg {
-                        right: -5px;
-                    }
-                }
-            }
 
-            .rating {
-                display: flex;
-                align-items: flex-end;
-                justify-content: space-between;
-                .star-list {
-                    padding: 0;
-                    margin: 0;
-                    display: flex;
-                    align-items: center;
-                    .star {
-                        img {
-                            width: 13px;
-                        }
-                        padding: 0;
-                        list-style: none;
-                    }
-                }
-            }
         }
     }
 }
 
 .review-link {
-    text-decoration: none;
-    margin-left: auto;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     color: $rs-blue-4;
     text-decoration: none;
     position: relative;
     padding: 0;
-    margin-top: 5px;
-    // text-transform: uppercase;
+    margin-top: 10px;
+    text-transform: uppercase;
     padding-right: 30px;
-    display: flex;
-    align-items: center;
-    svg {
-        width: 10px;
+    i {
+        font-size: 10px;
         transform: translate(-50%, -50%);
         position: absolute;
         right: 0;
@@ -926,10 +813,11 @@
         fill: $rs-blue-4;
     }
     &:hover {
+        color: $rs-blue;
         text-decoration: none;
-        color: $rs-blue-4;
-        svg {
+        i {
             right: -5px;
         }
     }
 }
+

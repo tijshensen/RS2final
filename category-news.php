@@ -22,7 +22,7 @@
                         <div class="info-description">
                             Where can you shop for a chia-bearded version of Duck Dynasty’s Uncle Si, a Major League Baseball urn for your loved one’s ashes …
                         </div>
-                        <a href="#" class="btn-purple-arw btn-small">Continue reading<img src="./img/arrow-right-white.svg"></a>
+                        <a href="#" class="btn-purple-arw btn-small">Continue reading <i class="icon-arrow-right-white"></i></a>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,12 @@
 					{
 						?>
 						<div class="row news-card">
-							<img src="./img/<?php echo $rs_news_card['news_img']; ?>" alt="" class="card-news-img">
+							<img srcset="
+								./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg 3019w,
+								./img/<?php echo $rs_news_card['news_img']; ?>x2.jpg 2013w,
+								./img/<?php echo $rs_news_card['news_img']; ?>x1.jpg 1006w
+                                "
+                                src="./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg" alt="" class="card-news-img">
 							<div class="news-card-info-block" id="news-detail">
 								<div class="news-label <?php echo $rs_news_card['news_label_class']; ?>"><?php echo $rs_news_card['news_label']; ?></div>
 								<h5 class="news-title"><?php echo $rs_news_card['news_title']; ?></h5>
@@ -68,7 +73,7 @@
                     <a href="#" class="btn btn-purple">See all news</a>
                 </div>
                 <div class="col-lg-4  side-info-card">
-                    <img src="./img/price.svg" alt="" class="card-info-img">
+                    <img src="./svg/price.svg" alt="" class="card-info-img">
                     <h5 class="h5"><span>Telehealth </span>Guides <span>May 2020</span></h5>
                     <div class="side-info-description">
                         Review the Ultimate Telehealth Guides to Find the Best Online Treatments
@@ -80,8 +85,10 @@
 					?>
                         <a href="#" class="card-label-block">
                             <img src="./svg/<?php echo $rs_guides_card['guide_svg']; ?>" alt="" class="card-label-img">
-                            <div class="label-name"><?php echo $rs_guides_card['guide_title']; ?></div>
-                            <span class="label-numb"><?php echo $rs_guides_card['guide_counts']; ?></span>
+                            <div class="description-block">
+                                <div class="label-name"><?php echo $rs_guides_card['guide_title']; ?></div>
+                                <span class="label-numb"><?php echo $rs_guides_card['guide_counts']; ?> providers</span>
+                            </div>
                         </a>
 					<?php 
 					} 
