@@ -645,8 +645,11 @@
 	}
 	.scroll-btn {
 		width: 100%;
+		max-width: 100%;
 		overflow: unset;
-		overflow-y: scroll;
+		overflow-y: auto;
+	    cursor: grab;
+	    user-select: none;
 		padding-bottom: 5px;
 		&::-webkit-scrollbar {
 			width: 8px;
