@@ -17,13 +17,13 @@
 </div>
 <div class="rs-footer rs-footer-second">
 	<div class="container">
-		<div class="row footer-nav">
-			
-			<div class="col-md-3 footer-nav-block">
+		<div class="row">
+			<div class="footer-logo col-12">
 				<a class="footer-logo-link" href="homepage.php">
 					<?php include('svg/logo-white.svg');?>
 				</a>
-				
+			</div>
+			<div class="col-md-12">
 				<ul class="social-links-list">
 					<li class="social-link" >
 						<a href="#"><i class="icon-twitter"></i></a>
@@ -35,9 +35,9 @@
 						<a href="#"><i class="icon-icon-instagram"></i></a>
 					</li>
 				</ul>
-
 			</div>
-			
+		</div>
+		<div class="row footer-nav">
 			<div class="col-md-3 footer-nav-block">
 				<div class="rs-footer-header">About us</div>
 				<ul class="footer-nav-list">

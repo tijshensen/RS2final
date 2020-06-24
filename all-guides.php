@@ -3,54 +3,44 @@
 ?>
 <?php include('_header.php'); ?>
 
-<body class="rs-index">
+<body class="rs-all-guides">
 	<?php include('_menu.php');?>
-	<?php include('_dataset.php');?>
 
 
 
-
+<section class="rs-section-hero">
+	<div class="container"> 
+		<div class="row justify-content-center">
+			<div class="col-md-10 text-center header-block">
+				<img src="./svg/price.svg">
+				<h1 class="h1"><span>Telehealth</span> Guides <span>May 2020</span></h1>
+				<div class="rs-description">Review the Ultimate Telehealth Guides to Find the Best Online Treatments</div>
+			</div>	
+		</div>
+	</div>
+</section>
 			
 
 <section class="guide-banner-section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-md-10 text-center header-block">
-                <img src="./svg/price.svg" alt="">
-				<h1 class="h1"><span>Telehealth</span> Guides <span>May 2020</span></h1>
-				<p class="banner-description">Review the Ultimate Telehealth Guides to Find the Best Online Treatments</p>
-			</div>
 			<div class="col-lg-11 col-md-10 col-sm-7 card-section">
 				<div class="row">
-					
 					
 					<?php
 					foreach ($rs_guides_cards as $rs_guides_card) 
 					{ 
 					?>
-
-
 					<div class="col-lg-3 col-md-6 card-container">
-						<a href="single-guide.php" class="simple-card">
-							<img class="simple-card-img" src="./svg/<?php echo $rs_guides_card['guide_svg']; ?>" /> 
-							<div class="description-block">
-								<div class="simple-card-description"><?php echo $rs_guides_card['guide_title']; ?></div>
-								<div class="simple-card-block">
-									<span class="block-number"><?php echo $rs_guides_card['guide_counts']; ?></span>
-									<span class="block-description">Providers</span>
-								</div>
-							</div>
-						</a>
+						<?php	
+						include('_card-guide.php');
+						?>
 					</div>
-				
 					<?php 
 					} 
 					?>
-					
-					
 				</div>
 			</div>
-		
 		</div>
 	</div>
 </section>
@@ -71,7 +61,7 @@
             </div>
 
             <div class="col-lg-5 col-md-4 img-block-full">
-                <img src="./img/medical-stuff.png" alt="">
+                <img src="./img/medical-stuff.png">
             </div>
         </div>
     </div>
@@ -81,10 +71,9 @@
 include('_module-news.php');
 ?>
 
-
-	<?php include('_footer-menu.php'); ?>
-
-	<script src="./js/script.js"></script> 
+<?php
+include('_footer-menu.php'); 
+?>
 
 </body>
 

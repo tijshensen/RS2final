@@ -1,11 +1,11 @@
 .news-banner {
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 35px;
     .h1 {
         text-align: left;
         font-size: 26px;
         line-height: 130%;
-        @media (min-width: 768px) {
+        @include media-breakpoint-up(md) {
             font-size: 50px;
             line-height: 60px;
             padding: 17px;
@@ -13,7 +13,7 @@
         }
     }
     .news-banner-card {
-        @media (min-width: 768px) {
+        @include media-breakpoint-up(md) {
             box-shadow: $box-shadow-heavy;
             border-radius: 30px;
             padding: 50px 40px 40px;
@@ -23,7 +23,6 @@
 
             .news-label {
                 position: absolute;
-                z-index: 1;
                 min-width: 166px;
                 max-width: 100%;
                 height: 33px;
@@ -39,7 +38,7 @@
                 left: 23px;
                 display: flex;
                 align-items: center;
-                @media (min-width: 768px) {
+                @include media-breakpoint-up(md) {
                     font-size: 14px;
                     min-width: 200px;
                     height: 48px;
@@ -56,7 +55,7 @@
                 margin-bottom: 20px;
                 width: 100%;
                 object-fit: contain;
-                @media (min-width: 768px) {
+                @include media-breakpoint-up(md) {
                     position: absolute;
                     border-radius: 30px;
                     width: calc(100% - 30px);
@@ -75,14 +74,14 @@
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 0 30px;
-            @media (min-width: 768px) {
+            @include media-breakpoint-up(md) {
                 padding-left: 40px;
             }
             .h6 {
                 font-weight: 800;
                 font-size: 22px;
                 line-height: 29px;
-                @media (min-width: 768px) {
+                @include media-breakpoint-up(md) {
                     font-size: 30px;
                     line-height: 35px;
                 }
@@ -96,7 +95,7 @@
                 color: $rs-blue;
                 width: 100%;
                 margin-bottom: 9px;
-                @media (min-width: 768px) {
+                @include media-breakpoint-up(md) {
                     width: max-content;
                     font-size: 12px;
                     line-height: 30px;
@@ -116,7 +115,7 @@
                     color: $rs-black;
                     padding-right: 20px;
                     margin-bottom: 18px;
-                    @media (min-width: 768px) {
+                    @include media-breakpoint-up(md) {
                         line-height: 30px;
                         margin-bottom: 0;
                     }
@@ -136,13 +135,13 @@
                 display: -webkit-box;
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
-                @media (min-width: 768px) {
+                @include media-breakpoint-up(md) {
                     line-height: 26px;
                 }
             }
         }
 
-        .btn-purple-arw {
+        .btn-cta-arw {
             margin: 17px 0 0;
         }
     }
@@ -150,9 +149,9 @@
 
 .all-news-section {
     padding-bottom: 28px;
-    .btn-purple {
+    .btn-cta {
         margin: auto;
-        @media (min-width: 768px) {
+        @include media-breakpoint-up(md) {
             margin: unset;
             margin-left: 28%;
         }
@@ -160,8 +159,9 @@
 
    .side-info-card {
         // padding: 43px 33px 95px 48px;
-        padding: 43px 25px 95px 34px;
-        @media (min-width: 992px) {
+        padding: 45px 15px 60px 20px;
+        @include media-breakpoint-up(lg) {
+            padding: 45px 15px 95px 20px;
             &::before {
                 top: -35px;
                 left: 15px;
@@ -177,11 +177,11 @@
         background: $rs-white;
         display: flex;
         flex-wrap: wrap;
-        box-shadow: $box-shadow-heavy;
+        box-shadow: $box-shadow-equal;
         border-radius: 30px;
         padding: 40px 30px 55px;
         justify-content: center;
-        @media (min-width: 768px) {
+        @include media-breakpoint-up(md) {
             box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.059);
             padding: 82px 0 65px 112px;
             justify-content: unset;
@@ -195,7 +195,7 @@
             font-weight: normal;
             margin-bottom: 62px;
             font-weight: 400;
-            @media (min-width: 768px) {
+            @include media-breakpoint-up(md) {
                 text-align: center;
                 font-weight: 800;
                 line-height: 35px;
@@ -209,28 +209,33 @@
             margin: 0;
             display: flex;
             flex-wrap: wrap;
-            padding-left: 27%;
-            @media (min-width: 768px) {
-                padding: 0;
-            }
+
             .news-categories-item {
                 width: 100%;
                 list-style: none;
                 font-weight: 400;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 22px;
-                text-transform: uppercase;
+                text-transform: lowercase;
                 color: $rs-black;
                 padding-right: 15px;
                 margin-bottom: 22px;
-                @media (min-width: 768px) {
+                font-weight: bold;
+                @include media-breakpoint-up(md) {
+                    text-transform: uppercase;
                     width: 50%;
                     line-height: 35px;
-                    font-weight: bold;
                     margin-bottom: 0;
                 }
-                @media (min-width: 992px) {
+                @include media-breakpoint-up(lg) {
                     width: 25%;
+                }
+                img {
+                    height: 20px;
+                    margin-left: 7px;
+					@include media-breakpoint-up(lg) {
+						margin-top: -3px;
+					}
                 }
             }
         }

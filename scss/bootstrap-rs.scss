@@ -44,9 +44,13 @@
 /*RS Styleguide*/
 @import "rs-styleguide";
 
+/*RS functions*/
+@import "rs-menu";
+@import "rs-filter";
+@import "rs-alphabet";
 
 /*RS Sections*/
-@import "rs-section-menu";
+
 @import "rs-section-hero";
 @import "rs-section-review";
 @import "rs-section-healingbar";
@@ -56,26 +60,23 @@
 @import "rs-homepage";
 @import "rs-review";
 @import "rs-page-index";
-@import "rs-page-medications";
 @import "rs-page-news";
 @import "rs-page-about";
 @import "rs-single-news";
-@import "rs-single-medication";
+@import "rs-single-treatment";
 @import "rs-guides";
-@import "rs-guide-single";
-@import "rs-single-condition";
 @import "rs-all-news";
 @import "rs-single-provider";
 
+
 /*cards*/
 /*Guides in the sidebar*/
-@import "rs-card-guides-sidebar";
+@import "rs-guides";
 
 /*Provider cards*/
 @import "rs-card-provider";
 
-/*functions*/
-@import "rs-filter";
+
 
 /*RS Modules*/
 @import "rs-module-news";

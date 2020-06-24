@@ -1,6 +1,6 @@
 <?php include('_header.php'); ?>
 
-<body>
+<body class="single-news">
 	<?php include('_menu.php');?>
 	<section   itemscope itemtype="http://schema.org/Article" class="article-banner-section">
 		<div class="container">
@@ -42,7 +42,7 @@
 						</div>
 					</div>
 					<div class="links-block">
-						<div class="sotials-block">
+						<div class="socials-block-block">
 							<a itemprop="url" href="#" class="social-link twitter"><i class="icon-icon-twitter"></i></a>
 							<a itemprop="url" href="#" class="social-link facebook"><i class="icon-icon-facebook-1"></i></a>
 							<a itemprop="url" href="#" class="social-link rss"><i class="icon-icon-rss"></i></a>
@@ -65,7 +65,7 @@
 					</div>
 					<div class="links-block pl-lg-3">
 						<span class="link-info">Share This Article:</span>
-						<div class="sotials-block">
+						<div class="socials-block-block">
 							<a itemprop="url" href="#" class="social-link twitter"><i class="icon-icon-twitter"></i></a>
 							<a itemprop="url" href="#" class="social-link facebook"><i class="icon-icon-facebook-1"></i></a>
 							<a itemprop="url" href="#" class="social-link rss"><i class="icon-icon-rss"></i></a>
@@ -77,7 +77,7 @@
 						<div class="information-block">
 							<div class="author-card-header">
 								<span class="author-name" >Simon Weather</span>
-								<div class="sotials-block">
+								<div class="socials-block-block">
 									<a itemprop="url" href="#" class="social-link twitter"><i class="icon-icon-twitter"></i></a>
 									<a itemprop="url" href="#" class="social-link facebook"><i class="icon-icon-facebook-1"></i></a>
 									<a itemprop="url" href="#" class="social-link rss"><i class="icon-icon-rss"></i></a>
@@ -123,15 +123,7 @@
 						<?php
 						foreach ($rs_guides_cards as $rs_guides_card) 
 						{ 
-						?>
-							<a href="#" class="card-label-block">
-								<img src="./svg/<?php echo $rs_guides_card['guide_svg']; ?>" alt="" class="card-label-img">
-								<div class="description-block">
-									<div class="label-name"><?php echo $rs_guides_card['guide_title']; ?></div>
-									<span class="label-numb"><?php echo $rs_guides_card['guide_counts']; ?> providers</span>
-								</div>
-							</a>
-						<?php 
+							include('_card-guide.php');
 						} 
 						?>
 					</div>

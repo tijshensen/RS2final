@@ -2,6 +2,63 @@ var $ = jQuery;
 
 jQuery(document).ready(function ($) {
 
+    $('.navbar-toggler').click(function(){
+        $('#navbarSupportedContent').toggleClass('show');
+        $('body').toggleClass('no-scroll');
+    });
+
+    $('#treatments-dropdown-toggler, #search-block-close').click(function(){
+        $('.search-block, .dropdown-search').toggleClass('show');
+    });
+
+    $('#menuInput').click(function (e) {
+        if ($(window).width() < 992){
+            e.stopPropagation();
+            return false;
+        }
+    });
+
+
+
+    $('.auto-toc').each(function(){
+        index = 1;
+        $tocElement = $(this);
+        $tocElement.empty();
+
+        $(this).parents('.rs-content-section').find('.rs-block-content').each(function(){
+            $(this).attr('id', 'toc-item-' + index);
+
+            var title = $(this).find('h2, h3, h4, h5, h6').first().text();
+
+            $tocItem = '<li class="list-item"><a href="#toc-item-' + index + '">' + title + '</a></li>';
+            $tocElement.append($tocItem);
+
+            index++;
+        });
+    });
+
+    // Scroll animations
+    $animImages = $('.our-mission .img-block-full').find('svg, img');
+    $animStickyblock = $('.rs-single-provider .providers-banner-section').find('.sticky-block');
+    $(window).scroll(function() {
+
+        // animate the image on the front page
+        $animImages.each(function(){
+            if ( $(this).offset().top < ($(window).scrollTop() + $(window).height()) - 200 ) {
+                $(this).addClass('slide-in');
+            }
+        });
+
+        $animStickyblock.each(function(){
+            if ( $(window).scrollTop() > 600 ) {
+                $(this).removeClass('short');
+            } else {
+                $(this).addClass('short');
+            }
+        });
+    });
+    
+    // set focus on the input field in the top search bar
     $('#dropdownSearchMenuButton').click(function () {
         $("#menuInput").focus();
     });
@@ -15,20 +72,24 @@ jQuery(document).ready(function ($) {
     // TOGGLE FILTERS
     function countSelectedElements() {
         $('.filter-item-mobile').each(function() {
-            console.log($('.dropdown-item input:checkbox', $(this)).length);
-            console.log($('.dropdown-item input:checkbox:checked', $(this)).length);
+            let listId = $(this).data('id');
+            let countElemSum = $('.dropdown-item input:checkbox', $(this)).length;
+            let countSelectedSum = $('.dropdown-item input:checkbox:checked', $(this)).length;
+            updateTitlesWithCounts(listId, countSelectedSum, countElemSum);
         });
     }
 
     function clearAllCheckBoxes() {
-        console.log($('.dropdown-item input:checkbox', $('#filters-items')).length);
         $('.dropdown-item input:checkbox', $('#filters-items')).prop('checked', false);
+        $('.filters-checked-elem ').remove();
+        recalculateHeightOfCheckedFilters();
+        countSelectedElements();
     }
 
     $('#toggle-filter').click(function () {
-        $("#filters-container").toggle("slow");
+        $("#filters-container").show("slow");
         countSelectedElements();
-        $("#filters-container-mobile").toggle();
+        $("#filters-container-mobile").show();
         $('body').addClass('no-scroll');
     });
 
@@ -42,7 +103,7 @@ jQuery(document).ready(function ($) {
         filtersSearch.attr('data-target', target);
         $('#filters-go-back-button').show();
         $('.filters-mobile-heading #top-title').html($(this).data('title') + ' <span class="count"></span>');
-        $('#filters-items').show();
+        $('#filters-items').show('slide', {direction: 'right'}, 500);
     });
 
     function goBack() {
@@ -51,7 +112,7 @@ jQuery(document).ready(function ($) {
         $('.filters-checked-elements').html('');
         $('#top-title').html('FILTERS');
         $('.filter-item-mobile').hide();
-        $('.filters-buttons').show();
+        $('.filters-buttons').show('slide', {direction: 'left'}, 500);
     }
 
     $('#filters-go-back-button').on('click', function () {
@@ -92,8 +153,13 @@ jQuery(document).ready(function ($) {
     }
 
     function updateTitlesWithCounts(listId, countElemSelected, countElemSum) {
-        $('.filter-button-mobile-' + listId + ' .count').html('(' + countElemSelected + '/' + countElemSum + ')');
-        $('.filters-mobile-heading #top-title .count').html('(' + countElemSelected + '/' + countElemSum + ')');
+        if(countElemSelected>0) {
+            $('.filter-button-mobile-' + listId + ' .count').html('(' + countElemSelected + '/' + countElemSum + ')');
+            $('.filters-mobile-heading #top-title .count').html('(' + countElemSelected + '/' + countElemSum + ')');
+        } else {
+            $('.filter-button-mobile-' + listId + ' .count').html('');
+            $('.filters-mobile-heading #top-title .count').html('');
+        }
     }
 
     $('.filters-container-mobile .dropdown-item').on('click', function () {
@@ -137,6 +203,38 @@ jQuery(document).ready(function ($) {
     $('.filters-mobile-footer-button--clear').on('click', function() {
         clearAllCheckBoxes();
     });
+
+    $('.filters-mobile-footer-button--apply').on('click', function () {
+        console.log('APPLY');
+        let filters = [];
+        $('.dropdown-item input:checkbox:checked').each(function () {
+            let filterClassName =  $(this).data('filter-id').replace(/\s/g , "-").toLowerCase();
+            filterClassName =  filterClassName.replace(/\W+(?!$)/g, '-');
+            filters.push(filterClassName);
+        });
+        console.log(filters);
+        if(filters.length) {
+            $('.result-item').each(function () {
+                let check = false;
+                let element = this;
+                filters.forEach(function (filter) {
+                    if ($(element).hasClass(filter)) {
+                        check = true;
+                    }
+                });
+                if (!check) {
+                    $(element).hide();
+                }
+                console.log(check);
+            });
+        } else {
+            $('.result-item').show();
+        }
+        //result-item
+        $("#filters-container-mobile").hide();
+        $('body').removeClass('no-scroll');
+    });
+
     // $(".news-slider").owlCarousel({
     //     items: 2,
     //     loop: true,
@@ -149,11 +247,11 @@ jQuery(document).ready(function ($) {
 
     // $("#myInput").on("keyup", function () {
     //     var value = $(this).val().toLowerCase();
-    //     $("#medications-list li div").filter(function () {
+    //     $("#rs-list li div").filter(function () {
     //         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     //     });
-    //     $('#medications-list li').filter(function(){
-    //         $('#medications-list li').show();
+    //     $('#rs-list li').filter(function(){
+    //         $('#rs-list li').show();
     //         var hide =  true;
     //         var children = $(this).children("div");
     //         for (var i = 0; i < children.length; i++) {
@@ -168,7 +266,7 @@ jQuery(document).ready(function ($) {
     //SEARCH FUNCTION on BTN
     // $('.search-toggle').click(function() {
     //     var value = $("#myInput").val().toLowerCase();
-    //     $("#medications-list li div").filter(function () {
+    //     $("#rs-list li div").filter(function () {
     //         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     //     });
     // });
@@ -179,9 +277,11 @@ jQuery(document).ready(function ($) {
 
 
 
+    /* START FILTER */
     // Filter results based on filter selection
     window.rs_filterclick = false;
 
+    // add items to the filter when you click on them from the dropdown
     jQuery('.filters-container').find('label.check').on('click', function (e) {
         if (window.rs_filterclick == false) {
             window.rs_filterclick = true;
@@ -190,17 +290,20 @@ jQuery(document).ready(function ($) {
         e.stopPropagation();
     });
 
+    // remove items from the filter if you click on the labels
     jQuery('.btn-filters-container').on('click', '.btn-filter', function () {
         var rs_filterID = jQuery(this).data('filter-id');
         jQuery('.filters-container').find('input[data-filter-id="' + rs_filterID + '"]').prop("checked", false);
         rs_filter_results();
     });
 
+    // remove all items when you clear the filter
     jQuery('.clear-filter').on('click', function () {
         jQuery('.filters-container').find('input').prop("checked", false);
         rs_filter_results();
     });
 
+    // execute the filter and build the result & selected labels. This function loops through the checked items in the dropdowns to see what is active.
     function rs_filter_results() {
         window.rs_filterclick = false;
 
@@ -227,6 +330,7 @@ jQuery(document).ready(function ($) {
                 rs_checkedFilters++;
             });
 
+            // count the items selected
             if (rs_checkedFilters > 0) {
                 jQuery(this).find('button span.count').html(rs_checkedFilters);
             } else {
@@ -245,16 +349,16 @@ jQuery(document).ready(function ($) {
         var $rs_providers_list = jQuery('.result-list');
 
         if (rs_filter_class != '') {
-            $rs_providers_list.find('.provider-item').hide();
-            $rs_providers_list.find('.provider-item' + rs_filter_class).show();
+            $rs_providers_list.find('.result-item').hide();
+            $rs_providers_list.find('.result-item' + rs_filter_class).show();
         } else {
-            $rs_providers_list.find('.provider-item').show();
+            $rs_providers_list.find('.result-item').show();
         }
 
-        // TODO: filter based on search words
+        // filter based on search words
         if (jQuery("#myInput").length) {
             var value = jQuery("#myInput").val().toLowerCase();
-            $rs_providers_list.find('.provider-item:visible').each(function () {
+            $rs_providers_list.find('.result-item:visible').each(function () {
                 if (jQuery(this).text().toLowerCase().indexOf(value) > -1) {
                     jQuery(this).show();
                 } else {
@@ -265,29 +369,31 @@ jQuery(document).ready(function ($) {
 
         // hide letters if empty
         $rs_providers_list.find('li.alphabet-section').show().each(function () {
-            if (!jQuery(this).find('.provider-item').is(":visible")) {
+            if (!jQuery(this).find('.result-item').is(":visible")) {
                 jQuery(this).hide();
             }
         });
 
         // update search result count - Not needed?
-        //jQuery('.search-container').find('.result').html($rs_providers_list.find('.provider-item:visible').length + ' Results');
+        //jQuery('.search-container').find('.result').html($rs_providers_list.find('.result-item:visible').length + ' Results');
     }
 
-    //Run the filter ones on page load
+    //Run the filter on page load
     rs_filter_results();
 
-
+    /* END FILTER */
+    
 
     //Smooth Scrolling
     $('a[href*="#"]').on('click', function (e) {
-        e.preventDefault()
+        e.preventDefault();
+        var href = $(this).attr('href').toUpperCase();
         $('html, body').animate({
-                scrollTop: $($(this).attr('href')).offset().top,
+                scrollTop: $(href).offset().top,
             },
             500,
             'linear'
-        )
+        );
     });
 
     if ( $.isFunction($.fn.owlCarousel) ) {
@@ -300,7 +406,7 @@ jQuery(document).ready(function ($) {
             responsive: {
                 0: {
                     items: 1,
-                    stagePadding: 30,
+                    stagePadding: 15,
                     mouseDrag: true,
                     touchDrag: true,
                 },
@@ -318,6 +424,11 @@ jQuery(document).ready(function ($) {
         })
     }
 
+    $("#treatment-menu").click(function(){
+        $(".menu-box").slideToggle('fast');
+        $(".slide-open").toggleClass("down"); 
+    });
+
 });
 
 //SEARCH FUNCTION FOR FILTERS BLOCK
@@ -333,5 +444,13 @@ function filterCheckboxOne() {
     var value = $(".menuInput1").val().toUpperCase();
     $(".filter-list-one li label span").filter(function () {
         $(this).toggle($(this).text().toUpperCase().indexOf(value) > -1);
+    });
+}
+
+//SEARCH FUNCTION FOR MENU
+function filterFunction() {
+    var value = $("#menuInput").val().toLowerCase();
+    $("#myDropdown li a").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
 }

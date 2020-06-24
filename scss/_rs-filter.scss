@@ -23,10 +23,8 @@
         font-size: 23px;
         margin-right: 20px;
     }
-    &:hover {
-        $box-shadow-light: 12px 4px 20px rgba(0, 0, 0, 0.06);
-    }
-    @media (min-width: 992px) {
+	
+    @include media-breakpoint-up(lg) {
         display: none;
     }
 }
@@ -44,27 +42,39 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid $rs-grey-13;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: $box-shadow-equal;
     border-radius: 0px;
     background: $rs-white;
     &.show {
         display: flex;
     }
+	
+
+	
     &.single {
-        margin: 0 15px 24px;
+        margin: 10px;
         display: flex;
         background: transparent;
-        // margin-bottom: 24px;
         justify-content: space-between;
         border: none;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
-        border-radius: 0px;
+        box-shadow: $box-shadow-equal;
         background: $rs-white;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
-        border-radius: 40px;
+        border-radius: 60px;
+		
+		.dropdown .btn-filter-search{
+			height: 50px !important;
+			border-radius: 50px;
+		}
+		
+		button{
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
         .dropdown {
-            width: 50%;
-            height: 48px;
+            width: 100%;
+             @include media-breakpoint-up(md) {
+				 width: 50%;
+             }
         }
     }
 
@@ -110,7 +120,7 @@
                 }
             }
         }
-        @media (min-width: 768px) {
+        @include media-breakpoint-up(md) {
             // width: 50%;
             &:nth-child(even) {
                 .btn-filter-search {
@@ -128,6 +138,9 @@
         transform: none !important;
         border: none;
         overflow-x: hidden;
+		@include media-breakpoint-up(lg) {
+			width: 280px !important;
+		}
 
         .rs-clearall {
             border-bottom: 1px solid #ecf2f5;
@@ -144,22 +157,20 @@
 
         .search-input {
             width: 100% !important;
-            background: transparent;
+            background: $rs-white;
             border: none;
             color: $rs-grey-14;
             font-size: 14px;
             padding: 0 15px 0 40px;
+			margin-bottom: 5px;
             outline: none;
             background-image: $rs-grey-13 url("../svg/icon-search.svg");
-
-            // @media (min-width: 992px) {
             background: $rs-grey-13;
             border-radius: 32px;
             height: 45px;
             width: 200px;
             justify-content: flex-start;
             transition: 0.4s ease-in-out;
-            // }
         }
 
         svg {
@@ -244,7 +255,7 @@
     .clear-filter,
     .filters-span {
         font-size: 14px;
-        line-height: 19px;
+        line-height: 28px;
         color: rgba(0, 0, 0, 0.8);
     }
     .clear-filter {
@@ -306,13 +317,13 @@
 /*styling of the selected filters*/
 
 .btn-filters-container {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 15px;
     display: none;
     flex-wrap: wrap;
     // justify-content: center;
     align-items: center;
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg) {
         display: flex;
     }
     .filters-span,
@@ -338,9 +349,10 @@
         line-height: 16px;
         text-transform: uppercase;
         margin-right: 20px;
+		margin-bottom: 0;
         padding: 8px 16px;
         height: 32px;
-        margin-bottom: 15px;
+
         cursor: pointer;
         svg {
             width: 10px;

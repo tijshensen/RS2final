@@ -7,8 +7,8 @@
 
 // Color system
 // @media (min-width: 576px) {  }
-// @media (min-width: 768px) {  }
-// @media (min-width: 992px) {  }
+// @include media-breakpoint-up(md) {  }
+// @include media-breakpoint-up(lg) {  }
 // @media (min-width: 1200px) {  }
 
 $rs-yellow: #fcf24d !default;
@@ -56,7 +56,9 @@ $rs-grey-20: #f9f9f9 !default;
 
 $box-shadow-heavy: 0px 0px 20px rgba(0, 0, 0, 0.2);
 $box-shadow-light: 12px 4px 20px rgba(0, 0, 0, 0.06);
-$box-shadow-equal: 0px 0px 20px rgba(0, 0, 0, 0.08);
+$box-shadow-equal-light: 0px 0px 20px rgba(0, 0, 0, 0.08);
+$box-shadow-equal: 0px 0px 20px rgba(0, 0, 0, 0.12);
+$box-shadow-equal-hover: 0px 0px 20px rgba(0, 0, 0, 0.2);
 
 /* Background */
 
@@ -89,6 +91,35 @@ $bg-gradient: linear-gradient(180deg, #f5f7f8 80px, rgba(255, 255, 255, 0) 200px
 }
 .bg-light-blue {
 	background-color: $rs-grey-7;
+}
+
+
+.yellow {
+	color: $rs-yellow;
+}
+.grey {
+	color: $rs-grey-13;
+}
+.green {
+	color: $rs-green;
+}
+.purple {
+	color: $rs-purple;
+}
+.pink {
+	color: $rs-pink;
+}
+.red {
+	color: $rs-red;
+}
+.black {
+	color: $rs-black;
+}
+.white {
+	color: $rs-white;
+}
+.light-blue {
+	color: $rs-grey-7;
 }
 
 /*RS Styling*/
@@ -128,7 +159,7 @@ body {
 	overflow-x: hidden;
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
 	h1 {
 		font-size: 50px;
 		padding: 1rem 3rem;
@@ -144,12 +175,15 @@ body {
 		margin-top: 30px;
 		margin-bottom: 26px;
 		display: inline-block;
-		@media (min-width: 768px) {
+		@include media-breakpoint-up(md) {
 			margin-right: unset;
 			// margin-left: -50px;
 		}
 		i {
 			font-size: 32px;
+		}
+		img {
+			height: 32px;
 		}
 
 
@@ -166,7 +200,7 @@ body {
 		font-size: 22px;
 		line-height: 36px;
 		margin: auto;
-		@media (min-width: 768px) {
+		@include media-breakpoint-up(md) {
 			font-size: 35px;
 			line-height: 57px;
 		}
@@ -190,7 +224,7 @@ body {
 
 .news-sidebar-third .btn-pink,
 .btn-pink,
-.btn-purple-arw {
+.btn-cta-arw {
 	display: flex;
 	width: max-content;
 	min-width: 173px;
@@ -232,7 +266,7 @@ body {
 	}
 }
 
-.btn-purple-arw {
+.btn-cta-arw {
 	background-color: $rs-purple;
 }
 
@@ -266,13 +300,13 @@ body {
 		line-height: 22px;
 		margin-top: 15px;
 		margin-bottom: 15px;
-		@media (min-width: 992px) {
+		@include media-breakpoint-up(lg) {
 			margin-bottom: unset;
 		}
 		i {
 			font-size: 12px;
 			margin-left: 15px;
-			transform: rotate(90deg);
+			transform: rotate(0deg);
 			transition: 0.4s;
 		}
 
@@ -321,7 +355,7 @@ body {
 	}
 }
 
-.btn-purple {
+.btn-cta {
 
 	font-weight: bold;
 	font-size: 16px;

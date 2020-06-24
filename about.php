@@ -1,6 +1,6 @@
 <?php include('_header.php'); ?>
 
-<body class="about">
+<body class="rs-about">
 	<?php include('_menu.php');?>
 
 	<section class="hero about-banner-section">
@@ -12,7 +12,6 @@
 					<h2 class="about-description">The World’s Largest Directory of <span>Online Healthcare Providers</span></h2>
 				</div>
 			</div>
-			<img src="./svg/owlAbout.svg" alt="" class="about-banner-img">
 		</div>
 	</section>
 
@@ -66,7 +65,7 @@
 				<div class="col-lg-4">
 					<h2 class="h2">Get best In-Class Healthcare <span> At-Home</span></h2>
 					<div class="descrition-capitalize">The World’s Largest Directory of Online Healthcare Providers</div>
-					<a href="#" class="btn btn-purple desctop">See all Categories</a>
+					<a href="#" class="btn btn-cta desctop">See all Categories</a>
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 card-container">
 					<div class="simple-card">
@@ -118,7 +117,7 @@
 				</div>
 
 
-				<a href="#" class="btn btn-purple mobile">See all Categories</a>
+				<a href="#" class="btn btn-cta mobile">See all Categories</a>
 			
 			</div>
 		</div>
@@ -298,7 +297,7 @@
 						<textarea class="form-textarea" name="message" placeholder="MESSAGE" required></textarea>
 						<div class="send-block">
 							<div class="g-recaptcha" data-sitekey="6LfF--0UAAAAANvDndvb8Ogje1R-iQLzKYORtqL6"></div>
-							<button class="btn btn-purple-arw">Send  <i class="icon-arrow-right-white"></i></button>
+							<button class="btn btn-cta-arw">Send  <i class="icon-arrow-right-white"></i></button>
 						</div>
 					</form>
 				</div>
@@ -317,7 +316,6 @@ include('_module-news.php');
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <?php include('_footer.php'); ?>
-<script src="./js/script.js"></script> 
 
 </body>
 
