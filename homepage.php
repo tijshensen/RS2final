@@ -2,6 +2,58 @@
 
 <body class="rs-index">
 	<?php include('_menu.php');?>
+<section class="banner-color-section">
+	<div class="container">
+		<div class="banner-caption-block">
+			<h1 class="h1">the future of <span>HEALTHCARE</span> is here</h1>
+		</div>
+	</div>	
+</section>
+
+<section class="search-card-section">
+	<div class="container">
+		<h3 class="h3">Take Control of Your Health <span>Online</span></h3>
+		<div class="search-card-container">
+			<?php
+				$x =0;
+				foreach ($rs_search_cards as $rs_search_cards) 
+				{ 
+				?>						
+					<?php	
+					include('_card-search.php');
+					?>
+				<?php 
+				$x++;
+				if($x==3) break;
+				} 
+			?>
+		</div>
+	</div>
+</section>
+
+<section class="partners-section">
+	<div class="container">
+		<h3 class="h3">Providers you can <span>trust</span></h3>
+		<div class="partners-container">
+			<?php
+				$x =0;
+				foreach ($rs_provider_link as $rs_provider_link) 
+				{ 
+				?>						
+					<?php	
+					include('_link_provider.php');
+					?>
+				<?php 
+				$x++;
+				if($x==10) break;
+				} 
+			?>
+		</div>
+		<div class="d-flex">
+			<a href="#" class="btn btn-cta">SEARCH BY CATEGORY</a>
+		</div>
+	</div>
+</section>
 
 <section class="banner-section">
 	<div class="container">
@@ -38,93 +90,10 @@
 	</div>
 </section>
 
-<section class="provider-list-section">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-10">
-				<div class="section-header">
-					<!-- <span class="header-disclosure">Advertiser Disclosure</span> -->
-					<div class="header-disclosure" data-toggle="modal" data-target="#disclosureModal">
-						Advertiser Disclosure
-					</div>
-					<div class="logo-icon">
-					<img src="./svg/mini-logo.svg" alt=""><span>Healing starts here</span>
-					</div>
-					<!-- <h2 class="h2">Find the Right <span>Provider</span> for You</h2> -->
-				</div>
-			</div>
-
-			<div class="single-filter-container col-12">
-				<div class="filter-caption">Compare the Best Providers</div>
-				<div class="dropdown-filter">
-					<div class="dropdown-filter-toggle" id="dropdownFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Online Therapy <i class="icon-arr-down"></i>
-					</div>
-					<div class="dropdown-menu" aria-labelledby="dropdownFilter">
-						<a class="dropdown-item" href="#">Online doctor</a>
-						<a class="dropdown-item" href="#">Online therapy</a>
-						<a class="dropdown-item" href="#">Digital clinics</a>
-						<a class="dropdown-item" href="#">Online pharmacy</a>
-						<a class="dropdown-item" href="#">At-home Lab Testing Kits</a>
-						<a class="dropdown-item" href="#">Health Apps</a>
-						<a class="dropdown-item" href="#">Skin Care</a>
-						<a class="dropdown-item" href="#">Supplements</a>
-						<a class="dropdown-item" href="#">Medical Devices</a>
-						<a class="dropdown-item" href="#">Teeth Aligners</a>
-						<a class="dropdown-item" href="#">Primary Care</a>
-						<a class="dropdown-item" href="#">Activity Trackers</a>
-					</div>
-				</div>
-			</div>
-			
-			<!-- </?php include('_filter.php'); ?> -->
-			<ul class="col-lg-11 mx-auto">
-                <?php
-				$x =0;
-				$divlist = 'li';
-				$style = 'provider-item-horizontal provider-item-separate mx-auto';
-				foreach ($rs_providers_cards as $rs_providers_card) 
-				{ 
-					include('_card-provider.php'); 
-				$x++;
-				if($x==3) break;
-				} 
-				?>
-			</ul>
-			<div class="col-12 text-center d-flex">
-				<a href="all-providers.php" class="btn btn-cta mx-auto">See all providers</a>
-			</div>
-		</div>
-	</div>
-</section>
-
 
 <?php 
 include('_module-news.php');
 ?>
-
-	<div class="bg-white our-mission">
-		<div class="container">
-			<div class="row justify-content-center align-items-center">
-				<div class="col-md-7 section-header">
-					<div class="logo-icon">
-					<img src="./svg/mini-logo.svg" alt=""><span>Our mission is clear</span>
-					</div>
-					<h2 class="h2">Finding You the Best Treatments in Healthcare & Wellness <span>Online</span></h2>
-				</div>
-				
-				<div class="col-lg-7 col-md-8 text-block mx-auto">
-					<p>Thanks for visiting ReliefSeeker.com! We are a small team of health seekers who are trying to take our medical care and wellness into our own hands. Over the last 5 years, there’s been a revolution in healthcare, with hundreds of new companies offering services online and delivering their treatments directly to consumers instead of through local pharmacies or networks of disparate salespeople and doctors. </p>
-					<p>We were sick and tired (literally) of mega conglomerates pulling levers behind the scenes and literally controlling all of our healthcare decisions with no accountability. </p>
-				</div>
-
-				<div class="col-md-4 img-block-full ml-auto">
-					<?php include('./svg/001-plaster.svg');?>
-				</div>
-
-			</div>
-		</div>
-	</div>
 
 	<?php include('_advertiser-disclosure.php'); ?>
 	

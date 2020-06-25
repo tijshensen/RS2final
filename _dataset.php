@@ -98,7 +98,63 @@ $rs_providers_cards = array(
     ),
 );
 
+$rs_search_cards = array(
+    array(
+        'search_c_img' => '010-medicine.svg',
+        'search_c_title' => 'Get Care Now',
+        'search_c_description' => 'Search by category to find the best online care providers.',
+        'search_c_btn' => 'SEARCH BY CATEGORY',
+    ),
+    array(
+        'search_c_img' => '001-plaster.svg',
+        'search_c_title' => 'Compare & Save',
+        'search_c_description' => 'Search by Treatment to find the right provider for you.',
+        'search_c_btn' => 'Search by treatment',
+    ),
+    array(
+        'search_c_img' => '010-medicine.svg',
+        'search_c_title' => 'Know Your Options',
+        'search_c_description' => 'Search by condition to discover every available online treatment.',
+        'search_c_btn' => 'Search by condition',
+    ),
+);
 
+/* LINK PROVIDER */ 
+$rs_provider_link = array(
+    array(
+        'provider_logo' => 'logo-help.png',
+    ),
+    array(
+        'provider_logo' => 'logo-talkspace.png',
+    ),
+    array(
+        'provider_logo' => 'logo-help.png',
+    ),
+    array(
+        'provider_logo' => 'logo-talkspace.png',
+    ),
+    array(
+        'provider_logo' => 'logo-help.png',
+    ),
+    array(
+        'provider_logo' => 'logo-lemonaid.png',
+    ),
+    array(
+        'provider_logo' => 'blink-logo.svg',
+    ),
+    array(
+        'provider_logo' => 'logo-lemonaid.png',
+    ),
+    array(
+        'provider_logo' => 'blink-logo.svg',
+    ),
+    array(
+        'provider_logo' => 'logo-lemonaid.png',
+    ),
+    array(
+        'provider_logo' => 'logo-lemonaid.png',
+    ),
+);
 /*News*/
 
 $rs_news_cards = array(
