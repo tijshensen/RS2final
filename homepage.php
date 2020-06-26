@@ -55,6 +55,42 @@
 	</div>
 </section>
 
+<section class="guides-section">
+	<div class="container">
+		<h3 class="h3">Find the best <span>providers</span></h3>
+		<p class="description">Search by Category to Discover Over 150 New Online Healthcare Providers </p>
+
+			
+			<div class="row justify-content-center">
+				<div class="col-lg-11 col-md-10 col-sm-7 guides-container">
+					<div class="row">
+					
+						<?php
+						$x =0;
+						foreach ($rs_guides_cards as $rs_guides_card) 
+						{ 
+						?>
+						<div class="col-lg-3 col-md-6 card-container">
+							<?php	
+							include('_card-guide.php');
+							?>
+						</div>
+						<?php 
+						$x++;
+						if($x==8) break;
+						} 
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="d-flex">
+			<a href="#" class="btn btn-cta">See All Categories</a>
+		</div>
+	</div>
+</section>
+
+<!--	
 <section class="banner-section">
 	<div class="container">
 		<div class="row justify-content-center">
@@ -89,14 +125,15 @@
 		</div>
 	</div>
 </section>
-
+-->
 
 <?php 
 include('_module-news.php');
 ?>
 
 	<?php include('_advertiser-disclosure.php'); ?>
-	
+
+
 	<section class="conditional-list-section">
 		<div class="container">
 			<div class="row">

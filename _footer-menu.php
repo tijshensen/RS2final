@@ -46,7 +46,7 @@
 					<li class="footer-nav-item"><a href="#">Contact Us</a></li>
 				</ul>
 			</div>
-			<div class="col-md-3 col-xl-3 footer-nav-block">
+			<div class="col-md-3 footer-nav-block">
 				<div class="rs-footer-header">Legal</div>
 				<ul class="footer-nav-list">
 					<li class="footer-nav-item"><a href="#">Advertising Disclosure</a></li>
@@ -54,7 +54,7 @@
 				</ul>
 				
 			</div>
-			<div class="col-md-4 col-xl-3 footer-nav-block" >
+			<div class="col-md-3 footer-nav-block" >
 				<div class="rs-footer-header">Quick links</div>
 				<ul class="footer-nav-list">
 					<li class="footer-nav-item"><a href="#">Online Doctors</a></li>
