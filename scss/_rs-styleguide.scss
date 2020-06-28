@@ -29,6 +29,7 @@ $rs-red: #f7573d !default;
 $rs-orange: #fab03b !default;
 $rs-blue-grey: #bdcbd4 !default;
 $rs-black: #000 !default;
+$rs-black-80: rgba(0,0,0,0.8) !default;
 $rs-white: #fff !default;
 $rs-grey: #525a62 !default;
 $rs-grey-1: #b1b1b1 !default;
@@ -121,6 +122,30 @@ $bg-gradient: linear-gradient(180deg, #f5f7f8 80px, rgba(255, 255, 255, 0) 200px
 }
 .light-blue {
 	color: $rs-grey-7;
+}
+
+
+.linear-yellow {
+	background: linear-gradient(90deg, $rs-yellow 4px, rgba(255,255,255,1) 4px);
+}
+.linear-blue {
+	background: linear-gradient(90deg, $rs-blue 4px, rgba(255,255,255,1) 4px);
+}
+.linear-green {
+	background: linear-gradient(90deg, $rs-green 4px, rgba(255,255,255,1) 4px);
+	color: $rs-green;
+}
+.linear-purple {
+	background: linear-gradient(90deg, $rs-purple 4px, rgba(255,255,255,1) 4px);
+}
+.linear-pink {
+	background: linear-gradient(90deg, $rs-pink 4px, rgba(255,255,255,1) 4px);
+}
+.linear-red {
+	background: linear-gradient(90deg, $rs-red 4px, rgba(255,255,255,1) 4px);
+}
+.linear-orange {
+	background: linear-gradient(90deg, $rs-orange 4px, rgba(255,255,255,1) 4px);
 }
 
 /*RS Styling*/

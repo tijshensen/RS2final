@@ -271,50 +271,72 @@ $rs_provider_alphabet = range('a', 'z');
 
 $rs_conditions = array(
     array(
+		'color' => 'blue',
 		'filter' => 'anxiety',
         'name' => 'Anxiety',
+		'providers' => '12',
     ),
     array(
+		'color' => 'green',
 		'filter' => 'acne',
         'name' => 'Acne',
+		'providers' => '12',
     ),
     array(
+		'color' => 'purple',
 		'filter' => 'add',
         'name' => 'A.D.D./A.D.H.D.',
+		'providers' => '12',
     ),
     array(
+		'color' => 'red',
 		'filter' => 'acid',
         'name' => 'Acid Reflux',
+		'providers' => '22',
     ),
     array(
+		'color' => 'green',
 		'filter' => 'backpain',
         'name' => 'Back Pain',
+		'providers' => '34',
     ),
     array(
+		'color' => 'blue',
 		'filter' => 'bipolar',
         'name' => 'Bipolar',
+		'providers' => '14',
     ),
     array(
+		'color' => 'blue',
 		'filter' => 'birthcontroloptions',
-        'name' => 'Birth Control Options',
+        'name' => 'Birth Control',
+		'providers' => '23',
     ),
     array(
+		'color' => 'green',
 		'filter' => 'bronchites',
         'name' => 'Bronchites',
+		'providers' => '34',
     ),
     array(
+		'color' => 'pink',
 		'filter' => 'bugbites',
         'name' => 'Bugbites',
+		'providers' => '9',
     ),
     array(
+		'color' => 'blue',
 		'filter' => 'carpaltunnel',
         'name' => 'Carpal Tunnel',
+		'providers' => '24',
     ),
     array(
+		'color' => 'yellow',
 		'filter' => 'cellulitis',
         'name' => 'Cellulitis',
     ),
     array(
+		'color' => 'orange',
 		'filter' => 'chlamydia',
         'name' => 'Chlamydia',
     ),

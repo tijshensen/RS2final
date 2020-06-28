@@ -23,7 +23,7 @@ include('_dataset.php');
 
 				<li class="nav-item dropdown nav-full">
 					<a id="fullMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
-						Guides <i class="icon-arr-down"></i>
+						Get Care <i class="icon-arr-down"></i>
 					</a>
 					<div aria-labelledby="fullMenu" class="dropdown-menu dropdown-full ">
 						<div class="container">
@@ -75,9 +75,10 @@ include('_dataset.php');
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 						<div class="dropdown-header">Explore</div>
-						<a class="dropdown-item" href="all-conditions.php">All Conditions<span class="count">95</span></a>
-						<a class="dropdown-item" href="all-providers.php">All providers<span class="count">190</span></a>
-						<a class="dropdown-item" href="all-treatments.php">All Treatments<span class="count">155</span></a>
+						<a class="dropdown-item" href="all-guides.php">Guides<span class="count">95</span></a>
+						<a class="dropdown-item" href="all-conditions.php">Conditions<span class="count">95</span></a>
+						<a class="dropdown-item" href="all-providers.php">Providers<span class="count">190</span></a>
+						<a class="dropdown-item" href="all-treatments.php">Treatments<span class="count">155</span></a>
 					</div>
 				</li>
 				<li class="nav-item">

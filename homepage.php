@@ -12,7 +12,9 @@
 
 <section class="search-card-section">
 	<div class="container">
+
 		<h3 class="h3">Take Control of Your Health <span>Online</span></h3>
+		<p class="description">Getting treatment is more affordable, convenient, and discreet than ever</p>
 		<div class="search-card-container">
 			<?php
 				$x =0;
@@ -33,7 +35,7 @@
 
 <section class="partners-section">
 	<div class="container">
-		<h3 class="h3">Providers you can <span>trust</span></h3>
+		<h3 class="h3">Providers You Can <span>Trust</span></h3>
 		<div class="partners-container">
 			<?php
 				$x =0;
@@ -57,8 +59,11 @@
 
 <section class="guides-section">
 	<div class="container">
-		<h3 class="h3">Find the best <span>providers</span></h3>
-		<p class="description">Search by Category to Discover Over 150 New Online Healthcare Providers </p>
+		<div class="logo-icon">
+			<img src="./svg/mini-logo.svg">
+		</div>
+		<h3 class="h3">Find the Best <span>Providers</span></h3>
+		<p class="description">Search by category to discover over 150 new online healthcare providers </p>
 
 			
 			<div class="row justify-content-center">
@@ -78,6 +83,49 @@
 						<?php 
 						$x++;
 						if($x==8) break;
+						} 
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="d-flex">
+			<a href="#" class="btn btn-cta">See All Categories</a>
+		</div>
+	</div>
+</section>
+
+<section class="conditions-section">
+	<div class="container">
+		<div class="logo-icon">
+			<img src="./svg/mini-logo.svg">
+		</div>
+		<h3 class="h3">Treat Hundreds of <span>Conditions</span></h3>
+		<p class="description">Search by condition to compare providers and get the best treatment avaiable</p>
+
+			
+			<div class="row justify-content-center">
+				<div class="col-lg-11 col-md-10 col-sm-7 conditions-container">
+					<div class="row">
+					
+						<?php
+						$x =0;
+						$class == '';
+						foreach ($rs_conditions as $rs_condition) 
+						{ 
+							if($x==6){
+								$class="d-none d-sm-block";
+							}
+						?>
+						<div class="col-lg-3 col-md-6 card-container <?php echo $class; ?>">
+							<a href="#" class="card-conditions linear-<?php echo $rs_condition['color']; ?>">
+								<div class="card-conditions-name"><?php echo $rs_condition['name']; ?></div>
+							    <div class="card-conditions-providers"><?php echo $rs_condition['providers']; ?> providers</div>
+							</a>
+						</div>
+						<?php 
+						$x++;
+						if($x==12) break;
 						} 
 						?>
 					</div>
@@ -141,7 +189,7 @@ include('_module-news.php');
 					<img src="./img/list-item-img.jpg" alt="">
 				</div>
 				<div class="col-lg-7 conditional-list-block">
-					<h5 class="h5">Don’t wait another second.</h5>
+					<h5 class="h5">Don’t Wait Another Second.</h5>
 					<div class="list-info-description">Find the best treatments in healthcare & wellness <span>online</span></div>
 					<ul class="info-list">
 						<li class="info-list-item"><div class="item-text">The <span>largest</span> collection of online healthcare providers</div></li>

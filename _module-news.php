@@ -3,13 +3,9 @@
 <div class="module-news">
 	<div class="container">
 		<div class="section-header">
-			<!--
 			<div class="logo-icon">
-
-				<img src="./svg/mini-logo.svg" alt=""><span>Read stories</span>
-				
+				<img src="./svg/mini-logo.svg">
 			</div>
-			-->
 			<h2 class="h2">Read Real Life Stories</h2>
 		</div>
 
