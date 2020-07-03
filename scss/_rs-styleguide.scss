@@ -19,6 +19,8 @@ $rs-blue-2: #4fb4ea !default;
 $rs-blue-3: #1c79aa !default;
 $rs-blue-4: #17a3e0 !default;
 $rs-blue-5: #0073B0 !default;
+$rs-blue-6: #C7EBFD !default;
+$rs-blue-7: #F9FDFF !default;
 $rs-green: #8cc740 !default;
 $rs-green-1: #00bf25 !default;
 $rs-green-2: #8cc740 !default;
@@ -26,6 +28,7 @@ $rs-pink: #ec028d !default;
 $rs-purple: #424ff5 !default;
 $rs-purple-1: #8400bf !default;
 $rs-red: #f7573d !default;
+$rs-red-1: #ff0000 !default;
 $rs-orange: #fab03b !default;
 $rs-blue-grey: #bdcbd4 !default;
 $rs-black: #000 !default;
@@ -53,6 +56,7 @@ $rs-grey-18: #f2f2f2 !default;
 $rs-grey-19: #333333 !default;
 $rs-grey-20: #f9f9f9 !default;
 $rs-grey-21: #F3F8FB !default;
+
 
 // Shadows
 
@@ -92,7 +96,7 @@ $bg-gradient: linear-gradient(180deg, #f5f7f8 80px, rgba(255, 255, 255, 0) 200px
 	background-color: $rs-white;
 }
 .bg-light-blue {
-	background-color: $rs-grey-7;
+	background-color: $rs-grey-21;
 }
 
 

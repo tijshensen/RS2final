@@ -530,7 +530,7 @@
 
 
 .partners-section {
-    background: $rs-grey-21;
+    // background: $rs-grey-21;
     padding: 30px 0 45px;
     @include media-breakpoint-up(md) {
         padding: 80px 0;
@@ -550,10 +550,10 @@
     }
     .btn-cta {
         margin: auto;
-        display: none;
-        @include media-breakpoint-up(sm) {
+        // display: none;
+        // @include media-breakpoint-up(sm) {
             display: flex;
-        }
+        // }
     }
     .partners-container {
         display: flex;
@@ -623,9 +623,9 @@
 	
     .btn-cta {
         margin: auto;
-        display: none;
-        @include media-breakpoint-up(sm) {
+        // display: none;
             display: flex;
+        @include media-breakpoint-up(sm) {
 			margin-top: 30px;
         }
     }
@@ -633,7 +633,7 @@
 
 
 .conditions-section {
-    background: $bg-gradient;
+    // background: $bg-gradient;
     padding: 30px 0 45px;
     @include media-breakpoint-up(md) {
         padding: 50px 0 80px;
@@ -713,9 +713,9 @@
 	
     .btn-cta {
         margin: auto;
-        display: none;
+        // display: none;
+        display: flex;
         @include media-breakpoint-up(sm) {
-            display: flex;
 			margin-top: 30px;
         }
     }

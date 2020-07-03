@@ -22,7 +22,7 @@ include('_dataset.php');
 			<ul class="navbar-nav mx-lg-auto main-menu">
 
 				<li class="nav-item dropdown nav-full">
-					<a id="fullMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
+					<a id="fullMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link active dropdown-toggle">
 						Get Care <i class="icon-arr-down"></i>
 					</a>
 					<div aria-labelledby="fullMenu" class="dropdown-menu dropdown-full ">
@@ -65,6 +65,9 @@ include('_dataset.php');
 								<li class="col-lg-4 col-md-6 list-item">
 									<a class="dropdown-item" href="single-guide.php">Activity Trackers</a>
 								</li>
+								<li class="col-12 list-item">
+									<a class="dropdown-item blue" href="all-guides.php">See All Categories</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -75,10 +78,10 @@ include('_dataset.php');
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 						<div class="dropdown-header">Explore</div>
-						<a class="dropdown-item" href="all-guides.php">Guides<span class="count">95</span></a>
+						<a class="dropdown-item" href="all-guides.php">Categories<span class="count">95</span></a>
 						<a class="dropdown-item" href="all-conditions.php">Conditions<span class="count">95</span></a>
-						<a class="dropdown-item" href="all-providers.php">Providers<span class="count">190</span></a>
 						<a class="dropdown-item" href="all-treatments.php">Treatments<span class="count">155</span></a>
+						<a class="dropdown-item" href="all-providers.php">Providers<span class="count">190</span></a>
 					</div>
 				</li>
 				<li class="nav-item">

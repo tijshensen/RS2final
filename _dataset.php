@@ -334,11 +334,13 @@ $rs_conditions = array(
 		'color' => 'yellow',
 		'filter' => 'cellulitis',
         'name' => 'Cellulitis',
+		'providers' => '24',
     ),
     array(
 		'color' => 'orange',
 		'filter' => 'chlamydia',
         'name' => 'Chlamydia',
+		'providers' => '24',
     ),
     array(
 		'filter' => 'depression',

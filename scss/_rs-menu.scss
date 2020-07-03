@@ -156,6 +156,13 @@ nav#main-nav {
 		}
 		
 		@include media-breakpoint-up(lg) {
+			.active {
+				background-color: $rs-blue;
+				color: $rs-white;
+				i {
+					color: $rs-white;
+				}
+			}
 			&.show {
 				.nav-link {
 					background-color: $rs-blue;
@@ -246,6 +253,12 @@ nav#main-nav {
 						padding: 1rem 1.5rem;
 						@include media-breakpoint-up(lg) {
 							padding: 5px 5px 5px 25px;
+						}
+						&.blue {
+							color: $rs-blue;
+							@include media-breakpoint-up(lg) {
+								font-weight: 600;
+							}
 						}
 					}
 				}

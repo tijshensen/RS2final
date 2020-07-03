@@ -33,7 +33,7 @@
 	</div>
 </section>
 
-<section class="partners-section">
+<section class="partners-section bg-light-blue">
 	<div class="container">
 		<h3 class="h3">Providers You Can <span>Trust</span></h3>
 		<div class="partners-container">
@@ -51,19 +51,22 @@
 				} 
 			?>
 		</div>
-		<div class="d-flex">
-			<a href="#" class="btn btn-cta">SEARCH BY CATEGORY</a>
+		<div class="d-flex justify-content-center">
+			<a href="all-providers.php" class="btn btn-cta">See All Providers</a>
 		</div>
 	</div>
 </section>
 
 <section class="guides-section">
 	<div class="container">
-		<div class="logo-icon">
-			<img src="./svg/mini-logo.svg">
+	
+		<div class="section-header">
+			<div class="logo-icon">
+				<img src="./svg/mini-logo.svg">
+			</div>
+			<h3 class="h3">Find the Best <span>Providers</span></h3>
+			<p class="description">Search by category to discover over 150 new online healthcare providers </p>
 		</div>
-		<h3 class="h3">Find the Best <span>Providers</span></h3>
-		<p class="description">Search by category to discover over 150 new online healthcare providers </p>
 
 			
 			<div class="row justify-content-center">
@@ -89,28 +92,28 @@
 				</div>
 			</div>
 		</div>
-		<div class="d-flex">
-			<a href="#" class="btn btn-cta">See All Categories</a>
+		<div class="d-flex justify-content-center">
+			<a href="all-guides.php" class="btn btn-cta">See All Categories</a>
 		</div>
 	</div>
 </section>
 
-<section class="conditions-section">
+<section class="conditions-section bg-light-blue">
 	<div class="container">
-		<div class="logo-icon">
-			<img src="./svg/mini-logo.svg">
+	
+		<div class="section-header">
+			<div class="logo-icon">
+				<img src="./svg/mini-logo.svg">
+			</div>
+			<h3 class="h3">Treat Hundreds of <span>Conditions</span></h3>
+			<p class="description">Search by condition to compare providers and get the best treatment avaiable</p>
 		</div>
-		<h3 class="h3">Treat Hundreds of <span>Conditions</span></h3>
-		<p class="description">Search by condition to compare providers and get the best treatment avaiable</p>
-
 			
 			<div class="row justify-content-center">
 				<div class="col-lg-11 col-md-10 col-sm-7 conditions-container">
 					<div class="row">
-					
 						<?php
 						$x =0;
-						$class == '';
 						foreach ($rs_conditions as $rs_condition) 
 						{ 
 							if($x==6){
@@ -132,8 +135,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="d-flex">
-			<a href="#" class="btn btn-cta">See All Categories</a>
+		<div class="d-flex justify-content-center">
+			<a href="all-conditions.php" class="btn btn-cta">See All Conditions</a>
 		</div>
 	</div>
 </section>
@@ -182,7 +185,7 @@ include('_module-news.php');
 	<?php include('_advertiser-disclosure.php'); ?>
 
 
-	<section class="conditional-list-section">
+	<section class="conditional-list-section bg-light-blue">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5 conditional-list-img-block">
@@ -197,7 +200,7 @@ include('_module-news.php');
 						<li class="info-list-item"><div class="item-text">Get treatment <span>today</span>, no need to leave home</div></li>
 						<li class="info-list-item"><div class="item-text"><span>Save money,</span> easily compare prices and get the best offers here</div></li>
 					</ul>
-					<a href="all-providers.php" class="btn btn-cta mx-auto">See all providers</a>
+					<a href="all-conditions.php" class="btn btn-cta mx-auto">See all conditions</a>
 				</div>
 			</div>
 		</div>

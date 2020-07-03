@@ -1,5 +1,5 @@
 
-<div class="rs-footer rs-footer-first bg-grey">
+<div class="rs-footer rs-footer-first">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -9,7 +9,7 @@
 			<form class="col-lg-10 subscribe-form" >
 				<input type="text" class="form-control" placeholder="Enter your name">
 				<input type="email" class="form-control" placeholder="Enter your email ">
-				<button class="btn-submit" type="submit">Join us</button>
+				<button class="btn-submit" type="submit">Join us now</button>
 			</form>
 
 		</div>

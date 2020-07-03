@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row relative-block">
 
-            <div class="col-12 lg-hide">
+            <div class="col-12">
                 <div class="breadcrumb-container">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -21,86 +21,57 @@
                         </ol>
                     </nav>
                 </div>
-                <h1 class="h1">Roman <span> Review</span></h1>
-            </div>
-            <div class="col-lg-8 providers-banner-card">
-                <div class="breadcrumb-container">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="homepage.php">Home</a></li>
-                            <li class="breadcrumb-item" aria-current="page">Condition</li>
-                            <li class="breadcrumb-item" aria-current="page">Depression</li>
-                        </ol>
-                    </nav>
-                </div>
-                <h1 class="h1">Roman <span> Review</span> </h1>
-                <span class="providers-name">Roman Snapshot</span>
-                <div class="providers-description">
-                    Roman is a digital clinic revolutionizing men’s healthcare. See a doctor, get a prescription, and have it mailed right to your home in a few days. Safe, secure, affordable, and discreet. Healing starts here.
-                </div>
-                <div class="card-rating">
-                    <span class="rating">9.9 
-                        <span class="rating-total">/10</span>
-                    </span>
-                    <ul class="rating-list">
-                        <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                        <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                        <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                        <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                        <li class="star"><img src="./svg/icon-star.svg" alt=""></li>
-                    </ul>
-                </div>
-                <!-- <div class="aditional-block">
-                    <span class="name">Specialities</span>
-                    <span class="description">Erectile Dysfnction, Stop Smoking, Premature Ejaculation, Hair Loss</span>
-				</div> -->
-				<div class="rs-info-block">
-					<div class="info-item">
-						<img src="./svg/money.svg" alt="">
-						Accepts insurance
+                <h1 class="h1">Lemonaid Health <span> Review</span></h1>
+			</div>
+			<div class="col-lg-8 providers-hero-card">
+				<img src="./img/logo-lemonaid.png" alt="" class="hero-logo">
+				<div class="hero-name">San Francisco, CA  |  Founded 2013</div>
+				<ul class="hero-rating-list">
+					<li class="rating-item"><i class="icon-icon-star"></i></li>
+					<li class="rating-item"><i class="icon-icon-star"></i></li>
+					<li class="rating-item"><i class="icon-icon-star"></i></li>
+					<li class="rating-item"><i class="icon-icon-star"></i></li>
+					<li class="rating-item"><i class="icon-icon-star"></i></li>
+				</ul>
+				<h3 class="h3">Why We Like Them</h3>
+				<div class="hero-description">Finally have a team that helps you lose weight  and improve your health without following a no-carb diet or tracking calories. Finally have a team that helps you lose weight  and improve your health without following a no-carb diet or tracking calories.</div>
+				<div class="accepts-block">
+					<div class="accepts-item">
+						<i class="icon-accept"></i>
+						<div class="description">Accepts <span>Insurance</span></div>
 					</div>
-					<div class="info-item">
-						<img src="./svg/quality.svg" alt="">
-						Accepts HSA/FSA
+					<div class="accepts-item">
+						<i class="icon-money"></i>
+						<div class="description">Accepts <span>HSA/FSA</span></div>
 					</div>
 				</div>
-                <div class="rs-button-with-number">
-                    <a href="#" class="rs-button-inner">
-                        <span class="button-number"><img src="./svg/icon-check.svg" alt=""></span>
-                        <span class="button-description">Online doctor</span>
-                    </a>
-                    <a href="#" class="rs-button-inner">
-                        <span class="button-number"><img src="./svg/icon-check.svg" alt=""></span>
-                        <span class="button-description">Digital Clinic</span>
-                    </a>
-                    <a href="#" class="rs-button-inner">
-                        <span class="button-number"><img src="./svg/icon-check.svg" alt=""></span>
-                        <span class="button-description">ONline therapy</span>
-                    </a>
-                </div>   
-            </div>
+				<h3 class="h3">Products & services</h3>
+				<ul class="check-list">
+					<li class="check-item">Online doctor</li>
+					<li class="check-item">Digital Clinic</li>
+					<li class="check-item">Online Therapy</li>
+				</ul>
+			</div>
+        
             <div class="col-lg-4 col-md-9 col-sm-10 sticky-block short">
-				
-				
-                <?php
-				$x =0;
-				$divlist = 'div';
-				$style = 'provider-item-vertical single-card';
-				foreach ($rs_providers_cards as $rs_providers_card) 
-				{ 
-					$rs_providers_card['provider_services'] = 'Doctor, Pharmacy, +2';
-					include('_card-provider.php'); 
-				$x++;
-				if($x==1) break;
-				} 
-				?>
-				
-				
+				<div class="sale-card">
+					<img src="./svg/mainLogo.svg" alt="" class="sale-provider-logo">
+					<div class="sale-card-title">Special Offer</div>
+					<div class="sale-description">How Much?</div>
+					<div class="sale-old-price">$95/<span>SESSION</span></div>
+					<div class="sale-price">$65 OFF</div>
+					<div class="sale-description">Use coupon</div>
+					<div class="yellow-dashed-label">Springsale</div>
+					<div class="sale-description">Find out if Lemonaid Health is right for you</div>
+					<a href="#" class="btn-cta-arw">Visit website<i class="icon-arrow-right-white"></i></a>
+				</div>
             </div>
 			
             <div class="col-lg-8 collapse-section">
-                <h3 class="h3">Conditions Treated at <span>Roman</span></h3>
-                <div class="rs-search-input-block col-md-8">
+                <!-- <h3 class="h3">Conditions Treated at <span>Roman</span></h3> -->
+				<h3>Lemonaid Health Offers </h3>
+				<h3>Treatment for <span>12</span>  Conditions</h3>
+				<div class="rs-search-input-block col-md-8">
                     <input class="search-input" id="myInput" type="text" placeholder="">
                     <i class="icon-icon-search"></i>
                 </div>
