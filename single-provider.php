@@ -175,20 +175,48 @@
             <div class="col-lg-8 rs-content-section">
                 <div class="rs-block-caption">
 					<!-- <i class="icon-blue-logo"></i> -->
-                    <h3 class="h3">More about</h3>
+                    <h2 class="h2">More about</h2>
                 </div>
 
              <ul class="rs-block-toc auto-toc">
                  <?php /* This '.auto-toc' div needs to be here to build the table of contents. The auto-toc needs to be within the '.content-section' div and will read the first title in the '.content-block' divs */ ?>
              </ul>
              <div class="rs-block-content" id="terms">
+                 <h4 class="h4">Terms Of Use Of This Site</h3>
+                 <p>ReliefSeeker.com does not offer medical advice. The contents of the ReliefSeeker.com Site, such as text, illustrations, images, icons, and other materials created by ReliefSeeker.com or obtained from ReliefSeeker.com’s licensors, and other materials contained on the ReliefSeeker.com Site (collectively, “Content”) are for informational purposes only. The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of a physician or other qualified health provider with any questions you may have regarding a medical condition or treatment. Never disregard professional medical advice or delay in seeking it because of something you have read on the ReliefSeeker.com Site!If you think you, or someone you know, may have a medical emergency, call 911 immediately (in USA). ReliefSeeker.com does not recommend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned on the Site. ReliefSeeker.com may rank a corporate entity above another, however ReliefSeeker.com does not warrant or recommend the health services that are provided by the employees, agents, contractors, or persons otherwise affiliated with that corporate entity. Reliance on any information provided by ReliefSeeker.com, ReliefSeeker.com employees, others appearing on the Site at the invitation of ReliefSeeker.com, or other visitors to the Site is solely at your own risk.</p>
+             </div>
+			 
+			 
+             <div class="rs-block-content" id="terms">
                  <h4 class="h4">Terms Of Use Of This Site</h4>
                  <p>ReliefSeeker.com does not offer medical advice. The contents of the ReliefSeeker.com Site, such as text, illustrations, images, icons, and other materials created by ReliefSeeker.com or obtained from ReliefSeeker.com’s licensors, and other materials contained on the ReliefSeeker.com Site (collectively, “Content”) are for informational purposes only. The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of a physician or other qualified health provider with any questions you may have regarding a medical condition or treatment. Never disregard professional medical advice or delay in seeking it because of something you have read on the ReliefSeeker.com Site!If you think you, or someone you know, may have a medical emergency, call 911 immediately (in USA). ReliefSeeker.com does not recommend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned on the Site. ReliefSeeker.com may rank a corporate entity above another, however ReliefSeeker.com does not warrant or recommend the health services that are provided by the employees, agents, contractors, or persons otherwise affiliated with that corporate entity. Reliance on any information provided by ReliefSeeker.com, ReliefSeeker.com employees, others appearing on the Site at the invitation of ReliefSeeker.com, or other visitors to the Site is solely at your own risk.</p>
              </div>
-             <div class="rs-block-content">
-                 <h4 class="h4" id="disclosure">Advertising Disclosure</h4>
-                 <p>We are able to operate ReliefSeeker.com, thanks to funding from advertising relationships. Our funding comes from advertising relationships with healthcare providers.In some cases, if you click a link on our site, or use a promotional code featured here to register or make a purchase at a provider’s website, we may receive financial compensation from that company. In some limited cases, we may sell clearly marked banner advertising space to other companies.We maintain a strict policy regarding our editorial content:Advertisers have no say over the content published on ReliefSeeker.comAdvertisers cannot ‘buy’ positive reviews - our reviews are independently.Advertisers cannot ‘buy’ news stories or sponsored articles.We aim to provide credible, unique, and objective information about online healthcare companies and legislation in the US.</p>
+			 
+             <div class="rs-block-content" id="since">
+				 <h5>Relief Seeker since 2019</h5>
+				<p>
+					Relief Seeker has been reporting on online healthcare providers & treatments since 2019. This site does not 
+					offer medical advice, for that, you should consult a healthcare professional, what we do is publish information 
+					to help people find which healthcare services are available online, and which providers are offering them. 
+				</p>
              </div>
+			 <div class="rs-block-content" id="wereview">
+				<h6>We review care providers</h6>
+				<p>	We review care providers so that our readers can be more informed when choosing which provider to get care from. 
+					We also publish information regarding the regulatory landscape of online healthcare in America. We want to help 
+					more people stay at the forefront of advancements and innovations in healthcare.ReliefSeeker.com is an privately 
+					& independently owned business, not affiliated with any of the providers or companies we report on.
+				</p>
+			  </div>
+ 			 <div class="rs-block-content" id="wereview">
+ 				<h4>We review care providers</h4>
+ 				<p>	We review care providers so that our readers can be more informed when choosing which provider to get care from. 
+ 					We also publish information regarding the regulatory landscape of online healthcare in America. We want to help 
+ 					more people stay at the forefront of advancements and innovations in healthcare.ReliefSeeker.com is an privately 
+ 					& independently owned business, not affiliated with any of the providers or companies we report on.
+ 				</p>
+ 			  </div>
+			 
              <img src="./img/mothers.jpg" alt="" class="content-img">
 
          </div>

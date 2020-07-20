@@ -7,8 +7,8 @@
 				<div class="pre-footer-description">Become a member today to get healthcare tips and treatment discounts</div>
 			</div>
 			<form class="col-lg-10 subscribe-form" >
-				<input type="text" class="form-control" placeholder="Enter your name">
-				<input type="email" class="form-control" placeholder="Enter your email ">
+				<input type="text" class="form-control" placeholder="Enter name">
+				<input type="email" class="form-control" placeholder="Enter email ">
 				<button class="btn-submit" type="submit">Join us now</button>
 			</form>
 

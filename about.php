@@ -43,6 +43,7 @@
 						more people stay at the forefront of advancements and innovations in healthcare.ReliefSeeker.com is an privately 
 						& independently owned business, not affiliated with any of the providers or companies we report on.
 					</p>
+					
 				</div>
 				<div class="col-lg-5 col-md-11 mission-img">
 					<img class="img" src="./img/medical-stuff.png" alt="">

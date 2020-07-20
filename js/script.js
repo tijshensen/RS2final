@@ -28,9 +28,11 @@ jQuery(document).ready(function ($) {
         $(this).parents('.rs-content-section').find('.rs-block-content').each(function(){
             $(this).attr('id', 'toc-item-' + index);
 
-            var title = $(this).find('h2, h3, h4, h5, h6').first().text();
+            var $elem = $(this).find('h2, h3, h4, h5, h6').first();
+            var title = $elem.text();
+            var tag = $elem.prop('nodeName').toLowerCase();
 
-            $tocItem = '<li class="list-item"><a href="#toc-item-' + index + '">' + title + '</a></li>';
+            $tocItem = '<li class="list-item"><a href="#toc-item-' + index + '" class="toc-' + tag + '">' + title + '</a></li>';
             $tocElement.append($tocItem);
 
             index++;
@@ -387,7 +389,8 @@ jQuery(document).ready(function ($) {
     //Smooth Scrolling
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
-        var href = $(this).attr('href').toUpperCase();
+        //var href = $(this).attr('href').toUpperCase(); <- uppercase?
+        var href = $(this).attr('href');
         $('html, body').animate({
                 scrollTop: $(href).offset().top,
             },
