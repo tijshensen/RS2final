@@ -1,0 +1,73 @@
+// @include media-breakpoint-up(md) {  }
+// @include media-breakpoint-up(lg) {  }
+
+
+/*Returnseekers colorset*/
+$rs-white: #fff !default;
+$rs-black: #000 !default;
+$rs-black-80: rgba(0, 0, 0, 0.8) !default;
+
+/*  YELLOW  */
+$rs-1: #fcf24d !default;
+$rs-2: #ffc107 !default;
+$rs-3: #fab03b !default;
+$rs-4: #f7573d !default;
+/*  RED  */
+$rs-5: #E12E11 !default;
+$rs-6: #EB5757 !default;
+$rs-7: #8400bf !default;
+/* GREEN */
+$rs-8: #8cc740 !default;
+$rs-9: #8BB04D !default;
+$rs-10: #bdcbd4 !default;
+$rs-12: #9BC456 !default;
+
+/* BLUE */
+$rs-11: #424ff5 !default;
+$rs-41: #17a3e0 !default;
+$rs-13: #16a3e0 !default;
+$rs-14: #4fb4ea !default;
+$rs-15: #1c79aa !default;
+$rs-16: #0073b0 !default;
+$rs-17: #c7ebfd !default;
+$rs-18: #f9fdff !default;
+/* GREY */
+$rs-19: #fafaf5 !default;
+$rs-20: #030303 !default;
+$rs-21: #f5f7f8 !default;
+$rs-22: #f8fdff !default;
+$rs-23: #edf2f5 !default;
+$rs-24: #ecf2f5 !default;
+$rs-25: #f6f6f6 !default;
+$rs-26: #d8d8d8 !default;
+$rs-27: #f2f2f2 !default;
+$rs-28: #F5F5F5 !default;
+$rs-29: #f3f8fb !default;
+$rs-30: #c4c4c4 !default;
+$rs-31: #F8F8F8 !default;
+$rs-32: #bdccd4 !default;
+$rs-33: #b1b1b1 !default;
+$rs-34: #FAFAFA !default;
+$rs-35: #869096 !default;
+$rs-36: #707070 !default;
+$rs-37: #54585a !default;
+$rs-38: #525a62 !default;
+$rs-39: #333333 !default;
+$rs-40: #4F4F4F !default;
+
+$rs-42: #E12E11 !default;
+$rs-43: #219653 !default;
+$rs-44: #737373 !default;
+
+
+// Shadows
+
+$box-shadow-heavy: 0px 0px 20px rgba(0, 0, 0, 0.2);
+$box-shadow-light: 12px 4px 20px rgba(0, 0, 0, 0.06);
+$box-shadow-equal-light: 0px 0px 20px rgba(0, 0, 0, 0.08);
+$box-shadow-equal: 0px 0px 20px rgba(0, 0, 0, 0.12);
+$box-shadow-equal-hover: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+/* Background */
+
+$bg-gradient: linear-gradient(180deg,#f5f7f8 80px,rgba(255, 255, 255, 0) 200px);
