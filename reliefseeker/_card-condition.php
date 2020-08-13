@@ -1,5 +1,5 @@
 <li class="result-item <?php echo $rs_treatment['treatment_filter']; ?> list">
-	<a href="single-condition.php" class="simple-card-block rs-treatments-list">
+	<a href="page-single-condition.php" class="simple-card-block rs-treatments-list">
 		<div class="simple-flex">
 			<span class="block-name"><?php echo $rs_treatment['treatment_name']; ?></span>
 		</div>

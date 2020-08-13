@@ -1,4 +1,4 @@
-<a href="#" class="card-guides">
+<a href="page-single-guide.php" class="card-guides">
     <img src="./svg/<?php echo $rs_guides_card['guide_svg']; ?>" alt="" class="card-guides-img">
     <div class="card-guides-content">
         <div class="card-guides-name"><?php echo $rs_guides_card['guide_title']; ?></div>

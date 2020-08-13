@@ -16,7 +16,7 @@ h6
 	font-weight: 800;
 	cursor: default;
 	span {
-		color: $rs-blue;
+		color: $style1;
 	}
 }
 p,
@@ -89,6 +89,23 @@ body {
 
 .link {
 	color: $rs-blue;
+}
+
+.description{
+	text-align: center;
+	font-size: 16px;
+	max-width: 320px;
+	line-height: 1.4;
+	margin: 10px auto 40px;
+	 @include media-breakpoint-up(md) {
+		font-size: 22px;
+		padding-bottom: 20px;
+	 	margin: 0px auto 32px;
+		max-width: 840px;
+	 }
+     span {
+         color: $style1;
+     }
 }
 
 .btn,
@@ -194,6 +211,7 @@ body {
 	}
 }
 
+/*
 .btn-cta {
 	display: inline-block;
 	margin-top: 12px;
@@ -217,6 +235,22 @@ body {
 		background-position: 93% 50%;
 	}
 }
+*/
+
+.btn-cta {
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: $rs-white;
+	background: $style1;
+	border-radius: 30px;
+	padding: 14px 28px;
+	transition: 0.4s;
+	&:hover {
+		color: $rs-white;
+		box-shadow: $box-shadow-heavy;
+	}
+}
 
 .btn-compare {
 	font-size: 16px;
@@ -231,21 +265,7 @@ body {
 	}
 }
 
-.btn-cta {
 
-	font-weight: bold;
-	font-size: 16px;
-	text-transform: uppercase;
-	color: $rs-white;
-	background: $rs-purple;
-	border-radius: 30px;
-	padding: 14px 28px;
-	transition: 0.4s;
-	&:hover {
-		color: $rs-white;
-		box-shadow: $box-shadow-heavy;
-	}
-}
 
 .link-cap {
 	font-size: 12px;

@@ -1,28 +1,19 @@
 
 /*module news*/
 .module-news {
-	// background-color: #F3F8FB;
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding: 20px 0 30px;
 	@include media-breakpoint-up(lg) {
-			padding-top: 40px;
-			padding-bottom: 60px;
-		
-	}
-	
-	.btn-cta{
-		margin-top: 40px;
+		padding: 46px 0 40px;
 	}
 }
-
 
 .card.card-news {
 	transition: 0.4s ease-in-out;
 	background: transparent;
 	margin: 0;
-	padding-bottom: 0;
 	padding-top: 0px;
 	padding-bottom: 10px;
+	margin-bottom: 24px;
 	* {
 		cursor: pointer;
 	}
@@ -605,14 +596,12 @@
 
 /*Trending topics*/
 
-
 .rs-trending-topics {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding: 0 0 24px;
 	overflow-x: hidden;
 	@include media-breakpoint-up(lg) {
 		justify-content: unset;

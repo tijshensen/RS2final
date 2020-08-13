@@ -1,14 +1,22 @@
 
 
-<div class="module-news <?php echo $bgcolor;?>">
+<section class="module-news <?php echo $bgcolor;?>">
 	<div class="container">
 		<div class="section-header">
+			<?php
+			if(!isset($hide_icon)){
+			?>
 			<div class="logo-icon">
 				<img src="./svg/mini-logo.svg">
 			</div>
-			<h2 class="h2">Read Real Life Stories</h2>
+			<?php
+			}
+			?>
+			<h2 class="h2">Real people, real stories</h2>
 		</div>
-
+<?php
+if(!isset($hide_trending)){
+?>
 		<div class="row justify-content-md-center">
 			<div class="col-auto rs-trending-topics">
 				<div class="fire-link">
@@ -21,6 +29,9 @@
 				</div>
 			</div>
 		</div>
+<?php
+}
+?>
 		
 		<div class="row md-row">
 
@@ -61,10 +72,10 @@
             ?>
 
 			<div class="col-12 text-center d-flex">
-				<a href="#" class="btn btn-cta mx-auto">See all news</a>
+				<a href="#" class="btn btn-cta mx-auto">See all stories</a>
 			</div>
 				
 		</div>
 
 	</div>
-</div>
+</section>
