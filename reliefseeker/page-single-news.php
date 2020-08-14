@@ -49,7 +49,7 @@
 							<a itemprop="url" href="#" class="social-link e-mail"><i class="icon-icon-email"></i></a>
 						</div>
 					</div>
-					<div class="article-content description">
+					<div class="article-content">
 						<p>Sars-CoV-2, more commonly called Coronavirus, has been spreading havoc across continents and taking a toll on fronts of life as we know it. Social distancing, taking care of your health, and hand hygiene are the new normal.  </p>
 						<p>More than 2.6 billion people across the globe have now been asked to stay at home by their respective governments. But the outbreak is not only pushing us into uncharted territories, but it is also taking a toll on our mental health. What has been considered as an alternative to orthodox mental health care is now the mainstream mode of therapy that is Online Therapy.</p>
 					</div>

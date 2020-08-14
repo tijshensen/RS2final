@@ -13,7 +13,7 @@
 <section class="guides-section">
 	<div class="container">
 		<h2 class="h2">Take Control of Your Health <span>Online</span></h2>
-		<p class="description">Getting treatment is more affordable, convenient, and discreet than ever.<br/>Search by category to discover over 150 of the best online healthcare providers.</p>
+		<p class="rs-description">Getting treatment is more affordable, convenient, and discreet than ever.<br/>Search by category to discover over 150 of the best online healthcare providers.</p>
 
 			
 		<div class="row justify-content-center">
@@ -52,7 +52,7 @@
 	
 		<div class="section-header">
 			<h2 class="h2">Treat Hundreds of <span>Conditions</span></h2>
-			<p class="description">Search by condition to compare providers and get the best treatment available.</p>
+			<p class="rs-description">Search by condition to compare providers and get the best treatment available.</p>
 		</div>
 			
 			<div class="row justify-content-center">
@@ -130,7 +130,7 @@ include('_module-news.php');
 				</div>
 				<div class="col-lg-7 conditional-list-block">
 					<h2 class="h2">Don’t Wait Another Second.</h2>
-					<div class="description">Find the best treatments in healthcare & wellness <span>online</span></div>
+					<div class="rs-description">Find the best treatments in healthcare & wellness <span>online</span></div>
 					<ul class="info-list">
 						<li class="info-list-item"><div class="item-text">The <span>largest</span> collection of online healthcare providers</div></li>
 						<li class="info-list-item"><div class="item-text"><span>Quick search</span> by condition, treatment or treatment types</div></li>

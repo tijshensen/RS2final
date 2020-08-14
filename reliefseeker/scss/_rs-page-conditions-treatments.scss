@@ -93,7 +93,6 @@
 
 
 
-
 /*
 single-condition
 single-treatment
@@ -105,7 +104,7 @@ single-provider
 /*Buttons with number*/
 
 .rs-button-with-number {
-	padding-top: 30px;
+	padding-top: 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -199,18 +198,26 @@ single-provider
 
 .rs-all-conditions{
 	padding-bottom: 40px;
+	@include media-breakpoint-up(lg) {
+		.rs-description{
+			max-width: 500px;
+		}
+		.rs-search-input-block {
+		    margin: 0 auto 15px;
+		}
+	}
 }
 
 .rs-all-treatments{
 	@include media-breakpoint-up(lg) {
+		.rs-description{
+			max-width: 500px;
+		}
 		.filters-container{
-
 			clear: both;
-		
 			 .dropdown {
 				width: 50%;
 			}
-			
 			.btn-filter-search{
 				height: 48px;
 			}
@@ -225,10 +232,7 @@ single-provider
     border-radius: 40px;
     padding: 0;
     height: 48px;
-    // margin: 0 30px 15px;
-	@include media-breakpoint-up(md) {
-		    margin: 0 15px 15px;
-	}
+
     .search-input {
         background: transparent;
         border: none;
@@ -242,7 +246,7 @@ single-provider
         transition: 0.4s ease-in-out;
     }
     @include media-breakpoint-up(md) {
-        margin: 0 auto 15px;
+        margin: 0 auto 15px 40px;
         background: transparent;
         padding: 0 15px;
         .search-input {

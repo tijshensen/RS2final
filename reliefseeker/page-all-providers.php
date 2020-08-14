@@ -10,7 +10,7 @@ include('_dataset.php');
 		<div class="container"> 
 			<div class="row justify-content-center">
 				<div class="col-md-10">
-					<h1 class="h1">Discover <span>354 Online Health Providers</span> </h1>
+					<h1 class="rs-h1">Discover <span>354 Online Health Providers</span> </h1>
 					<div class="rs-description">You can get medications prescribed by an online doctor in 30 minutes & delivered discreetly to your home</div>
 				</div>	
 			</div>

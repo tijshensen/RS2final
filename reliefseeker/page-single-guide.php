@@ -7,15 +7,15 @@ include('_filter.php');
 <?php include('_module-menu.php');?>
 
 <?php 
-$discloser = 'yes';
-include('__module-breadcrumb.php');
+$discloser = 'no';
+include('_module-breadcrumb.php');
 ?>
 
 <section class="rs-section-hero">
 	<div class="container"> 
 		<div class="row justify-content-center">
 			<div class="col-md-10 header-block">
-				<h1 class="h1">Best <span>Online Doctors</span></h1>
+				<h1 class="rs-h1">Best <span>Online Doctors</span></h1>
 				<div class="rs-description">
 					You can get medications prescribed by an online doctor in 30 minutes & delivered discreetly to your home.  
 				</div>
@@ -49,7 +49,11 @@ include('__module-breadcrumb.php');
 			?>
 		</div>
 	</div>
-</section>			
+</section>
+
+<?php 
+include('_module-disclaimer.php');
+?>			
         
 <section class="rs-section-provider-list">
 	<div class="container"> 

@@ -5,7 +5,7 @@ include('_dataset.php');
 <nav id="main-nav" class="navbar navbar-expand-lg">
 	<div class="container d-flex justify-content-between">
 		<a class="navbar-brand" href="page-index.php">
-			<img src="./svg/reliefseeker.svg" alt="ReliefSeeker">
+			<img src="<?php echo $logo;?>" alt="ReliefSeeker">
 		</a>
 
 		<button class="navbar-toggler" type="button" aria-label="Toggle navigation">

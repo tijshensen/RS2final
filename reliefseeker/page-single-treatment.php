@@ -13,7 +13,7 @@ include('__module-breadcrumb.php');
 	<div class="container"> 
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <h1 class="h1">Get <span>Cialis Online </span></h1>
+                <h1 class="rs-h1">Get <span>Cialis Online </span></h1>
                 <div class="rs-description">
                     Start treating your depression today with online telehealth providers. Finally have a team that helps you lose weight and improve your health without following a no-carb diet or tracking calories.
                 </div>

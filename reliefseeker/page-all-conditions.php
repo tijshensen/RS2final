@@ -8,7 +8,7 @@
 		<div class="container"> 
 			<div class="row justify-content-center">
 				<div class="col-md-10 header-block">
-					<h1 class="h1">See All <span>Conditions</span> </h1>
+					<h1 class="rs-h1">See All <span>Conditions</span> </h1>
 					<div class="rs-description">Explore to see all of the health conditions you can treat online. Healing starts here.</div>
 				</div>	
 			</div>

@@ -1,4 +1,10 @@
 <?php
+
+/*Title project*/
+$title = "ReliefSeeker";
+$pagetitle = $title . ".com V2.5.1";
+$logo = "./svg/reliefseeker.svg";
+
 /*Providers*/
 $rs_providers_cards = array(
     array(

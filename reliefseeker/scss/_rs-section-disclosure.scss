@@ -1,3 +1,28 @@
+.btn-open-modal {
+    @include media-breakpoint-down(md) {
+        padding: 6px;
+    }
+    font-weight: 300;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: capitalize;
+    width: max-content;
+    height: max-content;
+    display: block;
+    padding: 12px;
+    margin: 0 0 0 auto;
+    text-align: left;
+    @include media-breakpoint-up(lg) {
+        text-align: right;
+		font-size: 15px;
+    }
+    @include media-breakpoint-up(md) {
+        &.au-width {
+            width: auto;
+        }
+    }
+}
+
 .modal-dialog {
     margin-left: auto;
     margin-right: auto;

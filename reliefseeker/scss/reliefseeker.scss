@@ -46,48 +46,40 @@
 
 /*ReliefSeeker Styleguides*/
 @import "styleguide_relief";
-
-//@import "rs_general";
+@import "rs-svg-font";
 
 /*RS functions*/
 @import "rs-basics";
-@import "rs-menu";
 @import "rs-filter";
 @import "rs-alphabet";
 
 /*RS Sections*/
+@import "rs-section-menu";
+@import "rs-section-breadcrumb";
 @import "rs-section-hero";
 @import "rs-section-review";
+@import "_rs-section-disclosure";
 @import "rs-section-healingbar";
 @import "rs-section-footer";
 
 /*RS Pages*/
-@import "rs-homepage";
-@import "rs-review";
-//@import "rs-page-index";
+@import "rs-page-index";
+@import "rs-page-provider";
+@import "rs-page-conditions-treatments";
+@import "rs-page-guides";
 @import "rs-page-about";
-@import "rs-single-news";
-@import "rs-single-treatment";
-@import "rs-guides";
-@import "rs-all-news";
-@import "rs-single-provider";
-
-/*cards*/
-/*Guides in the sidebar*/
-@import "rs-guides";
+@import "rs-page-news";
 
 /*Provider cards*/
 @import "rs-card-provider";
 
 /*RS Modules*/
 @import "rs-module-news";
+
 @import "reliefseeker-module-telehealth";
 @import "rs-module-populair-conditions";
 
-@import "rs-modal-window";
 
-
-@import "rs-svg-font";
 
 
 
