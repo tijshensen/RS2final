@@ -1,0 +1,25 @@
+/*Breadcrumb*/
+.breadcrumb-container {
+	padding-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+	.breadcrumb {
+	    background-color: transparent;
+	    padding-left: 20px;
+		width: max-content;
+	    @include media-breakpoint-up(lg) {
+	        padding-left: 0;
+			padding-bottom: 0;
+	    }
+	    .breadcrumb-item,
+	    .breadcrumb-item a {
+	        font-size: 13px;
+	        color: $rs-black;
+	        @include media-breakpoint-up(md) {
+	            font-size: 14px;
+	        }
+	    }
+	}
+}
+

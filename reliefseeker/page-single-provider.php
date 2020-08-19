@@ -262,10 +262,6 @@
     </div>
 </section>
 
-
-
-<?php include('_module-footer-menu.php'); ?>
-
 <div class="sticky-mobile-menu">
 	<div class="sticky-inner">
 	    <span class="price">$65 OFF</span>
@@ -276,4 +272,7 @@
 </div>
 
 
+<?php include('_module-footer-menu.php');?>
+
+<?php include('_scripts.php'); ?>
 <?php include('_footer.php'); ?>

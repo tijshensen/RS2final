@@ -1,0 +1,48 @@
+.anchors-container {
+    &.abs-right {
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            right: -40px;
+        }
+    }
+    margin-top: 30px;
+    @media (max-width: 576px) {
+        // display: none;
+    }
+    &.anchors-providers {
+        @media (max-width: 768px) {
+            // display: none;
+        }
+    }
+    .alphabet {
+        padding: 0;
+        .letter {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+
+            .letter-link {
+                border-radius: 50%;
+                width: 28px;
+                height: 28px;
+                display: flex;
+                text-transform: uppercase;
+                justify-content: center;
+                align-items: center;
+                background: $rs-white;
+                font-family: "Catamaran";
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 1;
+                color: $rs-black;
+                transition: 0.2s ease-in-out;
+                text-decoration: none;
+				margin-bottom: 4px;
+
+                &:hover {
+                    background: $rs-grey-5;
+                }
+            }
+        }
+    }
+}

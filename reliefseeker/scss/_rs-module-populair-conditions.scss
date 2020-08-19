@@ -1,0 +1,50 @@
+/*Module popular conditions*/
+
+.most-popular {
+	.btn-condtion{
+		display: block;
+		padding: 1rem;
+		border-radius: 70px; 
+		box-shadow: $box-shadow-light;
+		text-align: left;
+		margin: 0 40px 16px 40px;
+		font-weight: 600;
+		background-color: $rs-white;
+		&:hover{
+			box-shadow: $box-shadow-heavy;
+		}
+		
+		svg {
+			margin-right: 16px;
+			margin-left: 8px;
+		}
+	}
+	
+	.popular-info{
+		text-align: center;
+	}
+	.most-popular-text{
+		padding: 20px 40px;
+	}
+	.btn-cta{
+		margin: 10 auto;
+	}
+	
+	@media (min-width: 576px) { 
+		.btn-condtion{
+			margin: 0 auto 16px;
+		}
+		.popular-info{
+			text-align: left;
+			padding: 20px;
+		}
+		
+		.most-popular-text{
+			padding: 0 20px;
+		}
+	}
+}
+
+.popular-heading {
+	padding-bottom: 0px;
+}

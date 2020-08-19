@@ -1,93 +1,290 @@
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
-    <title>Index</title>
-  </head>
-  <body style="margin: 4rem;">
-	  
-	<table class="table">
-		<tr>
-			<td>
-			    <h2 style="padding-bottom: 30px;">Reliefseeker.com V2.5</h2>
-				<h3>Pages</h3>
-				<ul>
-					<li><a href="reliefseeker/page-index.php" target="_blank">Homepage</a></li>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<title>Index</title>
+	<style>
+		h2{
+			padding-top: 20px;
+			padding-bottom: 0px;
+			margin-bottom: 0;
+		}
+		h3{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		h4{
+			margin-top: 30px;
+		}
+		
+		a{
+			color: #000;
+		}
+		.version a{
+			display: inline-block;
+			color: #000;
+			font-size: 22px;
+			text-decoration: none;
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+		
+		.changelog h4{
+			font-size: 16px;
+			padding-left: 0.5rem;
+			text-decoration: underline;
+		}
+			
+		.changelog p{
+			margin-bottom: 0;
+			padding: 0.5rem 0 0.5rem 0.5rem;
+		}
+		
+		.changelog p:nth-child(odd)
+		{
+			background-color:#F5F7F8;
 
-					<li><a href="reliefseeker/page-all-guides.php" target="_blank">Guide overview</a></li>
-					<li><a href="reliefseeker/page-single-guide.php" target="_blank">Single Guide</a></li>
+		}
+		</style>
+	</head>
+	<body style="margin: 1rem;">
 
-					<li><a href="reliefseeker/page-all-conditions.php" target="_blank">Conditions overview</a></li>
-					<li><a href="reliefseeker/page-single-condition.php" target="_blank">Conditions single</a></li>
 
-					<li><a href="reliefseeker/page-all-treatments.php" target="_blank">Treatments overview</a></li>
-					<li><a href="reliefseeker/page-single-treatment.php" target="_blank">Treatments single</a></li>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<h2>Reliefseeker.com</h2>
+					<div class="version"><a href="#changelog">V2.5.2</a></div>
+					<h3>Pages</h3> 
 
-					<li><a href="reliefseeker/page-all-providers.php" target="_blank">Providers overview</a></li>
-					<li><a href="reliefseeker/page-single-provider.php" target="_blank">Provider review</a></li>
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-index.php" target="_blank">Homepage </a>
+							<span class="badge badge-primary badge-pill">2.5.1</span>
+							<span class="badge badge-primary badge-pill">2.5.2</span>
+						</li>
 
-					<li><a href="reliefseeker/page-about.php" target="_blank">About Us</a></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-all-categories.php" target="_blank">Guide overview</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-single-category.php" target="_blank">Single category</a>
+							<span class="badge badge-primary badge-pill">2.5.2</span>
+						</li>
 
-					<li><a href="reliefseeker/page-all-news.php" target="_blank">News (overview)</a></li>
-					<li><a href="reliefseeker/page-single-news.php" target="_blank">News (single)</a></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-all-conditions.php" target="_blank">Conditions overview</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-single-condition.php" target="_blank">Conditions single</a>
+						</li>
+
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-all-treatments.php" target="_blank">Treatments overview</a>
+							<span class="badge badge-primary badge-pill">2.5.2</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-single-treatment.php" target="_blank">Treatments single</a>
+						</li>
+
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-all-providers.php" target="_blank">Providers overview</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-single-provider.php" target="_blank">Provider review</a>
+							<span class="badge badge-primary badge-pill">2.5.1</span>
+						</li>
+
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-about.php" target="_blank">About Us</a>
+						</li>
+
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-all-news.php" target="_blank">News (overview)</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-single-news.php" target="_blank">News (single)</a>
+						</li>
+					</ul>
+
+					<h4>Modules</h4>
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center">Module - News</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">Module - Popular conditions</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">Module - Healing bar</li>
+					</ul>
+				</div>
+
+				<div class="col-sm">
+					<h2>Returnsseeker.com</h2>
+					<div class="version"><a href="">V1</a></div>
+					<h3>Pages</h3>
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-index.php" target="_blank">Homepage</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-all-categories.php" target="_blank">Category page</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-news-categories.php" target="_blank">Category news</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/about.php" target="_blank">About</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-single-provider.php" target="_blank">Single provider</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-all-providers.php" target="_blank">All providers</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-list-crypto-currency.php" target="_blank">List crypto currency</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-list-robo-advisors.php" target="_blank">List robo advisors</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-list-real-estate-investments.php" target="_blank">List real estate investments</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-list-savings-account.php" target="_blank">List savings account</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-list-online-brokers.php" target="_blank">List online brokers</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-list-financial-advisors.php" target="_blank">List financial advisors</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-list-art-investments.php" target="_blank">List art investments</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-list-microlending.php" target="_blank">List microlending</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-list-business-investments.php" target="_blank">List business investments</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<h2>Oddseeker.com</h2>
+					<div class="version"><a href="">V1</a></div>
+					<h3>Pages</h3>
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><a href="oddseeker/homepage.php" target="_blank">Homepage</a></li>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" style="margin-top: 30px;">
+			<div class="row">
+				<div class="col-sm">
+					<h3>Backlog</h3>
+					<div class="changelog">
+						<p>Feature - Shrink the sticky menu when scrolling down | Reliefseeker Returnsseeker Oddseeker </p>
+						<p>Feature - Add animation in the hero section | Reliefseeker</p>
+						<p>Tweak - Provider card | Reliefseeker</p>
+						<p>Tweak - Improve whitespace/tightness of index page (mobile) | Reliefseeker</p>
+						<p>Tweak - Tightening up the index pages | Returnsseeker Oddseeker</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" style="margin-top: 30px;" id="changelog">
+			<div class="row">
+				<div class="col-sm">
+					<h3>Changelog</h3>
+					<div class="changelog">
+						<h4>19 August 2020 - 2.5.2</h4>
+						<p>Redesign - Provider card | Reliefseeker</p>
+						<p>Tweak - Left align search on all treatment page | Reliefseeker</p>
+						<p>Feature - Animation in the indexpage hero section | Reliefseeker</p>
+					</div>
+					<div class="changelog">
+						<h4>14 August 2020 - 2.5.1</h4>
+						<p>Workflow - Push Only CSS and HTML to Final Repo | Reliefseeker</p>
+						<p>Redesign - Menu (desktop) | Reliefseeker</p>
+						<p>Redesign - Find treatment - search | Reliefseeker</p>
+						<p>Redesign - Single provider | Reliefseeker</p>
+						<p>Tweak - Whitespace Index page (desktop) | Reliefseeker</p>
+						<p>Tweak - Change breadcrumbs on mobile | Reliefseeker</p>
+						<p>Tweak - Harmonise H2 and description| Reliefseeker</p>
+						<p>Tweak - Restructure SCSS for reusability | Reliefseeker</p>
+						<p>Tweak - Change text in Sign-up section | Reliefseeker</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="container" style="margin-top: 30px;">
+			<div class="row">
+				<div class="col-sm">
+					<h3>Structured data</h3> 
+
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-index.php" target="_blank">Homepage</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-about.php" target="_blank">About Us</a>
+						</li>
+
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="reliefseeker/page-single-news.php" target="_blank">News (single)</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm">
+					<h3>Structured data</h3> 
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/page-index.php" target="_blank">Homepage</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/single-news.php" target="_blank">Single news</a>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">
+							<a href="returnsseeker/about.php" target="_blank">About</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm">
+					<h3>Structured data</h3>
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center"><a href="oddseeker/page-index.php" target="_blank">Homepage</a></li>
+
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<div class="container">
+		  <div class="row">
+		    <div class="col-sm">
+		     	<h2 style="margin-bottom: 20px;">Documentation</h2>
+				<ul class="list-group">
+					<li class="list-group-item d-flex justify-content-between align-items-center"><a href="https://search.google.com/structured-data/testing-tool/u/0/">Google Structured Data Tool</a></li>
+					<li class="list-group-item d-flex justify-content-between align-items-center"><a href="https://developers.google.com/speed/pagespeed/insights/?url=reliefseeker.com">Google Page Speed Insights</a></li>
+					<li class="list-group-item d-flex justify-content-between align-items-center"><a href="https://getbootstrap.com">Bootstrap v4.5</a></li>
+					
 				</ul>
+		    </div>
+		  </div>
+		</div>	
+			
 
-				<h4>Modules</h4>
-				<ul>
-					<li>Module - News</li>
-					<li>Module - Popular conditions</li>
-					<li>Module - Healing bar</li>
-				</ul>
-			</td>
-			<td>
-			    <h2 style="padding-bottom: 30px;">Returnsseeker.com V1</h2>
-				<h3>Pages</h3>
-				<ul>
-					<li><a href="returnsseeker/homepage.php" target="_blank">Homepage</a></li>
-					<li><a href="returnsseeker/category-page.php" target="_blank">Category page</a></li>
-					<li><a href="returnsseeker/category-news.php" target="_blank">Category news</a></li>
-					<li><a href="returnsseeker/about.php" target="_blank">About</a></li>
-					<li><a href="returnsseeker/single-provider.php" target="_blank">Single provider</a></li>
-					<li><a href="returnsseeker/all-providers.php" target="_blank">All providers</a></li>
-					<li><a href="returnsseeker/list-crypto-currency.php" target="_blank">List crypto currency</a></li>
-					<li><a href="returnsseeker/list-robo-advisors.php" target="_blank">List robo advisors</a></li>
-					<li><a href="returnsseeker/list-real-estate-investments.php" target="_blank">List real estate investments</a></li>
-					<li><a href="returnsseeker/list-savings-account.php" target="_blank">List savings account</a></li>
-					<li><a href="returnsseeker/list-online-brokers.php" target="_blank">List online brokers</a></li>
-					<li><a href="returnsseeker/list-financial-advisors.php" target="_blank">List financial advisors</a></li>
-					<li><a href="returnsseeker/list-art-investments.php" target="_blank">List art investments</a></li>
-					<li><a href="returnsseeker/list-microlending.php" target="_blank">List microlending</a></li>
-					<li><a href="returnsseeker/list-business-investments.php" target="_blank">List business investments</a></li>
-				</ul>
 
-				<h4>Modules</h4>
-				<ul>
-					<li>Module - News</li>
-					<li>Module - Popular conditions</li>
-					<li>Module - Healing bar</li>
-				</ul>
-			</td>
-			<td>
-			    <h2 style="padding-bottom: 30px;">Oddseeker.com V1</h2>
-				<h3>Pages</h3>
-				<ul>
-					<li><a href="oddseeker/homepage.php" target="_blank">Homepage</a></li>
-
-			</td>
-		</tr>
-	</table>  
-
-	<h2>Structured data</h2>
-	<ul>
-		<li><a href="https://search.google.com/structured-data/testing-tool/u/0/">Google Tool</a></li>
-		<li><a href="single-news.php" target="_blank">News (single)</a></li>
-	</ul>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>

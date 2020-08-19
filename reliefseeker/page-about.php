@@ -68,7 +68,7 @@
 					<div class="descrition-capitalize">The World’s Largest Directory of Online Healthcare Providers</div>
 					<a href="#" class="btn btn-cta desctop">See all Categories</a>
 				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 card-container">
+				<div class="col-lg-4 page-single-category.php">
 					<div class="simple-card">
 						<img class="simple-card-img" src="./svg/smartphone.svg" /> 
 						<div class="description-block">
@@ -80,7 +80,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 card-container">
+				<div class="col-lg-3 col-md-6 card-container">
 					<div class="simple-card">
 						<img class="simple-card-img" src="./svg/smartphone.svg" /> 
 						<div class="description-block">
@@ -92,7 +92,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 card-container mobile">
+				<div class="col-lg-3 col-md-6 card-container mobile">
 					<div class="simple-card">
 						<img class="simple-card-img" src="./svg/smartphone.svg" /> 
 						<div class="description-block">
@@ -104,7 +104,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 card-container mobile">
+				<div class="col-lg-3 col-md-6 card-container mobile">
 					<div class="simple-card">
 						<img class="simple-card-img" src="./svg/smartphone.svg" /> 
 						<div class="description-block">
@@ -308,15 +308,10 @@
 
 
 
-<?php 
-include('_module-news.php');
-
-?>
-
+<?php include('_module-news.php');?>
 <?php include('_module-footer-menu.php'); ?>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<?php include('_scripts.php'); ?>
 <?php include('_footer.php'); ?>
-
-</body>
 

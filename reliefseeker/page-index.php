@@ -5,6 +5,10 @@
 <section class="banner-color-section">
 	<div class="container">
 		<div class="banner-caption-block">
+			<img src="svg/crose.svg" alt="" class="cros cros-1">
+			<img src="svg/crose.svg" alt="" class="cros cros-2">
+			<img src="svg/crose.svg" alt="" class="cros cros-3">
+			<img src="svg/crose.svg" alt="" class="cros cros-4">
 			<h1 class="h1">the future of <span>HEALTHCARE</span> is here</h1>
 		</div>
 	</div>	
@@ -17,7 +21,7 @@
 
 			
 		<div class="row justify-content-center">
-			<div class="col-lg-11 col-md-10 col-sm-7 guides-container">
+			<div class="col-lg-12 col-md-10 col-sm-7 guides-container">
 				<div class="row">
 				
 					<?php
@@ -40,7 +44,7 @@
 		</div>
 
 		<div class="d-flex justify-content-center">
-			<a href="page-all-guides.php" class="btn btn-cta">See All Categories</a>
+			<a href="page-all-categories.php" class="btn btn-cta">See All Categories</a>
 		</div>	
 			
 	</div>
@@ -56,7 +60,7 @@
 		</div>
 			
 			<div class="row justify-content-center">
-				<div class="col-lg-11 col-md-10 col-sm-7 conditions-container">
+				<div class="col-lg-12 col-md-10 col-sm-7 conditions-container">
 					<div class="row">
 						<?php
 						$x =0;
@@ -129,7 +133,7 @@ include('_module-news.php');
 					<img src="./img/list-item-img.jpg" alt="">
 				</div>
 				<div class="col-lg-7 conditional-list-block">
-					<h2 class="h2">Don’t Wait Another Second.</h2>
+					<h2 class="h2">Don’t wait another second.</h2>
 					<div class="rs-description">Find the best treatments in healthcare & wellness <span>online</span></div>
 					<ul class="info-list">
 						<li class="info-list-item"><div class="item-text">The <span>largest</span> collection of online healthcare providers</div></li>
@@ -142,8 +146,7 @@ include('_module-news.php');
 			</div>
 		</div>
 	</section>
-	<?php include('_module-footer-menu.php'); ?>
+	<?php include('_module-footer-menu.php');?>
 
-</body>
-
-<?php include('_footer.php'); ?>
+    <?php include('_scripts.php'); ?>
+    <?php include('_footer.php'); ?>

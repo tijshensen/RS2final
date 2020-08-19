@@ -33,7 +33,7 @@ if(!isset($hide_trending)){
 }
 ?>
 		
-		<div class="row md-row">
+		<div class="row">
 
              <?php
 			 	$n =0;
@@ -54,12 +54,14 @@ if(!isset($hide_trending)){
 								alt="" class="news-image"/>
 							</div>
 
-							<div class="col-9 col-md-12 card-content">
-								<div class="flag purple <?php echo $rs_news_card['news_label_class']; ?>"><?php echo $rs_news_card['news_label']; ?></div>
-								<h4 class="news-title"><?php echo $rs_news_card['news_title']; ?></h4>
-								<!--<div class="news-category" ><?php echo $rs_news_card['news_category']; ?></div>-->
-								<span class="news-date"><?php echo $rs_news_card['news_time']; ?></span> 
-								<span class="news-author"><?php echo $rs_news_card['news_author']; ?></span>
+							<div class="col-9 col-md-12 ">
+								<div class="card-content">
+									<div class="flag purple <?php echo $rs_news_card['news_label_class']; ?>"><?php echo $rs_news_card['news_label']; ?></div>
+									<h4 class="news-title"><?php echo $rs_news_card['news_title']; ?></h4>
+									<!-- </?php echo $rs_news_card['news_category']; ?> -->
+									<span class="news-date"><?php echo $rs_news_card['news_time']; ?></span> 
+									<span class="news-author"><?php echo $rs_news_card['news_author']; ?></span>
+								</div>
 							</div>
 
 						</div>

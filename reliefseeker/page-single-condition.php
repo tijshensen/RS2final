@@ -9,7 +9,7 @@ include('_filter.php');
 	
 <?php 
 $discloser = 'yes';
-include('__module-breadcrumb.php');
+include('_module-breadcrumb.php');
 ?>
 
 <section class="rs-section-hero">
@@ -217,8 +217,9 @@ include('__module-breadcrumb.php');
 
 	<?php include('_module-footer-menu.php'); ?>
     
+<!-- </?php $load_owl_carousel = true; ?> -->
 
-</body>
 
-<?php $load_owl_carousel = true; ?>
-<?php include('_footer.php'); ?>
+    <?php include('_scripts.php'); ?>
+    <script src="./js/owl.carousel.min.js"></script>
+    <?php include('_footer.php'); ?>

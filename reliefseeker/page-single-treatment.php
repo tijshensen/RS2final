@@ -6,7 +6,7 @@
 
 <?php 
 $discloser = 'yes';
-include('__module-breadcrumb.php');
+include('_module-breadcrumb.php');
 ?>
 
 <section class="rs-section-hero">
@@ -247,9 +247,9 @@ include('__module-breadcrumb.php');
 		
         <div class="row justify-content-center">
 
-			<?php
+		<!-- </?php
 				include('_card-filter-type-3.php'); 
-			?>
+			?> -->
 
             <ul class="provider-carousel owl-carousel col-lg-11">
             <?php
@@ -349,6 +349,11 @@ include('__module-breadcrumb.php');
 	<?php include('_module-footer-menu.php'); ?>
 
 
-<?php $load_owl_carousel = true; ?>
+<!-- </?php $load_owl_carousel = true; ?> -->
+<?php include('_scripts.php'); ?>
+
+<script src="./js/owl.carousel.min.js"></script>
 <?php include('_footer.php'); ?>
+
+
 

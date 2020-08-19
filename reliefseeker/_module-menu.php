@@ -2,7 +2,7 @@
 include('_dataset.php');
 ?>
 
-<nav id="main-nav" class="navbar navbar-expand-lg">
+<nav id="main-nav" class="navbar navbar-expand-lg bd-navbar">
 	<div class="container d-flex justify-content-between">
 		<a class="navbar-brand" href="page-index.php">
 			<img src="<?php echo $logo;?>" alt="ReliefSeeker">
@@ -26,43 +26,43 @@ include('_dataset.php');
 									<p>Find the best ...</p>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Online doctor</a>
+									<a class="dropdown-item" href="page-single-category.php">Online doctor</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Online Pharmacy</a>
+									<a class="dropdown-item" href="page-single-category.php">Online Pharmacy</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Skin Care</a>
+									<a class="dropdown-item" href="page-single-category.php">Skin Care</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Teeth Aligners</a>
+									<a class="dropdown-item" href="page-single-category.php">Teeth Aligners</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Online Therapy</a>
+									<a class="dropdown-item" href="page-single-category.php">Online Therapy</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">At-Home Lab Testing Kits</a>
+									<a class="dropdown-item" href="page-single-category.php">At-Home Lab Testing Kits</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Supplements</a>
+									<a class="dropdown-item" href="page-single-category.php">Supplements</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Primary Care</a>
+									<a class="dropdown-item" href="page-single-category.php">Primary Care</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Digital Clinics</a>
+									<a class="dropdown-item" href="page-single-category.php">Digital Clinics</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Health Apps</a>
+									<a class="dropdown-item" href="page-single-category.php">Health Apps</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Medical Devices</a>
+									<a class="dropdown-item" href="page-single-category.php">Medical Devices</a>
 								</li>
 								<li class="col-lg-4 col-md-6 list-item">
-									<a class="dropdown-item" href="page-single-guide.php">Activity Trackers</a>
+									<a class="dropdown-item" href="page-single-category.php">Activity Trackers</a>
 								</li>
 								<li class="col-12 list-item">
-									<a class="dropdown-item btn btn-see-all" href="page-all-guides.php">See All Categories</a>
+									<a class="dropdown-item btn btn-see-all" href="page-all-categories.php">See All Categories</a>
 								</li>
 							</ul>
 						</div>
@@ -79,7 +79,7 @@ include('_dataset.php');
 									<p>Explore</p>
 								</li>
 								<li class="col-12 list-item">
-									<a class="dropdown-item" href="page-all-guides.php">Categories<span class="count">95</span></a>
+									<a class="dropdown-item" href="page-all-categories.php">Categories<span class="count">95</span></a>
 								</li>
 								<li class="col-12 list-item">
 									<a class="dropdown-item" href="page-all-conditions.php">Conditions<span class="count">95</span></a>

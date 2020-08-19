@@ -2,8 +2,8 @@
 
 /*Title project*/
 $title = "ReliefSeeker";
-$pagetitle = $title . ".com V2.5.1";
-$logo = "./svg/reliefseeker.svg";
+$pagetitle = $title . ".com V2.5.2";
+$logo = "./svg/logo-reliefseeker-purple.svg";
 
 /*Providers*/
 $rs_providers_cards = array(
@@ -21,6 +21,7 @@ $rs_providers_cards = array(
         'provider_promo' => 'Springsale',
         'provider_old' => '$95',
         'provider_number' => '1',
+        'pl-top-label-left' => ' <img src="./img/top.png" alt=""> ',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
         'provider_insurance' => 'Accepted',
@@ -40,6 +41,7 @@ $rs_providers_cards = array(
         'provider_promo' => 'Summer',
         'provider_old' => '$95',
         'provider_number' => '2',
+        'pl-top-label-left' => ' ',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
         'provider_insurance' => 'Accepted',
@@ -59,6 +61,7 @@ $rs_providers_cards = array(
         'provider_promo' => 'Summer',
         'provider_old' => '$95',
         'provider_number' => '3',
+        'pl-top-label-left' => ' <img src="./img/top.png" alt=""> ',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
         'provider_insurance' => 'Accepted',
@@ -78,6 +81,7 @@ $rs_providers_cards = array(
         'provider_promo' => 'Summer',
         'provider_old' => '$95',
         'provider_number' => '4',
+        'pl-top-label-left' => ' <img src="./img/top.png" alt=""> ',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
         'provider_insurance' => 'Accepted',
@@ -97,6 +101,7 @@ $rs_providers_cards = array(
         'provider_promo' => 'Summer',
         'provider_old' => '$95',
         'provider_number' => '5',
+        'pl-top-label-left' => ' ',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
         'provider_insurance' => 'Accepted',

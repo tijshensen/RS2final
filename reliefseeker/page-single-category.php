@@ -100,7 +100,7 @@ include('_module-disclaimer.php');
 </section>
     <!-- Modal -->
     <?php include('_modal-advertiser-disclosure.php'); ?>
-	<?php include('_module-footer-menu.php'); ?>
+    <?php include('_module-footer-menu.php');?>
 
-
-<?php include('_footer.php'); ?>
+    <?php include('_scripts.php'); ?>
+    <?php include('_footer.php'); ?>

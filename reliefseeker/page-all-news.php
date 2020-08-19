@@ -155,8 +155,7 @@
 		</div>
     </section>
 
-	<?php include('_module-footer-menu.php'); ?>
+	<?php include('_module-footer-menu.php');?>
 
-</body>
-
-<?php include('_footer.php'); ?>
+    <?php include('_scripts.php'); ?>
+    <?php include('_footer.php'); ?>
