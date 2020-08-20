@@ -1,0 +1,112 @@
+/*------------- Footer --------------*/
+
+/*--RS Footer - Footer first --*/
+
+.rs-footer-first {
+  padding: 40px 30px 50px;
+  background: #f0f2f2;
+  @include media-breakpoint-up(md) {
+    padding: 40px 0 50px;
+  }
+  .h2 {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: center;
+    color: $rs-black;
+    margin: auto;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+    @include media-breakpoint-up(sm) {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  }
+  .rs-description {
+    line-height: 1.4;
+    max-width: 780px;
+    margin-bottom: 17px;
+  }
+  .description {
+    max-width: 275px;
+    @include media-breakpoint-up(sm) {
+      max-width: 400px;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: unset;
+    }
+  }
+
+  .subscribe-form {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input {
+      display: flex;
+      align-items: center;
+      background: $rs-white;
+      border-radius: 2px;
+      padding: 0 35px;
+      margin-bottom: 12px;
+      height: 70px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 27px;
+      color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      outline: none;
+      box-shadow: none;
+      border: none;
+      &::placeholder {
+        text-transform: capitalize;
+        color: rgba(0, 0, 0, 0.39);
+      }
+      @include media-breakpoint-up(md) {
+        width: 37%;
+        margin-bottom: unset;
+      }
+    }
+    .btn-submit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $rs-blue;
+      height: 70px;
+      border-radius: 0px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+      color: #ffffff;
+      position: relative;
+      padding: 0 34px;
+      border: none;
+      outline: none;
+      width: 100%;
+      transition: 0.4s ease-in-out;
+      text-transform: uppercase;
+      @include media-breakpoint-up(md) {
+        width: max-content;
+        padding: 0 34px;
+      }
+      // &::after {
+      // 	content: "\eb44";
+      // 	font-family: "icomoon" !important;
+      // 	display: none;
+      // 	color: $rs-white;
+      // 	position: absolute;
+      // 	right: 34px;
+      // 	transition: 0.4s ease-in-out;
+      // 	@include media-breakpoint-up(md) {
+      // 		display: block;
+      // 	}
+      // }
+      &:hover {
+        box-shadow: $box-shadow-light;
+        // &::after {
+        // 	right: 28px;
+        // }
+      }
+    }
+  }
+}

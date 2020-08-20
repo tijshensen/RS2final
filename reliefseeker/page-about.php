@@ -3,7 +3,7 @@
 <body class="rs-about">
 	<?php include('_module-menu.php');?>
 
-	<section class="hero about-banner-section">
+	<!-- <section class="hero about-banner-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 mx-auto">
@@ -13,6 +13,19 @@
 				</div>
 			</div>
 		</div>
+	</section> -->
+
+	<section class="banner-color-section">
+		<div class="container">
+			<div class="banner-caption-block">
+				<img src="svg/crose.svg" alt="" class="cros cros-1">
+				<img src="svg/crose.svg" alt="" class="cros cros-2">
+				<img src="svg/crose.svg" alt="" class="cros cros-3">
+				<img src="svg/crose.svg" alt="" class="cros cros-4">
+				<img src="svg/crose.svg" alt="" class="cros cros-5">
+				<h1 class="h1">The World’s Largest Directory of  <span>Online Healthcare Providers</span></h1>
+			</div>
+		</div>	
 	</section>
 
 	<section class="page-nav-section">
@@ -60,6 +73,7 @@
 		</div>
 	</section>
 
+<!--
 	<section class="categories-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -123,6 +137,43 @@
 			</div>
 		</div>
 	</section>
+-->
+	
+	<section class="guides-section">
+		<div class="container">
+			<h2 class="h2 text-center">Take Control of Your Health <span>Online</span></h2>
+			<p class="rs-description text-center">Getting treatment is more affordable, convenient, and discreet than ever.<br/>Search by category to discover over 150 of the best online healthcare providers.</p>
+
+				
+			<div class="row justify-content-center">
+				<div class="col-lg-12 col-md-10 col-sm-7 guides-container">
+					<div class="row">
+					
+						<?php
+						$x =0;
+						foreach ($rs_guides_cards as $rs_guides_card) 
+						{ 
+						?>
+						<div class="col-lg-3 col-md-6 card-container">
+							<?php	
+							include('_card-guide.php');
+							?>
+						</div>
+						<?php 
+						$x++;
+						if($x==8) break;
+						} 
+						?>
+					</div>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-center">
+				<a href="page-all-categories.php" class="btn btn-cta">See All Categories</a>
+			</div>	
+				
+		</div>
+	</section>
 
 	<section class="terms-section" id="terms">
 		<div class="container">
@@ -151,12 +202,12 @@
 
 
 
-	<section class="team-section" id="team">
+	<section class="team-section bg-light-blue" id="team">
 		<div class="container">
 
 			<div class="row justify-content-center">
 				<div class="col-12">
-					<h2 class="h2">Team</h2>
+					<h2 class="h2">Mee Our Team</h2>
 				</div>
 				<div class="col-md-6 team-member">
 					<img class="member-img" src="./img/image28.png" alt="">
@@ -306,9 +357,7 @@
 		</div>
 	</section>
 
-
-
-<?php include('_module-news.php');?>
+<?php include('_module-email-sign-up.php'); ?>
 <?php include('_module-footer-menu.php'); ?>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>

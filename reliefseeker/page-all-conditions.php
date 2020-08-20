@@ -83,7 +83,8 @@
 			</div>
 		</div>
 	</section>
-
+	
+	<?php include('_module-email-sign-up.php'); ?>
 	<?php include('_module-footer-menu.php'); ?>
 	<?php include('_scripts.php'); ?>
 	<?php include('_footer.php'); ?>

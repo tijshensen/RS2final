@@ -55,7 +55,7 @@
       position: absolute;
       z-index: 0;
       display: none;
-      
+
       @include media-breakpoint-up(md) {
         display: block;
       }
@@ -94,6 +94,15 @@
         opacity: 1;
         @include media-breakpoint-up(md) {
           animation: cros-a-4 43s infinite cubic-bezier(0.85, 0.85, 0.85, 0.85);
+        }
+      }
+      &-5 {
+        left: 70%;
+        top: 30%;
+        transform: scale(0.6);
+        opacity: 0.6;
+        @include media-breakpoint-up(md) {
+          animation: cros-a-5 43s infinite cubic-bezier(0.85, 0.85, 0.85, 0.85);
         }
       }
       @keyframes cros-a-1 {
@@ -244,6 +253,38 @@
           opacity: 1;
         }
       }
+      @keyframes cros-a-5 {
+        0% {
+          left: 70%;
+          top: 30%;
+          transform: scale(0.6);
+          opacity: 0.6;
+        }
+        25% {
+          left: 50%;
+          top: 50%;
+          transform: scale(0.8);
+          opacity: 0.4;
+        }
+        50% {
+          left: 20%;
+          top: 80%;
+          transform: scale(0.7);
+          opacity: 0.5;
+        }
+        75% {
+          left: 45%;
+          top: 45%;
+          transform: scale(0.6);
+          opacity: 0.5;
+        }
+        100% {
+          left: 70%;
+          top: 30%;
+          transform: scale(0.6);
+          opacity: 0.6;
+        }
+      }
     }
     .h1 {
       z-index: 1;
@@ -318,11 +359,14 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    padding: 24px 6px;
+    padding: 11px 6px;
     transition: 0.4s ease-in-out;
     box-shadow: $box-shadow-equal;
     margin: 0 15px;
     text-align: center;
+    @include media-breakpoint-up(md) {
+      padding: 24px 6px;
+    }
 
     .card-conditions-name {
       color: $rs-black-80;
@@ -355,7 +399,14 @@
       // margin-right: unset;
       flex-direction: column;
       justify-content: space-between;
-      padding: 25px 6px;
+      padding: 10px 6px;
+
+      @include media-breakpoint-up(md) {
+        padding: 25px 6px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
     }
     .btn-cta {
       margin-top: 15px;
@@ -409,6 +460,36 @@
     margin-top: 1px;
   }
 }
+
+
+//**** SECTION - TEXTBLOCK ****//
+
+.rs-index{
+	.rs-content-section h4,
+	.rs-content-section .tagline-above
+	{
+		text-align: left;
+	 @include media-breakpoint-up(md) {
+	 	text-align: center;
+	 }
+	}
+	
+	.rs-content-section h4{
+		padding-top: 16px;
+		padding-bottom: 8px;
+	}
+	.tagline-above{
+		color: $style1;
+		text-transform: uppercase;
+		padding-bottom: 12px;
+		font-weight: 600;
+		font-size: 16px;
+		 @include media-breakpoint-up(md) {
+		 	font-size: 18px;
+		 }
+	}
+}
+
 
 //**** SECTION - DON'T WAIT ANOTHER ***/
 

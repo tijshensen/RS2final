@@ -1,4 +1,13 @@
-.rs-about {
+.rs-about 
+{
+	@include media-breakpoint-up(md) {
+	.banner-color-section .banner-caption-block .h1 
+		{
+	    font-size: 50px;
+	    line-height: 1.4;
+		}
+	}
+	
     .h2 {
         font-weight: 800;
         font-size: 20px;
@@ -293,7 +302,6 @@
 }
 
 .team-section {
-    background: $rs-grey-4;
     padding-top: 35px;
     padding-bottom: 35px;
     @include media-breakpoint-up(md) {

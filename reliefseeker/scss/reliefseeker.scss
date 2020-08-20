@@ -52,21 +52,25 @@
 @import "rs-basics";
 @import "rs-filter";
 @import "rs-alphabet";
+@import "rs-search";
 
 /*RS Sections*/
 @import "rs-section-menu";
 @import "rs-section-breadcrumb";
 @import "rs-section-hero";
 @import "rs-section-review";
-@import "_rs-section-disclosure";
+@import "rs-section-disclosure";
+@import "rs-section-toc";
+@import "rs-section-content";
 @import "rs-section-healingbar";
+@import "rs-section-email-sign-up";
 @import "rs-section-footer";
 
 /*RS Pages*/
 @import "rs-page-index";
 @import "rs-page-provider";
 @import "rs-page-conditions-treatments";
-@import "rs-page-guides";
+@import "rs-page-categories";
 @import "rs-page-about";
 @import "rs-page-news";
 

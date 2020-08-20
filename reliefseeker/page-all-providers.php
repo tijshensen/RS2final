@@ -48,7 +48,7 @@ include('_dataset.php');
 		<div class="container">   
 			<div class="alphabet-container">
 				<div class="row justify-content-center p-relative">
-					<div class="col-10 col-md-12">
+					<div class="col-10 col-md-11">
 						<!-- Be sure to add the 'result-list' class to the ul with the search results -->
 						<ul class="rs-list result-list" id="rs-list">
 							<li class="alphabet-section list" id="a">
@@ -90,6 +90,7 @@ include('_dataset.php');
 			</div>
 		</section>
 		
+		<?php include('_module-email-sign-up.php'); ?>	
 		<?php include('_module-footer-menu.php');?>
 
 		<?php include('_scripts.php'); ?>

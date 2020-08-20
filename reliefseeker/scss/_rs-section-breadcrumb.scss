@@ -7,10 +7,11 @@
 	.breadcrumb {
 	    background-color: transparent;
 	    padding-left: 20px;
+		padding-bottom: 0;
 		width: max-content;
 	    @include media-breakpoint-up(lg) {
 	        padding-left: 0;
-			padding-bottom: 0;
+			
 	    }
 	    .breadcrumb-item,
 	    .breadcrumb-item a {
@@ -20,6 +21,17 @@
 	            font-size: 14px;
 	        }
 	    }
+	}
+	.rs-disclosure{
+	cursor: pointer;
+    font-size: 13px;
+    color: $rs-black;
+    @include media-breakpoint-up(md) 
+		{
+	    font-size: 14px;
+	    padding-top: 13px;
+	    font-weight: 500;
+   	 	}
 	}
 }
 

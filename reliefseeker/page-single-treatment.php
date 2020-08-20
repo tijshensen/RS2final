@@ -346,6 +346,7 @@ include('_module-breadcrumb.php');
 
     <?php include('_modal-advertiser-disclosure.php'); ?>
 
+	<?php include('_module-email-sign-up.php'); ?>
 	<?php include('_module-footer-menu.php'); ?>
 
 

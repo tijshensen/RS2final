@@ -3,9 +3,10 @@
 .rs-single-condition
 {
 	
-	/*hero no padding top*/
-	.rs-section-hero{
+	/*less margins because of breadcrumb*/
+	.rs-h1{
 		padding-top: 0;
+		margin-top: 0;
 	}
 	
 	/*Featured provider*/
@@ -91,7 +92,21 @@
 	}
 }
 
-
+.rs-single-condition,
+.rs-single-treatment
+{
+	.rs-section-hero{
+		//No margin because of category buttons
+		.rs-h1{
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+		.rs-description{
+			padding-bottom: 0;
+			margin-bottom: 8px;
+		}
+	}
+}
 
 /*
 single-condition
@@ -104,7 +119,8 @@ single-provider
 /*Buttons with number*/
 
 .rs-button-with-number {
-	padding-top: 0px;
+	padding-top: 16px;
+	padding-bottom: 24px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -116,7 +132,7 @@ single-provider
 
     .rs-button-inner {
         text-decoration: none;
-        margin: 0 5px 15px 0;
+        margin: 0 20px 10px;
         width: max-content;
         min-width: unset;
         display: flex;
@@ -125,9 +141,6 @@ single-provider
         border-radius: 30px;
         padding: 5px 15px 5px 5px;
         transition: 0.4s;
-        &:last-of-type {
-            margin: 0 0 15px 0;
-        }
 
         * {
             cursor: pointer;
@@ -138,20 +151,19 @@ single-provider
 			
         }
 
-        @media (min-width: 576px) {
+        @include media-breakpoint-up(sm) {
             display: flex;
             align-items: center;
             border: 1px solid $rs-grey-1;
             box-sizing: border-box;
             border-radius: 30px;
             padding: 8px 15px 8px 10px;
-            min-width: 141px;
             min-height: 40px;
             margin-left: unset;
         }
 
         @include media-breakpoint-up(md) {
-            margin: 0 20px 15px;
+           	margin: 0 5px 0 0;
         }
         .button-number {
             padding: 0;
@@ -197,7 +209,10 @@ single-provider
 */
 
 .rs-all-conditions{
-	padding-bottom: 40px;
+    padding-bottom: 40px;
+    .rs-search-input-block {
+        margin: 0 30px 15px;
+    }
 	@include media-breakpoint-up(lg) {
 		.rs-section-hero .rs-description{
 			max-width: 500px;
@@ -226,51 +241,6 @@ single-provider
 }
 
 
-.rs-search-input-block {
-    position: relative;
-    background: $rs-grey-9;
-    border-radius: 40px;
-    padding: 0;
-    height: 48px;
-
-    .search-input {
-        background: transparent;
-        border: none;
-        color: $rs-grey-14;
-        font-size: 14px;
-        padding: 0 15px 0 50px;
-        outline: none;
-        height: 48px;
-        width: 100%;
-        justify-content: flex-start;
-        transition: 0.4s ease-in-out;
-    }
-    @include media-breakpoint-up(md) {
-        margin: 0 auto 15px 12px;
-        background: transparent;
-        padding: 0 15px;
-        .search-input {
-            background: $rs-grey-9;
-            border-radius: 40px;
-        }
-    }
-
-    i {
-        color: $rs-blue-grey;
-        margin-right: 13px;
-        font-size: 20px;
-        position: absolute;
-        // z-index: 11;
-        left: 20px;
-        top: 16px;
-        &::before {
-            color: unset;
-        }
-        @include media-breakpoint-up(lg) {
-            left: 33px;
-        }
-    }
-}
 
 /*List items*/
 
@@ -304,14 +274,14 @@ single-provider
             align-items: center;
         }
         @include media-breakpoint-up(md) {
-            width: calc(100% - 65px);
+            width: calc(100% - 75px);
             margin-left: auto;
             padding: 0 40px;
             border-radius: 40px;
         }
 		
         @include media-breakpoint-up(lg) {
-            width: calc(100% - 75px);
+            width: calc(100% - 40px);
             margin-left: auto;
             padding: 0 40px;
         }
@@ -409,16 +379,11 @@ single-provider
     }
     display: flex;
     flex-direction: column;
-    .h4 {
+    .rs-h3 {
         font-weight: 800;
         font-size: 28px;
-        line-height: 45px;
+        line-height: 1.4;
         text-align: center;
-        text-transform: capitalize;
-        text-align: left;
-        @include media-breakpoint-up(md) {
-            text-align: center;
-        }
     }
     p {
         text-align: center;
@@ -557,44 +522,47 @@ single-provider
 
 
 .dr-header {
+	/*
     display: flex;
     justify-content: center;
     position: relative;
+	*/
     padding-top: 45px;
 
 	.rs-header-block {
+		/*
 	    display: flex;
 	    flex-direction: column;
 	    align-items: flex-start;
-	    text-align: left;
+		*/
+		text-align: center;	
 	    padding: 0 30px;
 	    @include media-breakpoint-up(md) {
 	        padding: 0 30px;
 	        align-items: center;
-	        // margin-left: 100px;
-	        text-align: center;
 	    }
 	    img {
 	        margin: auto;
 	    }
-	    .h3 {
+	    .h2,
+		.h3 {
 	        font-weight: 800;
 	        font-size: 20px;
-	        line-height: 34px;
-	        margin-bottom: 15px;
+	        line-height: 1.2;
 	        padding: 0;
+			text-align: center;
 	        @include media-breakpoint-up(md) {
 	            font-size: 35px;
-	            line-height: 57px;
 	        }
 	    }
 	    .description {
 	        display: block;
 	        font-size: 16px;
-	        line-height: 22px;
-	        max-width: 386px;
-	        margin-bottom: 25px;
+	        line-height: 1.4;
+	        margin: 0 auto 25px;
+			max-width: 386px;
 	        @include media-breakpoint-up(md) {
+				
 	        }
 	    }
 	}

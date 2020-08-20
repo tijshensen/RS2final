@@ -158,6 +158,7 @@
 	<meta itemprop="dateModified" content="2020-01-28T11:48:26+00:00">
 	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="link"/>
 
+	<?php include('_module-email-sign-up.php'); ?>
 	<?php include('_module-footer-menu.php');?>
 
 	<?php include('_scripts.php'); ?>

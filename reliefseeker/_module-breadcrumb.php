@@ -11,9 +11,9 @@
 			<?php if(isset($discloser) && $discloser == 'yes')
 			{
 			?>
-            <button type="button" class="btn-open-modal au-width" data-toggle="modal" data-target="#disclosureModal">
+            <a class="rs-disclosure btn-open-modal au-width" data-toggle="modal" data-target="#disclosureModal">
                 Advertiser Disclosure
-            </button>
+            </a>
 			<?php 
 			} 
 			?>

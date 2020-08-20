@@ -1,0 +1,50 @@
+.rs-single-provider,
+.rs-all-treatments,
+.rs-all-conditions{
+	.rs-search-input-block {
+	    position: relative;
+	    background: $rs-grey-9;
+	    border-radius: 40px;
+	    padding: 0;
+	    height: 48px;
+		margin: 0 50px 16px;
+
+	    .search-input {
+	        background: transparent;
+	        border: none;
+	        color: $rs-grey-14;
+	        font-size: 14px;
+	        padding: 0 15px 0 50px;
+	        outline: none;
+	        height: 48px;
+	        width: 100%;
+	        justify-content: flex-start;
+	        transition: 0.4s ease-in-out;
+	    }
+	    @include media-breakpoint-up(md) {
+	        margin: 0 auto 15px;
+	        background: transparent;
+	        padding: 0 15px;
+	        .search-input {
+	            background: $rs-grey-9;
+	            border-radius: 40px;
+	        }
+	    }
+
+	    i {
+	        color: $rs-blue-grey;
+	        margin-right: 13px;
+	        font-size: 20px;
+	        position: absolute;
+	        // z-index: 11;
+	        left: 20px;
+	        top: 16px;
+	        &::before {
+	            color: unset;
+	        }
+	        @include media-breakpoint-up(lg) {
+	            left: 33px;
+	        }
+	    }
+	}
+}

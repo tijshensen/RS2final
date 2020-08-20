@@ -39,27 +39,25 @@ include('_module-breadcrumb.php');
 <section class="banner-condition-section">
 	<div class="container">
 		<div class="row justify-content-center">		
-			<div class="col-xl-10 col-lg-11 col-md-8">
-  				<section class="rs-section-provider-list">
-					<div class="container"> 
-						<div class="row justify-content-center">			
-							<div class="col-12 mx-auto">
-								<?php
-								$divlist = 'div';
-								$style = 'provider-item-horizontal provider-item-separate';
-								$x =0;
-								foreach ($rs_providers_cards as $rs_providers_card) 
-								{ 
-									include('_card-provider.php'); 
-									$x++;
-									if($x==1) break;
-								} 
-								?>
-							</div>
+			<section class="rs-section-provider-list">
+				<div class="container"> 
+					<div class="row justify-content-center">			
+						<div class="col-12 mx-auto">
+							<?php
+							$divlist = 'div';
+							$style = 'provider-item-horizontal provider-item-separate';
+							$x =0;
+							foreach ($rs_providers_cards as $rs_providers_card) 
+							{ 
+								include('_card-provider.php'); 
+								$x++;
+								if($x==1) break;
+							} 
+							?>
 						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 		</div>
 	</div>
 </section>
@@ -68,7 +66,7 @@ include('_module-breadcrumb.php');
 	<div class="container">
         <div class="row dr-header">
             <div class="rs-header-block col-12">
-                <h3 class="h3">Health Apps for Depression</h3>
+                <h3 class="rs-h3">Health Apps for Depression</h3>
                 <div class="description">Start treating your depression today with online telehealth providers</div>
             </div>
         </div>
@@ -85,7 +83,7 @@ include('_module-breadcrumb.php');
 				?>
             </ul>
 
-            <a href="#medication" class="btn-compare">Compare prices</a>
+          <!--  <a href="#medication" class="btn-compare">Compare prices</a>-->
         </div>
 	</div>
 </section>
@@ -94,12 +92,13 @@ include('_module-breadcrumb.php');
         <div class="row  justify-content-center">			
 	        <div class="row dr-header">
 	            <div class="rs-header-block col-12">
-	                <h3 class="h3">Online Therapy for Depression</h3>
+	                <h3 class="rs-h3">Online Therapy for Depression</h3>
 	                <div class="description">Anxiety or stress can result in Erectile dysfunction. Discover how therapy can help.</div>
 	            </div>
 			</div>
 
 			<?php
+			/*
             showFilter([
                 [
                     'title' => 'Search Condition',
@@ -118,6 +117,7 @@ include('_module-breadcrumb.php');
                     'items' =>  $rs_insurances
                 ]
             ]);
+			*/
 			?>
 
             <ul class="provider-carousel owl-carousel col-lg-11 result-list">
@@ -131,18 +131,18 @@ include('_module-breadcrumb.php');
 				} 
 				?>
 			</ul>
-            <a href="#medication" class="btn-compare">Compare prices</a>
+            <!--<a href="#medication" class="btn-compare">Compare prices</a>-->
 		</div>
 
 	</div>
 </section>
 
-    
+ <!--   
 <section class="compare-section" id="medication">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h4 class="h4">Depression treatment prices</h4>
+                <h3 class="rs-h3">Depression treatment prices</h4>
             </div>
             <div class="col-12 table-shadow">
                 <div class="table-responsive">
@@ -210,13 +210,12 @@ include('_module-breadcrumb.php');
         </div>
     </div>
 </section>
-
+-->
 	
-
-    <?php include('_modal-advertiser-disclosure.php'); ?>
-
-	<?php include('_module-footer-menu.php'); ?>
-    
+<?php include('_module-content-block.php'); ?>
+<?php include('_module-email-sign-up.php'); ?>
+<?php include('_module-footer-menu.php'); ?>
+<?php include('_modal-advertiser-disclosure.php'); ?>  
 <!-- </?php $load_owl_carousel = true; ?> -->
 
 

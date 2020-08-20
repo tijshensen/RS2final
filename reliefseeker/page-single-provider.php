@@ -2,9 +2,15 @@
 <?php include('_header.php'); ?>
 
 <body class="rs-single-provider">
-	<?php include('_module-menu.php');?>
+	<?php 
+	$notsticky = 'yes';
+	include('_module-menu.php');
+	?>
 
-
+<?php 
+$discloser = 'yes';
+include('_module-breadcrumb.php');
+?>
 
 <section class="providers-banner-section">
 
@@ -12,15 +18,6 @@
         <div class="row relative-block">
 
             <div class="col-12">
-                <div class="breadcrumb-container">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="page-index.php">Home</a></li>
-                            <li class="breadcrumb-item" aria-current="page">Condition</li>
-                            <li class="breadcrumb-item" aria-current="page">Depression</li>
-                        </ol>
-                    </nav>
-                </div>
                 <h1 class="h1">Lemonaid Health <span> Review</span></h1>
 			</div>
 			<div class="col-lg-8 providers-hero-card">
@@ -212,17 +209,21 @@
 			
             <div class="col-lg-8 rs-content-section">
                 <div class="rs-block-caption">
-					<!-- <i class="icon-blue-logo"></i> -->
                     <h2 class="h2">More about</h2>
                 </div>
-
-             <ul class="rs-block-toc auto-toc">
-                 <?php /* This '.auto-toc' div needs to be here to build the table of contents. The auto-toc needs to be within the '.content-section' div and will read the first title in the '.content-block' divs */ ?>
-             </ul>
-             <div class="rs-block-content" id="terms">
-                 <h4 class="h4">Terms Of Use Of This Site</h3>
-                 <p>ReliefSeeker.com does not offer medical advice. The contents of the ReliefSeeker.com Site, such as text, illustrations, images, icons, and other materials created by ReliefSeeker.com or obtained from ReliefSeeker.com’s licensors, and other materials contained on the ReliefSeeker.com Site (collectively, “Content”) are for informational purposes only. The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of a physician or other qualified health provider with any questions you may have regarding a medical condition or treatment. Never disregard professional medical advice or delay in seeking it because of something you have read on the ReliefSeeker.com Site!If you think you, or someone you know, may have a medical emergency, call 911 immediately (in USA). ReliefSeeker.com does not recommend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned on the Site. ReliefSeeker.com may rank a corporate entity above another, however ReliefSeeker.com does not warrant or recommend the health services that are provided by the employees, agents, contractors, or persons otherwise affiliated with that corporate entity. Reliance on any information provided by ReliefSeeker.com, ReliefSeeker.com employees, others appearing on the Site at the invitation of ReliefSeeker.com, or other visitors to the Site is solely at your own risk.</p>
-             </div>
+				
+				<div class="rs-toc">
+					<div class="rs-toc-title">Table of Contents</div>
+	            	 <ul class="rs-block-toc auto-toc">
+				 
+	                 <?php /* This '.auto-toc' div needs to be here to build the table of contents. The auto-toc needs to be within the '.content-section' div and will read the first title in the '.content-block' divs */ ?>
+	            	 </ul>
+				 </div>
+			 
+	             <div class="rs-block-content" id="terms">
+	                 <h4 class="h4">Terms Of Use Of This Site</h3>
+	                 <p>ReliefSeeker.com does not offer medical advice. The contents of the ReliefSeeker.com Site, such as text, illustrations, images, icons, and other materials created by ReliefSeeker.com or obtained from ReliefSeeker.com’s licensors, and other materials contained on the ReliefSeeker.com Site (collectively, “Content”) are for informational purposes only. The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of a physician or other qualified health provider with any questions you may have regarding a medical condition or treatment. Never disregard professional medical advice or delay in seeking it because of something you have read on the ReliefSeeker.com Site!If you think you, or someone you know, may have a medical emergency, call 911 immediately (in USA). ReliefSeeker.com does not recommend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned on the Site. ReliefSeeker.com may rank a corporate entity above another, however ReliefSeeker.com does not warrant or recommend the health services that are provided by the employees, agents, contractors, or persons otherwise affiliated with that corporate entity. Reliance on any information provided by ReliefSeeker.com, ReliefSeeker.com employees, others appearing on the Site at the invitation of ReliefSeeker.com, or other visitors to the Site is solely at your own risk.</p>
+	             </div>
 			 
 			 
              <div class="rs-block-content" id="terms">
@@ -271,8 +272,9 @@
 	</div>
 </div>
 
-
+<?php include('_module-email-sign-up.php'); ?>
 <?php include('_module-footer-menu.php');?>
+<?php include('_modal-advertiser-disclosure.php'); ?> 
 
 <?php include('_scripts.php'); ?>
 <?php include('_footer.php'); ?>

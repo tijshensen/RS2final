@@ -44,7 +44,7 @@ if(!isset($hide_trending)){
 				<div class="col-md-6 col-lg-4 " >
 					<a href="#" class="card card-news">
 						<div class="row">
-							<div class="col-3 col-md-12 card-img-block">
+							<div class="col-4 col-md-12 card-img-block">
 							<img srcset="
 								./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg 3019w,
 								./img/<?php echo $rs_news_card['news_img']; ?>x2.jpg 2013w,
@@ -54,7 +54,7 @@ if(!isset($hide_trending)){
 								alt="" class="news-image"/>
 							</div>
 
-							<div class="col-9 col-md-12 ">
+							<div class="col-8 col-md-12 ">
 								<div class="card-content">
 									<div class="flag purple <?php echo $rs_news_card['news_label_class']; ?>"><?php echo $rs_news_card['news_label']; ?></div>
 									<h4 class="news-title"><?php echo $rs_news_card['news_title']; ?></h4>
@@ -81,3 +81,4 @@ if(!isset($hide_trending)){
 
 	</div>
 </section>
+

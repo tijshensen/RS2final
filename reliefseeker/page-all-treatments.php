@@ -22,7 +22,7 @@ include('_filter.php');
 		<div class="container"> 
 			<div class="row justify-content-center">
 	            <div class="col-md-4 ">
-					<div class="rs-search-input-block ">
+					<div class="rs-search-input-block">
 	               		<input class="search-input" id="myInput" type="text" placeholder="">
 	                	<i class="icon-icon-search"></i>
 					</div>
@@ -90,7 +90,7 @@ include('_filter.php');
     </section>
 
 
-
+	<?php include('_module-email-sign-up.php'); ?>
 	<?php include('_module-footer-menu.php');?>
 
     <?php include('_scripts.php'); ?>

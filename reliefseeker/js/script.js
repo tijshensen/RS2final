@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
             var title = $elem.text();
             var tag = $elem.prop('nodeName').toLowerCase();
 
-            $tocItem = '<li class="list-item"><a href="#toc-item-' + index + '" class="toc-' + tag + '">' + title + '</a></li>';
+            $tocItem = '<li class="list-item toc-' + tag + '"><a href="#toc-item-' + index + '">' + title + '</a></li>';
             $tocElement.append($tocItem);
 
             index++;

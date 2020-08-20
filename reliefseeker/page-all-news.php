@@ -80,11 +80,7 @@
                 </div>
                 <div class="col-lg-4  side-info-card">
 					<div class="side-info-card-inner">
-                    	<img src="./svg/price.svg" alt="" class="card-info-img">
-                    	<h5 class="h5"><span>Telehealth </span>Guides <span>May 2020</span></h5>
-                    	<div class="side-info-description">
-                       	 <p>Review the Ultimate Telehealth Guides to Find the Best Online Treatments</p>
-                    	</div>
+                    	<h5 class="h5"><span>Best</span> Telehealth Providers</h5>
 					</div>
                     
 					<?php
@@ -155,6 +151,7 @@
 		</div>
     </section>
 
+	<?php include('_module-email-sign-up.php'); ?>
 	<?php include('_module-footer-menu.php');?>
 
     <?php include('_scripts.php'); ?>
