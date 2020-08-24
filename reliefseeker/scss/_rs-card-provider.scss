@@ -527,9 +527,9 @@ vertical cards: (single-small provider-card-vertical)
   .provider-logo {
     width: auto;
     max-width: 100%;
+	max-height: 60px;
     object-fit: contain;
     height: auto;
-    max-height: 55px;
   }
   .provider-name {
     font-weight: 600;

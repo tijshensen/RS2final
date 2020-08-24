@@ -1,5 +1,39 @@
-
 <?php include('_header.php'); ?>
+
+<?php
+/*This script below should go in the <head> section*/	
+?>
+ <script type="application/ld+json">
+	 {
+	  		"@context": "https://schema.org/",
+	  		"@type": "Review",
+	  		"itemReviewed": {
+	  			"@type": "Organization",
+	  			"image": "https://reliefseeker.com/img/logo-lemonaid.jpg",
+	  			"name": "Lemonaid Health",
+	             "address" :{
+	  				"@type": "PostalAddress",
+	  				"addressLocality": "San Francisco",
+	  				"addressRegion": "CA",
+	  				"addressCountry": "US"
+	  			}
+	  		},
+	  		"reviewRating": {
+	  			"@type": "Rating",
+	  			"ratingValue": "5"
+	  		},
+	  		"name": "",
+	  		"reviewBody": "Finally have a team that helps you lose weight and improve your health without following a no-carb diet or tracking calories. Finally have a team that helps you lose weight and improve your health without following a no-carb diet or tracking calories.",
+	  		"publisher": {
+	  			"@type": "Organization",
+	  			"name": "Reliefseeker.com"
+	  		},
+	         "author": {
+	  			"@type": "Person",
+	  			"name": "Tijs Hensen"
+	  		}
+	  	}
+</script>
 
 <body class="rs-single-provider">
 	<?php 

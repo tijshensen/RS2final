@@ -20,9 +20,14 @@ Add the 'result-item' class to each item
 ?>
 
 <<?php echo $divlist;?> class="result-item provider-item <?php if(isset($style)) { echo $style;}?> <?php echo $rs_providers_card['provider_filters']; ?>">
+<?php
+	if(!isset($hidenumber)){
+		?>
 	<div class="top-lable left">
 		<div class="rs-order"><?php echo $rs_providers_card['provider_number']; ?></div>
 	</div>
+<?php }?>
+	
 	<div class="row">
 		<div class="col-lg-3 provider-logo-block">
 			<div class="rs-card-logo">

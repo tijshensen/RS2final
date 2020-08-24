@@ -57,6 +57,7 @@ include('_dataset.php');
 
 								<?php
 								$style = 'provider-item-horizontal provider-item-separate';
+								$hidenumber = 'yes';
 								foreach ($rs_providers_cards as $rs_providers_card) 
 								{ 
 									include('_card-provider.php'); 
