@@ -10,13 +10,13 @@ body.no-scroll {
 }
 
 .dropdown-item{
-	border-radius: 3px;
-	&.active,
-	&:active {
-	  color: #fff;
-	  text-decoration: none;
-	  background-color: $rs-white;
-	}
+  border-radius: 3px;
+  &.active,
+  &:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: $rs-white;
+  }
 }
 
 
@@ -39,29 +39,30 @@ body.no-scroll {
       width: 180px;
     }
   }
+
   //Navbar shrink when scrolling down.
   &.navbar-shrink{
-	  @include media-breakpoint-up(md) {
-	  padding: 6px;
+    @include media-breakpoint-up(md) {
+      padding: 6px;
 
-		.nav-item .nav-link{
-			padding-top: 5px;
-			padding-bottom: 5px;
-		}
-	    img {
-	      width: 90%;
-		  transition: width 0.3s ease-in-out;
-	    }
-		
-		//move top of nav up
-		.dropdown-menu.show.dropdown-getcare{
-			top: 53px;
-			transition: top 0.3s ease-in-out;
-		}
-		.dropdown-menu.show.dropdown-explore{
-			top: 45px;
-		}
-	}
+      .nav-item .nav-link{
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      img {
+        width: 90%;
+        transition: width 0.3s ease-in-out;
+      }
+
+      //move top of nav up
+      .dropdown-menu.show.dropdown-getcare{
+        top: 53px;
+        transition: top 0.3s ease-in-out;
+      }
+      .dropdown-menu.show.dropdown-explore{
+        top: 45px;
+      }
+    }
   }
 
   .navbar-toggler-icon {
@@ -432,10 +433,26 @@ body.no-scroll {
     color: $rs-blue;
   }
 }
-
 .nav-spacer {
-  padding-top: 91px;
+  padding-top: 67px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 91px;
+
+  }
 }
+.rs-single-provider {
+
+  @include media-breakpoint-down(md) {
+    .bd-navbar{
+      position: relative;
+    }
+
+    .nav-spacer {
+      padding-top: 0;
+    }
+  }
+}
+
 /*Search conditions */
 
 .dropdown.search-block {
