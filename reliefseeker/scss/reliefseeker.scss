@@ -66,6 +66,10 @@
 @import "rs-section-email-sign-up";
 @import "rs-section-footer";
 
+/*RS Sidebars*/
+@import "rs-sidebar-news";
+@import "rs-sidebar-categories";
+
 /*RS Pages*/
 @import "rs-page-index";
 @import "rs-page-provider";
@@ -80,7 +84,7 @@
 /*RS Modules*/
 @import "rs-module-news";
 
-@import "reliefseeker-module-telehealth";
+//@import "reliefseeker-module-telehealth";
 @import "rs-module-populair-conditions";
 
 

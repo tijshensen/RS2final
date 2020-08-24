@@ -11,7 +11,12 @@
 // @include media-breakpoint-up(lg) {  }
 // @media (min-width: 1200px) {  }
 
+
 $style1: #17a3e0 !default;
+
+$bg1: #F3F8FB;
+$bg2: #EBF6FD;
+
 
 /*Reliefseeker colorset*/
 $rs-yellow: #fcf24d !default;
@@ -32,6 +37,7 @@ $rs-purple: #424ff5 !default;
 $rs-purple-1: #8400bf !default;
 $rs-red: #f7573d !default;
 $rs-red-1: #ff0000 !default;
+$rs-red-2: #FF4D4D !default;
 $rs-orange: #fab03b !default;
 $rs-blue-grey: #bdcbd4 !default;
 $rs-black: #000 !default;
@@ -100,7 +106,7 @@ $bg-gradient: linear-gradient(180deg, #f5f7f8 80px, rgba(255, 255, 255, 0) 200px
 	background-color: $rs-white;
 }
 .bg-light-blue {
-	background-color: $rs-grey-21;
+	background-color: $bg1;
 }
 
 
@@ -132,28 +138,3 @@ $bg-gradient: linear-gradient(180deg, #f5f7f8 80px, rgba(255, 255, 255, 0) 200px
 	color: $rs-grey-7;
 }
 
-
-.linear-yellow {
-	background: linear-gradient(90deg, $rs-yellow 4px, rgba(255,255,255,1) 4px);
-}
-.linear-blue {
-	background: linear-gradient(90deg, $rs-blue 4px, rgba(255,255,255,1) 4px);
-}
-.linear-green {
-	background: linear-gradient(90deg, $rs-green 4px, rgba(255,255,255,1) 4px);
-	color: $rs-green;
-}
-.linear-purple {
-	background: linear-gradient(90deg, $rs-purple 4px, rgba(255,255,255,1) 4px);
-}
-.linear-pink {
-	background: linear-gradient(90deg, $rs-pink 4px, rgba(255,255,255,1) 4px);
-}
-.linear-red {
-	background: linear-gradient(90deg, $rs-red 4px, rgba(255,255,255,1) 4px);
-}
-.linear-orange {
-	background: linear-gradient(90deg, $rs-orange 4px, rgba(255,255,255,1) 4px);
-}
-
-/*RS Styling*/

@@ -1,13 +1,20 @@
 <section class="rs-section-breadcrumb">
 	<div class="container">
-        <div class="breadcrumb-container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="page-index.php">Home</a></li>
-                    <li class="breadcrumb-item" aria-current="page">All items</li>
-                    <li class="breadcrumb-item" aria-current="page">Single item</li>
-                </ol>
-            </nav>
+        <div class="breadcrumb-container">			
+			<nav aria-label="breadcrumb" >
+				<ol class="breadcrumb"  itemscope itemtype="http://schema.org/BreadcrumbList">
+					<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="page-index.php"><span itemprop="name">Home</span><meta itemprop="position" content="1" /></a>
+					</li>
+					<li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="#"><span itemprop="name">All Items</span><meta itemprop="position" content="2" /></a>
+					</li>
+					<li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a itemprop="item" href="#"><span itemprop="name">Single item</span><meta itemprop="position" content="3" /></a>
+					</li>
+				</ol>
+			</nav>
+			
 			<?php if(isset($discloser) && $discloser == 'yes')
 			{
 			?>
@@ -20,3 +27,5 @@
         </div>
 	</div>
 </section>
+
+

@@ -2,17 +2,17 @@
 
 <body class="single-news">
 	<?php include('_module-menu.php');?>
+	
+	<?php 
+	$discloser = 'no';
+	include('_module-breadcrumb.php');
+	?>
+	
 	<section   itemscope itemtype="http://schema.org/Article" class="article-banner-section">
 		<div class="container">
 			<div class="row">
 				<div class="article-content-section col-lg-8">
-					<nav aria-label="breadcrumb" >
-						<ol class="breadcrumb"  itemscope itemtype="http://schema.org/BreadcrumbList">
-							<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="page-index.php"><span itemprop="name">Home</span><meta itemprop="position" content="1" /></a></li>
-							<li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="#"><span itemprop="name">News</span><meta itemprop="position" content="2" /></a></li>
-							<li class="breadcrumb-item" aria-current="page" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="#"><span itemprop="name">Onlne Therapy During Covid</span><meta itemprop="position" content="3" /></a></li>
-						</ol>
-					</nav>
+
 					<div class="artical-banner-block">
 						<h1 class="article-name" itemprop="headline">Fight COVID-19 Anxiety & Fear With 7 Best Online Therapy Companies</h1>
 						<div class="data-publication">
@@ -89,70 +89,13 @@
 					</div>
 				</div>
 				<div class="col-lg-4 mx-auto">
-					<div class="side-news-card">
-						<h5 class="h5">More news</h5>
-
-						<?php
-						foreach ($rs_news_cards as $rs_news_card) 
-						{ 
-						?>
-							<a href="#" class="side-news-block">
-								<img src="./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg" alt="" class="side-news-img">
-								<div class="side-news-info-block">
-									<div class="side-news-label <?php echo $rs_news_card['news_label_class']; ?>"><?php echo $rs_news_card['news_label']; ?></div>
-									<h6 class="side-news-name">
-										<?php echo $rs_news_card['news_title']; ?>
-									</h6>
-									<div class="side-news-detail">
-										<span class="side-new-category"><?php echo $rs_news_card['news_category']; ?></span>
-										<span class="side-new-data"><?php echo $rs_news_card['news_date']; ?></span>
-									</div>
-								</div>
-							</a>
-						<?php 
-						} 
-						?>
-					</div>
-					<div class="side-info-card">
-						<img src="./svg/price.svg" alt="" class="card-info-img">
-						<h5 class="h5"><span>Telehealth </span>Guides <span>May 2020</span></h5>
-						<div class="side-info-description">
-							Review the Ultimate Telehealth Guides to Find the Best Online Treatments
-						</div>
-						
-						<?php
-						foreach ($rs_guides_cards as $rs_guides_card) 
-						{ 
-							include('_card-guide.php');
-						} 
-						?>
-					</div>
+					<?php include('_module-sidebar-news.php'); ?>
+					<?php include('_module-sidebar-categories.php'); ?>
 				</div>
 			
 			</div>
 		</div>
 	</section>
-
-	<!-- <section class="article-content-section"  itemprop="articleBody">
-		<div class="container">
-			<div class="row">
-				
-
-			</div>
-		</div>
-	</section> -->
-
-	<!-- <section class="author-card-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 mx-auto">
-
-				
-				</div>
-			</div>
-		</div>
-	</section> -->
-	
 	
 	<meta itemprop="name" content="Simon_Weather">
 	<meta itemprop="dateModified" content="2020-01-28T11:48:26+00:00">

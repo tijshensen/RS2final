@@ -71,7 +71,7 @@
 									$class="d-none d-sm-block";
 								}
 							?>
-							<div class="col-lg-3 col-md-6 card-container <?php echo $class; ?>">
+							<div class="col-lg-4 col-md-6 card-container <?php echo $class; ?>">
 								<a href="#" class="card-conditions linear-<?php echo $rs_condition['color']; ?>">
 									<div class="card-conditions-name"><?php echo $rs_condition['name']; ?></div>
 									<div class="card-conditions-providers"><?php echo $rs_condition['providers']; ?> providers</div>
@@ -148,7 +148,7 @@
 	<?php include('_modal-advertiser-disclosure.php'); ?>
 
 
-	<section class="conditional-list-section">
+	<section class="conditional-list-section bg-light-blue">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5 conditional-list-img-block">

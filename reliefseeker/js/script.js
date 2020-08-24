@@ -1,6 +1,17 @@
 var $ = jQuery;
 
 jQuery(document).ready(function ($) {
+	
+	//Shrink menu on scroll
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) { 
+            $('#main-nav').addClass('navbar-shrink');
+        }
+        else{
+            $('#main-nav').removeClass('navbar-shrink');
+        }
+    });
+
 
     $('.navbar-toggler').click(function(){
         $('#navbarSupportedContent').toggleClass('show');
@@ -18,6 +29,13 @@ jQuery(document).ready(function ($) {
         }
     });
 
+
+//A-Z sticky at bottom
+  $("#sidebar").stickySidebar({
+    topSpacing: 130,
+    bottomSpacing: 60,
+    containerSelector: ".result-list"
+  });
 
 
     $('.auto-toc').each(function(){
@@ -457,3 +475,5 @@ function filterFunction() {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
 }
+
+

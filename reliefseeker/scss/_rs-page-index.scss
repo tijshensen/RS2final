@@ -332,6 +332,31 @@
 }
 
 //**** SECTION - CONDITIONS ***/
+
+.linear-yellow {
+	background: linear-gradient(90deg, $rs-yellow 4px, rgba(255,255,255,1) 4px);
+}
+.linear-blue {
+	background: linear-gradient(90deg, $rs-blue 4px, rgba(255,255,255,1) 4px);
+}
+.linear-green {
+	background: linear-gradient(90deg, $rs-green 4px, rgba(255,255,255,1) 4px);
+	color: $rs-green;
+}
+.linear-purple {
+	background: linear-gradient(90deg, $rs-purple 4px, rgba(255,255,255,1) 4px);
+}
+.linear-pink {
+	background: linear-gradient(90deg, $rs-pink 4px, rgba(255,255,255,1) 4px);
+}
+.linear-red {
+	background: linear-gradient(90deg, $rs-red 4px, rgba(255,255,255,1) 4px);
+}
+.linear-orange {
+	background: linear-gradient(90deg, $rs-orange 4px, rgba(255,255,255,1) 4px);
+}
+
+
 .conditions-section {
   padding: 30px 0 45px;
   @include media-breakpoint-up(md) {

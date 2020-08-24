@@ -2,7 +2,7 @@
 
 /*Title project*/
 $title = "ReliefSeeker";
-$pagetitle = $title . ".com V2.5.3";
+$pagetitle = $title . ".com V2.5.4";
 $logo = "./svg/logo-reliefseeker-purple.svg";
 
 /*Providers*/
@@ -20,8 +20,8 @@ $rs_providers_cards = array(
         'provider_price' => '$50 OFF',
         'provider_promo' => 'Springsale',
         'provider_old' => '$95',
-        'provider_number' => '1',
-        'pl-top-label-left' => ' <img src="./img/top.png" alt=""> ',
+        'provider_number' => '#1',
+        'pl-top-label-left' => '#1',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
         'provider_insurance' => 'Accepted',
@@ -40,7 +40,7 @@ $rs_providers_cards = array(
         'provider_price' => '$20 OFF',
         'provider_promo' => 'Summer',
         'provider_old' => '$95',
-        'provider_number' => '2',
+        'provider_number' => '#2',
         'pl-top-label-left' => ' ',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
@@ -60,7 +60,7 @@ $rs_providers_cards = array(
         'provider_price' => '$20 OFF',
         'provider_promo' => 'Summer',
         'provider_old' => '$95',
-        'provider_number' => '3',
+        'provider_number' => '#3',
         'pl-top-label-left' => ' <img src="./img/top.png" alt=""> ',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
@@ -80,7 +80,7 @@ $rs_providers_cards = array(
         'provider_price' => '$20 OFF',
         'provider_promo' => 'Summer',
         'provider_old' => '$95',
-        'provider_number' => '4',
+        'provider_number' => '#4',
         'pl-top-label-left' => ' <img src="./img/top.png" alt=""> ',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
@@ -100,7 +100,7 @@ $rs_providers_cards = array(
         'provider_price' => '$20 OFF',
         'provider_promo' => 'Summer',
         'provider_old' => '$95',
-        'provider_number' => '5',
+        'provider_number' => '#5',
         'pl-top-label-left' => ' ',
         'provider_conditions' => '19 Treatments',
         'provider_services' => 'Doctor, Pharmacy, Therapy, Clinic',
@@ -170,54 +170,44 @@ $rs_provider_link = array(
 
 $rs_news_cards = array(
     array(
-        'news_img' => 'news01',
+        'news_img' => 'newsitem2',
         'news_label' => 'for new moms',
         'news_label_class' => 'purple',
-        'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
-        'news_category' => "Men's health",
-        'news_author' => 'By Jon Bon Jovi',
-        'news_date' => '05/07/20',
-        'news_time' => 'March 25th, 2020'
+        'news_title' => 'COVID-19 And PTSD: What Can We Expect?',
+        'news_category' => "COVID-19",
+        'news_author' => 'By Alicia Butler',
+        'news_date' => '08/20/20',
+        'news_time' => 'August 20th, 2020'
     ),
     array(
-        'news_img' => 'news02',
+        'news_img' => 'newsitem3',
         'news_label' => 'for new dads',
         'news_label_class' => 'red',
-        'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
+        'news_title' => 'Real Doctors, Real Medication, No Waiting Rooms.',
         'news_category' => "Men's health",
-        'news_author' => 'By Jon Bon Jovi',
+        'news_author' => 'By Trivesh Vassen',
         'news_date' => '05/07/20',
         'news_time' => 'March 25th, 2020'
     ),
     array(
-        'news_img' => 'news03',
+        'news_img' => 'newsitem4',
         'news_label' => 'Menopause',
         'news_label_class' => 'green',
-        'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
+        'news_title' => 'Everything You Need To Know About Hair Loss Treatment',
         'news_category' => "Men's health",
-        'news_author' => 'By Jon Bon Jovi',
-        'news_date' => '05/07/20',
-        'news_time' => 'March 25th, 2020'
+        'news_author' => 'By Matthew Merola',
+        'news_date' => '04/24/20',
+        'news_time' => 'April 24th, 2020'
     ),
     array(
-        'news_img' => 'news01',
+        'news_img' => 'newsitem5',
         'news_label' => 'Menopause',
         'news_label_class' => 'green',
-        'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
+        'news_title' => 'Couples Counseling: 7 Ways To Convince Your Spouse To Go To Therapy.',
         'news_category' => "Men's health",
-        'news_author' => 'By Jon Bon Jovi',
-        'news_date' => '05/07/20',
-        'news_time' => 'March 25th, 2020'
-    ),
-    array(
-        'news_img' => 'news02',
-        'news_label' => 'Menopause',
-        'news_label_class' => 'green',
-        'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
-        'news_category' => "Men's health",
-        'news_author' => 'By Jon Bon Jovi',
-        'news_date' => '05/07/20',
-        'news_time' => 'March 25th, 2020'
+        'news_author' => 'By Krista DeJong',
+        'news_date' => '04/17/20',
+        'news_time' => 'April 17th, 2020'
     ),
 );
 

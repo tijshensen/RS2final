@@ -79,11 +79,14 @@ include('_dataset.php');
 					</div>
 
 					<div class="anchors-container abs-right col-1 col-sm-1">
-						<ul class="alphabet">
-							<?php foreach ($rs_provider_alphabet as $rs_letter) { ?>
-								<li class="letter"><a href="#<?php echo $rs_letter; ?>" class="letter-link"><?php echo $rs_letter; ?></a></li>
-								<?php } ?>
-							</ul>
+						<div id="sidebar">
+							<div class="sidebar-inner">
+								<ul class="alphabet">
+									<?php foreach ($rs_provider_alphabet as $rs_letter) { ?>
+										<li class="letter"><a href="#<?php echo $rs_letter; ?>" class="letter-link"><?php echo $rs_letter; ?></a></li>
+										<?php } ?>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

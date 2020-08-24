@@ -172,7 +172,7 @@ body {
 }
 
 .btn-cta-arw {
-  background-color: $rs-purple;
+  background-color: $style1;
 }
 
 .btn-grey {
@@ -338,16 +338,7 @@ body {
   }
 }
 
-/*Flags*/
-.flag {
-  display: inline-block;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 0 30px 30px 0;
-  color: $rs-white;
-  font-size: 14px;
-  padding: 1rem 1.25rem 0.8rem;
-}
+
 
 .shadow-top {
   position: relative;
@@ -369,7 +360,7 @@ body {
 }
 
 
-
+/*
 .rs-review {
   .btn-cta {
     max-width: 100%;
@@ -609,6 +600,7 @@ body {
   }
 }
 
+
 .complete-information-section {
   padding-bottom: 40px;
   margin-bottom: 33px;
@@ -788,6 +780,7 @@ body {
   }
 }
 
+
 .list-price-block {
   padding: 38px 0;
   text-align: center;
@@ -845,6 +838,7 @@ body {
   }
 }
 
+
 .provider-contact-block {
   text-align: center;
   padding: 10px 0 40px;
@@ -893,6 +887,7 @@ body {
     }
   }
 }
+
 
 .simple-list-block {
   padding: 45px 25px;
@@ -971,6 +966,8 @@ body {
     margin-bottom: 45px;
   }
 }
+*/
+
 
 .check-list {
   display: flex;
@@ -1038,6 +1035,8 @@ body {
     }
   }
 }
+
+/*
 .list-container {
   background-color: $rs-grey-9;
   border-radius: 32px;
@@ -1075,6 +1074,7 @@ body {
   }
 }
 
+
 .double-list {
   display: flex;
   flex-wrap: wrap;
@@ -1096,6 +1096,7 @@ body {
     }
   }
 }
+*/
 
 /*Hero Section
 .rs-section-hero{
@@ -1260,6 +1261,7 @@ collapse card
 }
 
 /*list for
+-All providers
 -All conditions
 -All treatments
 */

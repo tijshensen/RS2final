@@ -3,33 +3,37 @@ body.no-scroll {
 }
 
 .bd-navbar {
-	@supports (position: sticky) {
-		position: sticky;
-		top: 0;
-		z-index: 1071; // over everything in bootstrap
-	  }
-	  &.not-sticky {
-		position: static;
-		top: unset;
-		z-index: 1071; // over everything in bootstrap
-		@include media-breakpoint-up(md) {
-			@supports (position: sticky) {
-			  position: sticky;
-			  top: 0;
-			  z-index: 1071; // over everything in bootstrap
-			}
-		  }
-	  }
+  @supports (position: sticky) {
+    position: sticky;
+    top: 0;
+    z-index: 20; // over everything in bootstrap
+  }
+  &.not-sticky {
+    position: static;
+    top: unset;
+    z-index: 20; // over everything in bootstrap
+    @include media-breakpoint-up(md) {
+      @supports (position: sticky) {
+        position: sticky;
+        top: 0;
+        z-index: 20; // over everything in bootstrap
+      }
+    }
+  }
 }
 
-.dropdown-item.active,
-.dropdown-item:active {
-  color: #fff;
-  text-decoration: none;
-  background-color: $rs-white;
+.dropdown-item{
+	border-radius: 3px;
+	&.active,
+	&:active {
+	  color: #fff;
+	  text-decoration: none;
+	  background-color: $rs-white;
+	}
 }
 
-nav#main-nav {
+
+.navbar {
   padding: 19px 0;
   background-color: $rs-white;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
@@ -43,6 +47,31 @@ nav#main-nav {
     img {
       width: 180px;
     }
+  }
+  //Navbar shrink when scrolling down.
+  &.navbar-shrink{
+	  @include media-breakpoint-up(md) {
+	  padding: 6px;
+	  transition: all 0.3s ease-in-out;
+		
+		.nav-item .nav-link{
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	    img {
+	      width: 90%;
+		  transition: width 0.3s ease-in-out;
+	    }
+		
+		//move top of nav up
+		.dropdown-menu.show.dropdown-getcare{
+			top: 53px;
+			transition: top 0.3s ease-in-out;
+		}
+		.dropdown-menu.show.dropdown-explore{
+			top: 45px;
+		}
+	}
   }
 
   .navbar-toggler-icon {
@@ -131,7 +160,7 @@ nav#main-nav {
     @include media-breakpoint-up(lg) {
       padding: 0;
       width: unset;
-      // margin-left: 12% !important; /*prevent other items from moving to the left*/
+      margin-left: 12% !important; /*prevent other items from moving to the left*/
     }
 
     li:last-child a {
@@ -465,7 +494,7 @@ nav#main-nav {
       float: unset;
       margin: 0;
       width: 200px;
-      padding: 4px 15px 0 45px;
+      padding: 2px 15px 0 45px;
     }
     &:focus {
       border: 2px solid $style1;
@@ -560,7 +589,7 @@ nav#main-nav {
 }
 */
 
-nav#main-nav .dropdown-menu.dropdown-search {
+#main-nav.navbar .dropdown-menu.dropdown-search {
   display: none;
   position: relative;
   width: calc(100% - 30px);
@@ -670,7 +699,7 @@ nav#main-nav .dropdown-menu.dropdown-search {
       }
     }
     &:hover {
-      background-color: #f3f8fb;
+      background-color: $bg1;
       border-radius: 3px;
     }
   }
