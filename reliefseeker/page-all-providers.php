@@ -21,6 +21,7 @@ include('_dataset.php');
 		<div class="container"> 
 			<div class="row justify-content-center">
                 <?php
+					$showinput = 'yes';
                     showFilter([
                         [
                             'title' => 'Search Condition',
@@ -93,9 +94,22 @@ include('_dataset.php');
 				</div>
 			</div>
 		</section>
-		
-		<?php include('_module-email-sign-up.php'); ?>	
-		<?php include('_module-footer-menu.php');?>
 
-		<?php include('_scripts.php'); ?>
-		<?php include('_footer.php'); ?>
+			<?php include('_module-email-sign-up.php'); ?>	
+			<?php include('_module-footer-menu.php');?>
+<?php include('_scripts.php'); ?>
+
+
+
+	<script>
+	$(document).ready(function() {
+	      $("#sidebar").stickySidebar({
+	        topSpacing: 130,
+	        bottomSpacing: 60,
+	        containerSelector: ".result-list"
+	      });
+	    });
+	</script>
+	<script type="text/javascript" src="./js/jquery.sticky-sidebar.min.js"></script>	
+	
+<?php include('_footer.php'); ?>

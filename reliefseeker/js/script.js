@@ -29,15 +29,6 @@ jQuery(document).ready(function ($) {
         }
     });
 
-
-//A-Z sticky at bottom
-  $("#sidebar").stickySidebar({
-    topSpacing: 130,
-    bottomSpacing: 60,
-    containerSelector: ".result-list"
-  });
-
-
     $('.auto-toc').each(function(){
         index = 1;
         $tocElement = $(this);
@@ -410,40 +401,12 @@ jQuery(document).ready(function ($) {
         //var href = $(this).attr('href').toUpperCase(); <- uppercase?
         var href = $(this).attr('href');
         $('html, body').animate({
-                scrollTop: $(href).offset().top,
+                scrollTop: $(href).offset().top -100,
             },
             500,
             'linear'
         );
     });
-
-    if ( $.isFunction($.fn.owlCarousel) ) {
-        // var owl = $('.owl-carousel');
-        $('.provider-carousel').owlCarousel({
-            margin: 0,
-            loop: true,
-            nav: true,
-            navText: '',
-            responsive: {
-                0: {
-                    items: 1,
-                    stagePadding: 15,
-                    mouseDrag: true,
-                    touchDrag: true,
-                },
-                768: {
-                    items: 2,
-                    mouseDrag: false,
-                    touchDrag: false,
-                },
-                1200: {
-                    items: 3,
-                    mouseDrag: false,
-                    touchDrag: false,
-                }
-            }
-        })
-    }
 
     $("#treatment-menu").click(function(){
         $(".menu-box").slideToggle('fast');

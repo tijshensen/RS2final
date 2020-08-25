@@ -12,6 +12,13 @@ function showFilter($data) {
 </div>
 
 <div id="filters-container" class="col-md-10 filters-container d-none d-md-block">
+	<?php if(isset($showinput)){
+		
+	?>
+	<input type="text"/>
+	<?php 
+}
+	?>
     <?php
         foreach($data as $key=>$filter) {
     ?>

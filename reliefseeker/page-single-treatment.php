@@ -350,10 +350,40 @@ include('_module-breadcrumb.php');
 	<?php include('_module-footer-menu.php'); ?>
 
 
-<!-- </?php $load_owl_carousel = true; ?> -->
 <?php include('_scripts.php'); ?>
+<script>
+	$(document).ready(function() {
+    if ( $.isFunction($.fn.owlCarousel) ) {
+        // var owl = $('.owl-carousel');
+        $('.provider-carousel').owlCarousel({
+            margin: 0,
+            loop: true,
+            nav: true,
+            navText: '',
+            responsive: {
+                0: {
+                    items: 1,
+                    stagePadding: 15,
+                    mouseDrag: true,
+                    touchDrag: true,
+                },
+                768: {
+                    items: 2,
+                    mouseDrag: false,
+                    touchDrag: false,
+                },
+                1200: {
+                    items: 3,
+                    mouseDrag: false,
+                    touchDrag: false,
+                }
+            }
+        })
+    }
+	  });
+</script>
+<script type="text/javascript" src="./js/owl.carousel.min.js"></script>
 
-<script src="./js/owl.carousel.min.js"></script>
 <?php include('_footer.php'); ?>
 
 
