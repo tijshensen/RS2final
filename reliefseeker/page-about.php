@@ -207,7 +207,7 @@
 
 			<div class="row justify-content-center">
 				<div class="col-12">
-					<h2 class="h2">Mee Our Team</h2>
+					<h2 class="h2">Meet Our Team</h2>
 				</div>
 				<div class="col-md-6 team-member">
 					<img class="member-img" src="./img/image28.png" alt="">

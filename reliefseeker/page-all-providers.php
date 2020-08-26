@@ -19,29 +19,39 @@ include('_dataset.php');
 
 	<section class="rs-section-filter">
 		<div class="container"> 
-			<div class="row justify-content-center">
-                <?php
-					$showinput = 'yes';
-                    showFilter([
-                        [
-                            'title' => 'Search Condition',
-                            'items' =>  $rs_conditions
-                        ],
-                        [
-                            'title' => 'Search treatment',
-                            'items' =>  $rs_treatments
-                        ],
-                        [
-                            'title' => 'Treatment type',
-                            'items' =>  $rs_treatment_types
-                        ],
-                        [
-                            'title' => 'Category',
-                            'items' =>  $rs_categories
-                        ]
-                    ]);
-                ?>
+			<div class="row justify-content-left">
+	            <div class="col-md-3">
+					<div class="rs-search-input-block">
+	               		<input class="search-input" id="myInput" type="text" placeholder="">
+	                	<i class="icon-icon-search"></i>
+					</div>
+	            </div>
+				<div class="col-md-8">
+					<div class="row">
+		                <?php
+		                    showFilter([
+		                        [
+		                            'title' => 'Search Condition',
+		                            'items' =>  $rs_conditions
+		                        ],
+		                        [
+		                            'title' => 'Search treatment',
+		                            'items' =>  $rs_treatments
+		                        ],
+		                        [
+		                            'title' => 'Treatment type',
+		                            'items' =>  $rs_treatment_types
+		                        ],
+		                        [
+		                            'title' => 'Category',
+		                            'items' =>  $rs_categories
+		                        ]
+		                    ]);
+		                ?>
+					</div>
+				</div>
 			</div>
+			<?php include '_filter-selection.php';?>
 		</div>
 	</section>
 

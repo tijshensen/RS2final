@@ -21,7 +21,7 @@ include('_filter.php');
 	<section class="rs-section-filter">
 		<div class="container"> 
 			<div class="row justify-content-center">
-	            <div class="col-md-4 ">
+	            <div class="col-md-3 ">
 					<div class="rs-search-input-block">
 	               		<input class="search-input" id="myInput" type="text" placeholder="">
 	                	<i class="icon-icon-search"></i>
@@ -43,6 +43,7 @@ include('_filter.php');
 		                ?>
 					</div>
 				</div>
+				<div class="col-md-1"></div>
 			</div>
 		</div>
 	</section>
