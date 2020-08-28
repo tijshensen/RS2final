@@ -1,16 +1,7 @@
 /*RS Styling*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 .h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h1,h2,h3,h4,h5,h6 
+{
   font-family: "Catamaran", sans-serif;
   font-weight: 800;
   cursor: default;
@@ -50,7 +41,7 @@ body {
   line-height: 1.2;
   margin: auto;
   @include media-breakpoint-up(md) {
-    margin-top: 32px;
+    margin-top: 16px;
     font-size: 50px;
     line-height: 1.3;
   }
@@ -77,8 +68,10 @@ body {
 
 /*Page All Guides*/
 
+  /*
 .section-header {
   text-align: center;
+
   .logo-icon {
     margin-left: auto;
     margin-right: auto;
@@ -105,6 +98,7 @@ body {
       font-weight: 700;
     }
   }
+
   .h2 {
     font-size: 22px;
     line-height: 36px;
@@ -115,9 +109,10 @@ body {
     }
   }
 }
+  */
 
 .link {
-  color: $rs-blue;
+  color: $style1;
 }
 
 .btn,
@@ -175,6 +170,7 @@ body {
   background-color: $style1;
 }
 
+/*
 .btn-grey {
   display: flex;
   justify-content: center;
@@ -221,6 +217,7 @@ body {
     }
   }
 }
+*/
 
 /*
 .btn-cta {
@@ -249,54 +246,29 @@ body {
 */
 
 .btn-cta {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   color: $rs-white;
   background: $style1;
   border-radius: 30px;
   padding: 11px 28px;
-  transition: 0.4s;
+  transition: 0.3s;
   &:hover {
     color: $rs-white;
     box-shadow: $box-shadow-heavy;
+	transition: 0.3s;
   }
-}
-
-.btn-compare {
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  text-decoration-line: underline;
-  color: $rs-black;
-  transition: 0.4s ease-in-out;
-  &:hover {
-    opacity: 0.8;
-    color: $rs-black;
-  }
-}
-
-.link-cap {
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 .card {
   border: none;
   padding: none;
   border-radius: 12px;
-  // box-shadow: $box-shadow-light;
-  // single-provider
 
   @media (min-width: 576px) {
     border-radius: 32px;
   }
-}
-
-//Font size
-.fs-sm {
-  font-size: 10px;
 }
 
 //Font weight
@@ -316,17 +288,13 @@ body {
   font-weight: 800;
 }
 
-.color-white {
-  color: $rs-white;
-}
-
 /*helpers*/
 .text-center {
   text-align: center;
 }
 
 .link {
-  color: $rs-blue;
+  color: $style1;
   text-decoration: underline;
 }
 
@@ -339,7 +307,7 @@ body {
 }
 
 
-
+/*
 .shadow-top {
   position: relative;
 
@@ -358,7 +326,7 @@ body {
     );
   }
 }
-
+*/
 
 /*
 .rs-review {
@@ -1266,99 +1234,6 @@ collapse card
 -All treatments
 */
 
-.rs-list {
-  padding: 0;
-  @media (max-width: 576px) {
-    margin-bottom: 60px;
-  }
-
-  &.providers-list {
-    .alphabet-section {
-      padding-bottom: 20px;
-    }
-  }
-
-  li {
-    list-style: none;
-  }
-
-  .result-item {
-    width: 100%;
-  }
-
-  .alphabet-section {
-    // padding: 0;
-    position: relative;
-    list-style: none;
-    border-top: 1px solid $rs-grey-5;
-    margin-top: 41px;
-    display: flex;
-    flex-wrap: wrap;
-    @media (max-width: 576px) {
-      margin-top: 60px;
-      margin-left: 15px;
-      &:first-of-type {
-        margin-top: 15px;
-      }
-    }
-
-    &.list {
-      margin-top: 15px;
-      border-top: none;
-      padding: 0;
-      margin-left: 0;
-
-      .provider-item {
-        margin: 0;
-        margin-bottom: 32px;
-        @include media-breakpoint-up(md) {
-          margin: 0 9px 40px 4px;
-        }
-        .card {
-          box-shadow: $box-shadow-light;
-        }
-      }
-    }
-
-    .name-section {
-      text-transform: uppercase;
-      border-radius: 50%;
-      width: 42px;
-      height: 42px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: $rs-grey-5;
-      font-family: "Catamaran";
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 1;
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: translate(-50%, -50%);
-      @media (max-width: 576px) {
-        transform: translate(0, -50%);
-      }
-      &.alfabet {
-        transform: unset;
-        display: none;
-        @include media-breakpoint-up(md) {
-          display: flex;
-        }
-      }
-      &.left-abs {
-        left: -50px;
-        top: 0;
-        transform: translate(0);
-        display: none;
-        @include media-breakpoint-up(md) {
-          display: flex;
-        }
-      }
-    }
-  }
-}
 
 /*For
 -All providers

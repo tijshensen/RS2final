@@ -42,7 +42,7 @@
 
 	<section class="mission-section" id="mission">
 		<div class="container">
-			<div class="row justify-content-center align-items: center">
+			<div class="row justify-content-center">
 				<div class="col-xl-10 col-lg-11 col-md-11 mx-auto">
 					<h2 class="h2">Our Mission</h2>
 				</div>
@@ -139,7 +139,7 @@
 	</section>
 -->
 	
-	<section class="guides-section">
+	<section class="guides-section bg-light-blue">
 		<div class="container">
 			<h2 class="h2 text-center">Take Control of Your Health <span>Online</span></h2>
 			<p class="rs-description text-center">Getting treatment is more affordable, convenient, and discreet than ever.<br/>Search by category to discover over 150 of the best online healthcare providers.</p>
@@ -218,15 +218,10 @@
 					<div class="member-description">
 						<h5 class="name">Simon Weather</h5>
 						<div class="position">Sales manager</div>
-						<p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </p>
-						<div class="link-block">
-							<a href="#" class="twitter">
-								<i class="icon-icon-twitter"></i>
-							</a>
-							<a href="#" class="linkedin">
-								<i class="icon-icon-linkedin"></i>
-							</a>
-						</div>
+						<p class="description">Since 2011 Alicia has worked as a travel, health, and wellness writer & editor contributing to widely read digital publications such as The Spruce, The Balance and The Spruce Pets, VeryWell, and TripSavvy. Alicia is a marketing expert, entrepreneur, and avid traveler!
+
+</p>
+						
 					</div>
 				</div>
 				<div class="col-md-6 team-member">
@@ -238,15 +233,10 @@
 					<div class="member-description">
 						<h5 class="name">Simon Weather</h5>
 						<div class="position">Sales manager</div>
-						<p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </p>
-						<div class="link-block">
-							<a href="#" class="twitter">
-								<i class="icon-icon-twitter"></i>
-							</a>
-							<a href="#" class="linkedin">
-								<i class="icon-icon-linkedin"></i>
-							</a>
-						</div>
+						<p class="description">Since 2011 Alicia has worked as a travel, health, and wellness writer & editor contributing to widely read digital publications such as The Spruce, The Balance and The Spruce Pets, VeryWell, and TripSavvy. Alicia is a marketing expert, entrepreneur, and avid traveler!
+
+ </p>
+						
 					</div>
 				</div>
 				<div class="col-md-6 team-member">
@@ -258,15 +248,10 @@
 					<div class="member-description">
 						<h5 class="name">Simon Weather</h5>
 						<div class="position">Sales manager</div>
-						<p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </p>
-						<div class="link-block">
-							<a href="#" class="twitter">
-								<i class="icon-icon-twitter"></i>
-							</a>
-							<a href="#" class="linkedin">
-								<i class="icon-icon-linkedin"></i>
-							</a>
-						</div>
+						<p class="description">LSince 2011 Alicia has worked as a travel, health, and wellness writer & editor contributing to widely read digital publications such as The Spruce, The Balance and The Spruce Pets, VeryWell, and TripSavvy. Alicia is a marketing expert, entrepreneur, and avid traveler!
+
+</p>
+
 					</div>
 				</div>
 				<div class="col-md-6 team-member">
@@ -278,15 +263,8 @@
 					<div class="member-description">
 						<h5 class="name">Simon Weather</h5>
 						<div class="position">Sales manager</div>
-						<p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </p>
-						<div class="link-block">
-							<a href="#" class="twitter">
-								<i class="icon-icon-twitter"></i>
-							</a>
-							<a href="#" class="linkedin">
-								<i class="icon-icon-linkedin"></i>
-							</a>
-						</div>
+						<p class="description">Trivesh is a copywriter based in Cape Town, South Africa. Since 2005 Trivesh has worked with hundreds of brands and publications covering a variety of  </p>
+
 					</div>
 				</div>
 				<div class="col-md-6 team-member">
@@ -298,15 +276,8 @@
 					<div class="member-description">
 						<h5 class="name">Simon Weather</h5>
 						<div class="position">Sales manager</div>
-						<p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </p>
-						<div class="link-block">
-							<a href="#" class="twitter">
-								<i class="icon-icon-twitter"></i>
-							</a>
-							<a href="#" class="linkedin">
-								<i class="icon-icon-linkedin"></i>
-							</a>
-						</div>
+						<p class="description">Matt's a 2016 Grad of The State University of New York College at Brockport. Matt is a Financial Services Representative and freelance writer who cut his teeth </p>
+						
 					</div>
 				</div>
 				<div class="col-md-6 team-member">
@@ -318,15 +289,8 @@
 					<div class="member-description">
 						<h5 class="name">Simon Weather</h5>
 						<div class="position">Sales manager</div>
-						<p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </p>
-						<div class="link-block">
-							<a href="#" class="twitter">
-								<i class="icon-icon-twitter"></i>
-							</a>
-							<a href="#" class="linkedin">
-								<i class="icon-icon-linkedin"></i>
-							</a>
-						</div>
+						<p class="description">Matt's a 2016 Grad of The State University of New York College at Brockport. Matt is a Financial Services Representative and freelance writer who cut his teeth Matt is a Financial Services Representative and freelance writer who cut his teeth Matt is a Financial Services Representative and freelance writer who cut his teeth </p>
+
 					</div>
 				</div>
 				

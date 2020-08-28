@@ -21,7 +21,7 @@ body.no-scroll {
 
 
 .navbar {
-  padding: 19px 0;
+  padding: 14px 0;
   background-color: $rs-white;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
@@ -351,7 +351,7 @@ body.no-scroll {
 
     &.dropdown-getcare {
       @include media-breakpoint-up(lg) {
-        top: 83px;
+        top: 74px;
         width: 50%;
         left: 58%;
         transform: translate(-50%, 0);

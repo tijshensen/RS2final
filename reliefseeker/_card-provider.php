@@ -90,7 +90,7 @@ Add the 'result-item' class to each item
 				</div>
 				<div class="col-lg-9 aditional-item">
 					<div class="rs-speciality">
-						<div class="rs-card-caption">Conditions</div>
+						<div class="rs-card-caption">Specialities</div>
 						<div class="rs-text">
 							<?php echo $rs_providers_card['provider_conditions']; ?>
 						</div>

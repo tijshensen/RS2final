@@ -199,9 +199,12 @@ include('_module-breadcrumb.php');
 				<?php
 				$divlist = 'div';
 				$style = 'provider-item-horizontal provider-item-separate';
+				$x = 0;
 				foreach ($rs_providers_cards as $rs_providers_card) 
 				{ 
 					include('_card-provider.php'); 
+					$x++;
+					if($x==1) break;
 				} 
 				?>
 			</div>
@@ -231,7 +234,6 @@ include('_module-breadcrumb.php');
 				?>
             </ul>
 
-            <a href="#medication" class="btn-compare">Compare prices</a>
         </div>
 	</div>
 </section>
@@ -262,12 +264,11 @@ include('_module-breadcrumb.php');
 			} 
 			?>
             </ul>
-            <a href="#medication" class="btn-compare">Compare prices</a>
 		</div>
 	</div>
 </section>
 
-    
+ <!--   
 <section class="compare-section" id="medication">
     <div class="container">
         <div class="row justify-content-center">
@@ -341,7 +342,7 @@ include('_module-breadcrumb.php');
         </div>
     </div>
 </section>
-
+-->
 	
 
     <?php include('_modal-advertiser-disclosure.php'); ?>

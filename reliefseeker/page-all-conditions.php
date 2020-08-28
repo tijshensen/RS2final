@@ -29,6 +29,7 @@
 	<section class="rs-all-conditions rs-alphabet alphabet-section">
 		<div class="container">
 			<div class="row justify-content-center alphabet-container">
+				
 				<div class="col-10 col-sm-11 col-lg-10">
 					<ul class="rs-list result-list" id="rs-list">
 
@@ -44,47 +45,47 @@
 									</li>
 								<?php } ?>
 
-								<li class="alphabet-section list" id="<?php echo $firstCharacter;?>">
-									<span class="name-section alfabet"><?php echo $firstCharacter;?></span>
-
-								<?php
-							}
-							?>
-
-							<div class="result-item <?php //echo $rs_condition['condition_filter']; ?>">
-								<a href="page-single-condition.php" class="simple-card-block rs-conditions-list">
-									<div class="simple-flex">
-										<span class="block-name"><?php echo $rs_condition['name']; ?></span>
-									</div>
-									<div class="numb-block">
-										<span class="block-number">12</span>
-										<span class="block-description">Treatment Providers</span>
-									</div>
-									<i class="icon-blueArrow arw-right"></i>
-								</a>
-							</div>
+						<li class="alphabet-section list" id="<?php echo $firstCharacter;?>">
+							<span class="name-section alfabet"><?php echo $firstCharacter;?></span>
 
 							<?php
+							}
+							include('_card-condition.php');
 						}
 						?>
 						</li>
 					</ul>	
-
 				</div>
-
-				<div class="col-1 anchors-container">
-					<ul class="alphabet">
-						<?php foreach ($rs_provider_alphabet as $rs_letter) { ?>
-							<li class="letter"><a href="#<?php echo $rs_letter; ?>" class="letter-link"><?php echo $rs_letter; ?></a></li>
-							<?php } ?>
-						</ul>
+				
+				<div class="col-1 col-sm-1 anchors-container ">
+					<div id="sidebar">
+						<div class="sidebar-inner">
+							<ul class="alphabet">
+								<?php foreach ($rs_provider_alphabet as $rs_letter) { ?>
+									<li class="letter"><a href="#<?php echo $rs_letter; ?>" class="letter-link"><?php echo $rs_letter; ?></a></li>
+									<?php } ?>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 	
 	<?php include('_module-email-sign-up.php'); ?>
 	<?php include('_module-footer-menu.php'); ?>
 	<?php include('_scripts.php'); ?>
+	
+	<script>
+	$(document).ready(function() {
+	      $("#sidebar").stickySidebar({
+	        topSpacing: 130,
+	        bottomSpacing: 60,
+	        containerSelector: ".result-list"
+	      });
+	    });
+	</script>
+	<script type="text/javascript" src="./js/jquery.sticky-sidebar.min.js"></script>
+	
 	<?php include('_footer.php'); ?>

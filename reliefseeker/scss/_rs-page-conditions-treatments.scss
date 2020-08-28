@@ -1,4 +1,17 @@
 
+.btn-compare {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: $rs-black;
+  transition: 0.4s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+    color: $rs-black;
+  }
+}
+
 .rs-single-treatment,
 .rs-single-condition
 {

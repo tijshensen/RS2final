@@ -28,7 +28,7 @@
 				<!-- <div class="rs-footer-header">About us</div> -->
 				<ul class="footer-nav-list">
 					<li class="footer-nav-item"><a href="#">Made in NYC</a></li>
-					<li class="footer-nav-item"><a href="about.php">About Us</a></li>
+					<li class="footer-nav-item"><a href="page-about.php">About Us</a></li>
 					<li class="footer-nav-item"><a href="#">Contact Us / Write For Us</a></li>
 					<li class="footer-nav-item"><a href="#">Advertising Disclosure</a></li>
 				</ul>

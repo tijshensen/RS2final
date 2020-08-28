@@ -2,16 +2,7 @@
 
 <section class="module-news <?php echo $bgcolor;?>">
 	<div class="container">
-		<div class="section-header">
-			<?php
-			if(!isset($hide_icon)){
-			?>
-			<div class="logo-icon">
-				<img src="./svg/mini-logo.svg">
-			</div>
-			<?php
-			}
-			?>
+		<div class="text-center">
 			<h2 class="h2">Real people, real stories</h2>
 		</div>
 <?php

@@ -50,42 +50,46 @@ include('_filter.php');
 
     <section class="rs-alphabet alphabet-section">
         <div class="container">
-            <div class="alphabet-container">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-sm-11 col-lg-10">
+            <div class="row justify-content-center alphabet-container">
+				
+                <div class="col-10 col-sm-11 col-lg-10">
+					<ul class="rs-list result-list" id="rs-list">
+						<?php
+						$previousFirstCharacter ='';
+						foreach ($rs_treatments as $rs_treatment){ 
 
-						<ul class="rs-list result-list" id="rs-list">
-							<li class="alphabet-section list" id="a">
-								<span class="name-section left-abs">A</span>
+							$firstCharacter = $rs_treatment['name'][0];
+							if ($firstCharacter != $previousFirstCharacter){
+								$previousFirstCharacter = $firstCharacter;
 
-								<?php
-								foreach ($rs_treatments as $rs_treatment)
-								{
-									include('_card-treatment.php');
-								}
-								?>
+								if ($previousFirstCharacter != '') { ?>
+									</li>
+								<?php } ?>
 
-							</li>
-							<li class="alphabet-section list" id="b">
-								<span class="name-section left-abs">a</span>
-								<?php
-								foreach ($rs_treatments as $rs_treatment)
-								{
-									include('_card-treatment.php');
-								}
-								?>
-							</li>
-						</ul>
-                    </div>
+						<li class="alphabet-section list" id="<?php echo $firstCharacter;?>">
+							<span class="name-section alfabet"><?php echo $firstCharacter;?></span>
 
-                    <div class="col-1 anchors-container">
-                        <ul class="alphabet">
-                            <?php foreach ($rs_provider_alphabet as $rs_letter) { ?>
-                            <li class="letter"><a href="#<?php echo $rs_letter; ?>" class="letter-link"><?php echo $rs_letter; ?></a></li>
-                            <?php } ?>
-                        </ul>
-                    </div>
+							<?php
+							}
+							include('_card-treatment.php');
+						}
+						?>
+						</li>
+					</ul>
                 </div>
+
+				<div class="col-1 col-sm-1 anchors-container ">
+					<div id="sidebar">
+						<div class="sidebar-inner">
+							<ul class="alphabet">
+								<?php foreach ($rs_provider_alphabet as $rs_letter) { ?>
+									<li class="letter"><a href="#<?php echo $rs_letter; ?>" class="letter-link"><?php echo $rs_letter; ?></a></li>
+									<?php } ?>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
             </div>
         </div>
     </section>
@@ -95,4 +99,14 @@ include('_filter.php');
 	<?php include('_module-footer-menu.php');?>
 
     <?php include('_scripts.php'); ?>
+	<script>
+	$(document).ready(function() {
+	      $("#sidebar").stickySidebar({
+	        topSpacing: 130,
+	        bottomSpacing: 60,
+	        containerSelector: ".result-list"
+	      });
+	    });
+	</script>
+	<script type="text/javascript" src="./js/jquery.sticky-sidebar.min.js"></script>
     <?php include('_footer.php'); ?>

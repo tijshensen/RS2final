@@ -2,7 +2,7 @@
 
 /*Title project*/
 $title = "ReliefSeeker";
-$pagetitle = $title . ".com V2.5.4";
+$pagetitle = $title . ".com V2.5.5";
 $logo = "./svg/logo-reliefseeker-purple.svg";
 
 /*Providers*/

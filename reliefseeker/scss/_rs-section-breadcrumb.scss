@@ -1,6 +1,5 @@
 /*Breadcrumb*/
 .breadcrumb-container {
-	padding-top: 8px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -15,20 +14,20 @@
 	    }
 	    .breadcrumb-item,
 	    .breadcrumb-item a {
-	        font-size: 13px;
-	        color: $rs-black;
+	        font-size: 11px;
+	        color: $rs-black-60;
 	        @include media-breakpoint-up(md) {
-	            font-size: 14px;
+	            font-size: 13px;
 	        }
 	    }
 	}
 	.rs-disclosure{
 	cursor: pointer;
-    font-size: 13px;
-    color: $rs-black;
+    font-size: 11px;
+    color: $rs-black-60;
     @include media-breakpoint-up(md) 
 		{
-	    font-size: 14px;
+	    font-size: 13px;
 	    padding-top: 13px;
 	    font-weight: 500;
    	 	}

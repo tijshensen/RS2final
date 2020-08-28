@@ -124,7 +124,7 @@
 	include('_module-news.php');
 	?>
 
-	<section class="rs-content-section our-mission shadow-top pt-4">
+	<section class="rs-content-section our-mission pt-4">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 ">
