@@ -255,12 +255,14 @@
 }
 
 .clear-filters-block {
+	@include media-breakpoint-up(lg) {
     margin-bottom: 15px;
+	}
     .clear-filter,
     .filters-span {
         font-size: 14px;
-        line-height: 28px;
-        color: rgba(0, 0, 0, 0.8);
+        line-height: 1.4;
+        color: $rs-black-80;
     }
     .clear-filter {
         transition: 0.4s;

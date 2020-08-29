@@ -1,4 +1,4 @@
-<li class="result-item <?php echo $rs_treatment['filter']; ?> list">
+<div class="result-item <?php echo $rs_treatment['filter']; ?> list">
 	<a href="page-single-treatment.php" class="simple-card-block rs-treatments-list">
 		<div class="simple-flex">
 			<span class="block-name"><?php echo $rs_treatment['name']; ?></span>
@@ -9,4 +9,4 @@
 		</div>
 		<i class="icon-blueArrow arw-right"></i>
 	</a>
-</li>
+</div>

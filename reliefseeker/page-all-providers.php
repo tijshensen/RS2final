@@ -20,13 +20,13 @@ include('_dataset.php');
 	<section class="rs-section-filter">
 		<div class="container"> 
 			<div class="row justify-content-left">
-	            <div class="col-md-3">
+	            <div class="col-md-3 rs-search">
 					<div class="rs-search-input-block">
 	               		<input class="search-input" id="myInput" type="text" placeholder="">
 	                	<i class="icon-icon-search"></i>
 					</div>
 	            </div>
-				<div class="col-md-8">
+				<div class="col-md-8 rs-filter">
 					<div class="row">
 		                <?php
 		                    showFilter([

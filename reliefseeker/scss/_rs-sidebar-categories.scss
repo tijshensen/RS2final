@@ -32,6 +32,7 @@
 		justify-content: unset;
 		box-shadow: $box-shadow-equal-light;
 		background-color: $rs-white;
+		text-align: left;
 
 		.card-guides-img {
 			height: 55px;
@@ -40,21 +41,23 @@
 			text-align: left;
 		}
 
-		.card-guides-name {
-			text-transform: capitalize;
-			color: $rs-black;
-			font-weight: 600;
-			font-size: 18px;
-			line-height: 1.4;
-			padding-top: 5px !important;
-			text-align: left;
-			margin: 0;
-		}
-		.card-guides-providers {
-			color: $rs-black;
-			font-weight: 400;
-			font-size: 12px;
-			text-align: left;
+		.card-guides-content{
+			.card-guides-name {
+				text-transform: capitalize;
+				color: $rs-black;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 1.4;
+				padding-top: 5px !important;
+				text-align: left;
+				margin: 0;
+			}
+			.card-guides-providers {
+				color: $rs-black;
+				font-weight: 400;
+				font-size: 12px;
+				text-align: left;
+			}
 		}
 	}
 }

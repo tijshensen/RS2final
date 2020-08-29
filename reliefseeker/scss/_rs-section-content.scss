@@ -3,7 +3,11 @@
 .rs-content-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  order: 3;
+  /*order: 3;*/
+  
+  li{
+	  padding-bottom: 12px;
+  }
 
   .rs-block-caption {
     display: flex;
@@ -36,18 +40,18 @@
 
       @include media-breakpoint-up(lg) {
         font-size: 32px;
-        line-height: 41px;
+        line-height: 1.6;
       }
     }
     p {
-      font-weight: normal;
-      color: rgba(0, 0, 0, 0.8);
+      font-weight: 400;
+      color: $rs-black-80;
       font-size: 14px;
-      line-height: 22px;
+      line-height: 1.4;
 
       @include media-breakpoint-up(md) {
         font-size: 16px;
-        line-height: 1.4;
+        line-height: 1.6;
       }
     }
   }

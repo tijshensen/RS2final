@@ -36,6 +36,11 @@
 			right: unset;
 		}
 	}
+	@include media-breakpoint-down(md) {
+		.rs-filter{
+			display: none;
+		}
+	}
 }
 
 .providers-hero-card {
