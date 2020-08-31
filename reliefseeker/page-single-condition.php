@@ -45,7 +45,8 @@ include('_module-breadcrumb.php');
 						<div class="col-12 mx-auto">
 							<?php
 							$divlist = 'div';
-							$style = 'provider-item-horizontal provider-item-separate';
+							$is_featured = 'yes';
+							$style = 'provider-item-horizontal provider-item-separate provider-featured';
 							$x =0;
 							foreach ($rs_providers_cards as $rs_providers_card) 
 							{ 

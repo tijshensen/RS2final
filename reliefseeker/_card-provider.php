@@ -27,6 +27,17 @@ Add the 'result-item' class to each item
 		<div class="rs-order"><?php echo $rs_providers_card['provider_number']; ?></div>
 	</div>
 <?php }?>
+
+<?php
+	if(isset($is_featured)){
+		?>
+	<div class="label-featured">
+		<div class="label-featured-inner"><i class="icon-icon-star"></i><span>Featured</span></div>
+	</div>
+	
+<?php
+unset($is_featured);
+ }?>
 	
 	<div class="row">
 		<div class="col-lg-3 provider-logo-block">

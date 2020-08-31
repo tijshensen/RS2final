@@ -223,6 +223,7 @@ vertical cards: (single-small provider-card-vertical)
   margin-bottom: 15px;
   @include media-breakpoint-up(lg) {
     border-bottom: none;
+	border-radius: 0 0 20px 20px;
     // padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 10px;
@@ -282,9 +283,10 @@ vertical cards: (single-small provider-card-vertical)
     margin-right: 0;
   }
   .provider-additional-block {
-    order: 2;
+
     border-top: 1px solid rgba(23, 163, 224, 0.2);
     border-bottom: 1px solid rgba(23, 163, 224, 0.2);
+	border-radius: 0 0 ;
     padding-top: 0px;
     padding-bottom: 17px;
     margin-top: 0;
@@ -770,6 +772,68 @@ vertical cards: (single-small provider-card-vertical)
     font-size: 14px;
     line-height: 19px;
   }
+}
+
+/*Featured card */
+.provider-featured{
+	margin-top: -20px;
+	
+	.top-lable{
+		display: none; /*hide top label*/
+	}
+	
+	.label-featured{
+		position: absolute;
+		top: -36px;
+		left: 50%;
+		margin-left: -62px;
+		width: 124px;
+		 @include media-breakpoint-up(md) {
+			 left: 10%;
+		 }
+		.label-featured-inner{
+		    display: flex;
+		    width: max-content;
+		    justify-content: space-between;
+		    align-items: center;
+
+			border-radius: 10px 10px 0 0;
+			background-color: $rs-orange;
+			padding-left: 12px;
+			padding-right: 20px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			color: $rs-white;
+			font-weight: 700;
+			font-size: 14px;
+			text-transform: uppercase;
+			i{
+				color: $rs-white;
+				padding-right: 8px;
+				font-size: 16px;
+			}
+			span{
+				padding-top: 3px;
+			}
+			.icon-icon-star:before{
+				fill: $rs-white;
+				color: $rs-white;
+			}
+		}
+	}
+	
+	.provider-additional-block{
+		border-top: 1px solid $rs-orange;
+		background-color:#FFFCF3;
+	}
+	
+	&.provider-item{
+		margin-top: 38px;
+		overflow: visible;
+		 @include media-breakpoint-up(md) {
+			 margin-top: 18px;
+		 }
+	}
 }
 
 /*

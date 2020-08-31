@@ -16,6 +16,13 @@
 .rs-single-condition
 {
 	
+	.breadcrumb-container .rs-disclosure{
+		margin-bottom: 6px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 20px;
+		}
+	}
+	
 	/*less margins because of breadcrumb*/
 	.rs-h1{
 		padding-top: 0;
@@ -133,7 +140,7 @@ single-provider
 
 .rs-button-with-number {
 	padding-top: 16px;
-	padding-bottom: 24px;
+	padding-bottom: 8px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
