@@ -2,6 +2,10 @@
 /*Single provider*/
 
 .rs-all-providers {
+    .top-lable{
+      display: none;
+    }
+	
 	/*h1 must fit on big screen*/
 	.rs-section-hero .col-md-10 {
 		flex: 0 0 100%;
@@ -13,7 +17,13 @@
 			}
 		}
 	}
-	@include media-breakpoint-up(lg) {
+	@include media-breakpoint-down(md) {
+		.rs-filter{
+			display: none;
+		}
+	}
+	@include media-breakpoint-up(lg) 
+	{
 
 		.rs-section-hero .rs-description
 		{
@@ -23,8 +33,6 @@
 		.rs-section-filter .container {
 			max-width: 1100px;
 		}
-	}
-	@include media-breakpoint-up(lg) {
 		.abs-right.col-sm-1 {
 		    -webkit-box-flex: 0;
 		    -ms-flex: 0 0 8.3333333333%;
@@ -36,22 +44,17 @@
 			right: unset;
 		}
 	}
-	@include media-breakpoint-down(md) {
-		.rs-filter{
-			display: none;
-		}
-	}
 }
 
 .providers-hero-card {
 	order: 2;
-	background-color:#F8F8F8;
+	background-color:$bg1;
 	padding: 0 20px;
-	border-radius: 20px;
 	margin-top: 20px;
 	@media (min-width: 576px) {
 		padding: 0 15px;
 		margin-top: 40px;
+		border-radius: 20px;
 	}
 	@include media-breakpoint-up(lg) {
 		order: unset;
@@ -67,9 +70,10 @@
 
 .rs-single-provider {
 	.breadcrumb-container {
+		/*
 		@include media-breakpoint-up(lg) {
 			padding: 0 32px;
-		}
+		}*/
 		
 		.breadcrumb{
 			padding-left:0;
@@ -78,17 +82,17 @@
 	.h1 {
 		font-weight: 800;
 		font-size: 26px;
-		line-height: 100%;
 		text-transform: capitalize;
 		text-align: left;
 		padding: 0;
 		@include media-breakpoint-up(md) {
 			font-size: 50px;
-			line-height: 81px;
 		}
+		/*
 		@include media-breakpoint-up(lg) {
 			padding: 0 32px;
 		}
+		*/
 	}
 	
 	/*Sticky mobile menu*/
@@ -101,7 +105,7 @@
 
 		.sticky-inner {
 			display: flex;
-			background: #f5f7f8;
+			background: $rs-white;
 			padding: 13px 0;
 			justify-content: space-around;
 			align-items: center;
@@ -109,21 +113,26 @@
 			* {
 				order: unset;
 			}
+			.logo img{
+			    max-width: 120px;
+				max-height: 80px;
+			    object-fit: contain;
+			}
+			
 			.price {
 				font-size: 22px;
-				line-height: 1;
-				color: #8cc740;
-				font-weight: bold;
+				color: $rs-green;
+				font-weight: 700;
 			}
 			.old-price {
-				font-size: 18px;
-				line-height: 1;
-				font-weight: bold;
+				font-size: 22px;
+				font-weight: 700;
 				display: none;
+				color: $rs-green;
 				span {
-					font-weight: normal;
-					font-size: 10px;
-					line-height: 1;
+					font-weight: 400;
+					font-size: 12px;
+					color: $rs-black;	
 				}
 				@media (min-width: 375px) {
 					display: block;
@@ -155,6 +164,29 @@
 	}
 	
 	/*General table and compare prices link*/	
+	
+
+	.price-table-block {
+	  padding-bottom: 40px;
+	  .table-name-block {
+	    &.tmd-right {
+			padding-left: 0;
+	      text-align: left;
+	      @include media-breakpoint-up(lg) {
+	        text-align: right;
+	      }
+	    }
+	  }
+	  .link-compare {
+	    font-weight: 600;
+	    font-size: 15px;
+	    line-height: 20px;
+	    text-decoration-line: underline;
+	    color: $rs-black;
+	    cursor: pointer;
+	    margin-top: 17px;
+	  }
+	}
 	
 	.table-price{
 		border: 1px solid #EAEAEA;
@@ -189,9 +221,9 @@
 	/*list item on the Single provider page*/
 
 	.providers-hero-card {
-		padding: 55px 15px;
+		padding: 32px 16px;
 		@include media-breakpoint-up(lg) {
-			padding: 35px 47px;
+			padding: 32px 42px;
 		}
 		/*
 		&:before {
@@ -213,10 +245,8 @@
 			max-width: 100%;
 		}
 		.hero-name {
-			font-style: normal;
-			font-weight: normal;
+			font-weight: 400;
 			font-size: 14px;
-			line-height: 19px;
 			color: $rs-black;
 			padding: 16px 0;
 		}
@@ -236,27 +266,24 @@
 		.h3 {
 			padding: 0;
 			font-size: 26px;
-			line-height: 33px;
-			font-weight: bold;
+			font-weight: 700;
 			margin: 4px 0 12px;
-			text-transform: capitalize;
 			@include media-breakpoint-up(md) {
-				margin: 24px 0 12px;
+				margin: 8px 0 12px;
 				
 			}
 		}
 		.hero-description {
-			font-style: normal;
-			font-weight: normal;
+			font-weight: 400;
 			font-size: 16px;
-			line-height: 28px;
 			color: $rs-black;
 			@include media-breakpoint-up(md) {
 				padding-right: 60px;
 			}
 		}
 		.accepts-block {
-			margin-top: 26px;
+			margin-top: 24px;
+			margin-bottom: 24px;
 			.accepts-item {
 				display: flex;
 				margin-bottom: 10px;
@@ -451,13 +478,13 @@
 		padding-bottom: 20px;
 	
 		h2{
-			margin-left: 30px;
+			/*margin-left: 30px;*/
 			margin-top: 60px;
 			padding-bottom: 20px;
 		}
 	
 		.table-price{
-			margin-left: 20px;
+			/*margin-left: 20px;*/
 		}
 	
 		.link-compare{
@@ -475,23 +502,22 @@
 		h3 {
 			font-weight: 800;
 			font-size: 28px;
-			line-height: 1.2;
 			@include media-breakpoint-up(lg) {
 				margin: 0;
-				margin-left: 30px;
+				/*margin-left: 30px;*/
 			}
 			@include media-breakpoint-up(lg) {
 				text-align: left;
 				font-size: 28px;
-				line-height: 1.2;
 			}
 		}
 		.rs-search-input-block {
 			height: 56px;
-			margin: 30px 0 45px;
+			margin: 24px 0 40px;
 			// max-width: calc(100% - 30px);
 			@include media-breakpoint-up(md) {
-				margin: 30px 15px 50px;
+				margin: 32px 0 40px;
+				padding-left: 0;
 			}
 		}
 
@@ -516,18 +542,18 @@
 				}
 				.collapse-name {
 					display: flex;
-					align-items: center;
+					align-items: left;
 					margin-right: auto;
-					font-weight: bold;
+					font-weight: 600;
 					font-size: 16px;
-					line-height: 141.7%;
+					text-align: left;
 					@include media-breakpoint-up(md) {
 						font-size: 20px;
 					}
 					.collapse-label {
 						display: flex;
-						justify-content: center;
-						align-items: center;
+						justify-content: left;
+						align-items: left;
 						height: 24px;
 						padding: 0 16px;
 						margin-left: 30px;
@@ -536,7 +562,6 @@
 						border-radius: 30px;
 						text-transform: uppercase;
 						font-size: 10px;
-						line-height: 1;
 						font-weight: 800;
 						&.green {
 							background: $rs-green;
@@ -545,18 +570,15 @@
 				}
 				.collapse-description {
 					font-size: 18px;
-					line-height: 25px;
 					text-align: right;
 					color: $rs-grey-19;
 					font-weight: 600;
 					font-size: 12px;
-					line-height: 16px;
 					margin-top: 5px;
 					@include media-breakpoint-up(md) {
 						margin-top: unset;
-						font-weight: bold;
+						font-weight: 600;
 						font-size: 18px;
-						line-height: 25px;
 						span {
 							color: $rs-blue;
 						}
@@ -595,10 +617,10 @@
 				margin-bottom: 11px;
 			}
 			.card {
-				padding: 30px;
 				transition: 0.4s;
 				overflow-x: hidden;
 				@include media-breakpoint-up(lg) {
+					padding: 30px;
 					/*padding: 60px 30px 15px 97px;*/
 				}
 			}

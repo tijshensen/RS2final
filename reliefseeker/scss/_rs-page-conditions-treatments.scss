@@ -230,9 +230,15 @@ single-provider
 
 .rs-all-conditions{
     padding-bottom: 40px;
+	
+	.rs-description{
+		padding-bottom: 0;
+	}
+	
     .rs-search-input-block {
         margin: 0 30px 15px;
     }
+	
 	@include media-breakpoint-up(lg) {
 		.rs-section-hero .rs-description{
 			max-width: 500px;
@@ -542,19 +548,11 @@ single-provider
 
 
 .dr-header {
-	/*
-    display: flex;
-    justify-content: center;
-    position: relative;
-	*/
-    padding-top: 45px;
+	@include media-breakpoint-up(md) {
+    	padding-top: 8px;
+	}
 
 	.rs-header-block {
-		/*
-	    display: flex;
-	    flex-direction: column;
-	    align-items: flex-start;
-		*/
 		text-align: center;	
 	    padding: 0 30px;
 	    @include media-breakpoint-up(md) {
@@ -564,25 +562,25 @@ single-provider
 	    img {
 	        margin: auto;
 	    }
-	    .h2,
-		.h3 {
+	    h2,
+		h3 {
 	        font-weight: 800;
-	        font-size: 20px;
+	        font-size: 1.2rem;
 	        line-height: 1.2;
 	        padding: 0;
 			text-align: center;
 	        @include media-breakpoint-up(md) {
-	            font-size: 35px;
+	            font-size: 32px;
 	        }
 	    }
 	    .description {
 	        display: block;
 	        font-size: 16px;
 	        line-height: 1.4;
-	        margin: 0 auto 25px;
+	        margin: 0 auto 8px;
 			max-width: 386px;
 	        @include media-breakpoint-up(md) {
-				
+				margin: 0 auto 8px;
 	        }
 	    }
 	}

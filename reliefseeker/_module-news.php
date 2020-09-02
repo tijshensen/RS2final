@@ -50,7 +50,7 @@ if(!isset($hide_trending)){
 							</div>
 							<div class="col-8 col-md-12 ">
 								<div class="card-content">
-									<div class="flag purple <?php echo $rs_news_card['news_label_class']; ?>"><?php echo $rs_news_card['news_label']; ?></div>
+									<div class="news-category <?php echo $rs_news_card['news_label_class']; ?>"><?php echo $rs_news_card['news_label']; ?></div>
 									<h4 class="news-title"><?php echo $rs_news_card['news_title']; ?></h4>
 									<!-- </?php echo $rs_news_card['news_category']; ?> -->
 									<span class="news-date"><?php echo $rs_news_card['news_time']; ?></span> 

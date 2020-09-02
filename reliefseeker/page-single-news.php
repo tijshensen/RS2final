@@ -1,6 +1,6 @@
 <?php include('_header.php'); ?>
 
-<body class="single-news">
+<body class="rs-single-news">
 	<?php include('_module-menu.php');?>
 	
 	<?php 
@@ -45,7 +45,6 @@
 						<div class="socials-block-block">
 							<a itemprop="url" href="#" class="social-link twitter"><i class="icon-icon-twitter"></i></a>
 							<a itemprop="url" href="#" class="social-link facebook"><i class="icon-icon-facebook-1"></i></a>
-							<a itemprop="url" href="#" class="social-link rss"><i class="icon-icon-rss"></i></a>
 							<a itemprop="url" href="#" class="social-link e-mail"><i class="icon-icon-email"></i></a>
 						</div>
 					</div>
@@ -77,12 +76,6 @@
 						<div class="information-block">
 							<div class="author-card-header">
 								<span class="author-name" >Simon Weather</span>
-								<div class="socials-block-block">
-									<a itemprop="url" href="#" class="social-link twitter"><i class="icon-icon-twitter"></i></a>
-									<a itemprop="url" href="#" class="social-link facebook"><i class="icon-icon-facebook-1"></i></a>
-									<a itemprop="url" href="#" class="social-link rss"><i class="icon-icon-rss"></i></a>
-									<a itemprop="url" href="#" class="social-link e-mail"><i class="icon-icon-email"></i></a>
-								</div>
 							</div>
 						</div>
 						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum</p>

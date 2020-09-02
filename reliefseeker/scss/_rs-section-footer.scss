@@ -76,13 +76,16 @@
           color: $rs-white;
           text-decoration: none;
           font-size: 16px;
-          line-height: 26px;
+          line-height: 2;
           text-decoration: underline;
           text-decoration-color: transparent;
           transition: 0.4s;
           &:hover {
             text-decoration-color: $rs-white;
           }
+		  @include media-breakpoint-up(md) {
+		  	line-height: 1.4;
+		  }
         }
       }
     }

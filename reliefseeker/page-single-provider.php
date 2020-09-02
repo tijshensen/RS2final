@@ -165,7 +165,7 @@ include('_module-breadcrumb.php');
 	                            <div class="price-table-block row">
 	                                <div class="table-name-block tmd-right col-lg-10">
 	                                    <h5 class="h5">Digital Clinic</h5>
-	                                    <h6 class="h6"><span>Get a new Prescription</span></h6>
+	                                    <h6 class="h6">Get a new Prescription</h6>
 	                                </div>
 	                                <table class="table-price col-lg-10">
 	                                    <tr class="table-row">
@@ -268,10 +268,10 @@ include('_module-breadcrumb.php');
 
 <div class="sticky-mobile-menu">
 	<div class="sticky-inner">
-	    <span class="price">$65 OFF</span>
-	    <span class="old-price">$95 <span>/VISIT</span></span>
-	    <div class="yellow-dashed-label">MAYSALE</div>
-	    <a href="#" class="btn-cta-arw">Visit <i class="icon-arrow-right-white"></i></a>
+		<div class="logo"><img src="./img/logo-lemonaid.png" alt="Lemon Aid"/></div>
+	   <!-- <div class="price">$65 OFF</div>-->
+	    <div class="old-price">$95 <span>/VISIT</span></div>
+	    <a href="#" class="btn-cta-arw">Visit</a>
 	</div>
 </div>
 

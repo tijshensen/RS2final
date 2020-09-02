@@ -1,5 +1,13 @@
 /*RS Styling*/
 
+@include media-breakpoint-down(sm) {
+  html,
+  body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+}
+
 h1,h2,h3,h4,h5,h6 
 {
   font-family: "Catamaran", sans-serif;
@@ -1205,28 +1213,7 @@ single-condition
 single-treatment
 single-provider
 
-collapse card
-*/
-.price-table-block {
-  padding-bottom: 40px;
-  .table-name-block {
-    &.tmd-right {
-      text-align: left;
-      @include media-breakpoint-up(lg) {
-        text-align: right;
-      }
-    }
-  }
-  .link-compare {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-    text-decoration-line: underline;
-    color: $rs-black;
-    cursor: pointer;
-    margin-top: 17px;
-  }
-}
+
 
 /*list for
 -All providers
@@ -1255,3 +1242,13 @@ collapse card
     }
 }
 */
+
+
+.old-price-wst {
+  text-decoration-line: none !important;
+
+  span {
+    text-decoration-line: none !important;
+  }
+}
+

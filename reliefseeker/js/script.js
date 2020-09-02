@@ -33,13 +33,13 @@ jQuery(document).ready(function ($) {
         if ($(this).is('h2')) {
           $tocItem = '<li class="list-item toc-h2"><a href="#toc-item-' + index + '">' + title + '</a></li>';
         } else if ($(this).is('h3')) {
-          $tocItem = '<li class="list-item toc-h3">&mdash; <a href="#toc-item-' + index + '">' + title + '</a></li>';
+          $tocItem = '<li class="list-item toc-h3"><a href="#toc-item-' + index + '">' + title + '</a></li>';
         } else if ($(this).is('h4')) {
-          $tocItem = '<li class="list-item toc-h4">&mdash; <a href="#toc-item-' + index + '">' + title + '</a></li>';
+          $tocItem = '<li class="list-item toc-h4"><a href="#toc-item-' + index + '">' + title + '</a></li>';
         } else if ($(this).is('h5')) {
-          $tocItem = '<li class="list-item toc-h5">&mdash; <a href="#toc-item-' + index + '">' + title + '</a></li>';
+          $tocItem = '<li class="list-item toc-h5"><a href="#toc-item-' + index + '">' + title + '</a></li>';
         } else if ($(this).is('h6')) {
-          $tocItem = '<li class="list-item toc-h6">&mdash; <a href="#toc-item-' + index + '">' + title + '</a></li>';
+          $tocItem = '<li class="list-item toc-h6"><a href="#toc-item-' + index + '">' + title + '</a></li>';
         }
 
         $tocElement.append($tocItem);

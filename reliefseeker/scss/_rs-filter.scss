@@ -287,6 +287,19 @@
             .btn-filter-search {
                 border-right: 1px solid $rs-grey-13;
             }
+			&:nth-child(1){
+				width: 27%;
+			}
+			&:nth-child(2){
+				width: 27%;
+			}
+			&:nth-child(3){
+				width: 27%;
+			}
+			&:nth-child(4){
+				width: 19%;
+			}
+			
             &:nth-child(even) {
                 .btn-filter-search {
                     border-right: 1px solid $rs-grey-13;

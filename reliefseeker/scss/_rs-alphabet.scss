@@ -26,6 +26,7 @@
 		flex-wrap: wrap;
 
 		.name-section {
+			margin-left: -32px;
 			text-transform: uppercase;
 			border-radius: 50%;
 			width: 32px;
@@ -42,6 +43,7 @@
 			top: 0;
 			transform: translate(0, -50%);
 			@include media-breakpoint-up(sm) {
+				margin-left: 0;
 				transform: translate(-50%, -50%);
 			}
 			&.left-abs {
@@ -57,9 +59,15 @@
 	}
 }
 
+
+
 .anchors-container {
 	padding-left: 0;
 	padding-right: 0;
+	
+    margin-top: 0;
+    padding-top: 15px;
+	
 	&.abs-right {
 		@include media-breakpoint-up(md) {
 			position: absolute;
@@ -76,7 +84,7 @@
 		}
 	}
 	.alphabet {
-		padding: 0;
+		padding: 13px 0 50px;
 		.letter {
 			list-style: none;
 			display: flex;

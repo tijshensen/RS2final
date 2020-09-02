@@ -36,19 +36,19 @@
 			<div class="col-lg-3 col-md-4 footer-nav-block">
 				<!-- <div class="rs-footer-header">Legal</div> -->
 				<ul class="footer-nav-list">
-					<li class="footer-nav-item"><a href="#">Online Doctors</a></li>
-					<li class="footer-nav-item"><a href="#">Online Pharmacies</a></li>
-					<li class="footer-nav-item"><a href="#">Next Generation Primary Care</a></li>
-					<li class="footer-nav-item"><a href="#">Telehealth</a></li>
+					<li class="footer-nav-item"><a href="#">Best Online Therapy</a></li>
+					<li class="footer-nav-item"><a href="#">Best Online Doctors</a></li>
+					<li class="footer-nav-item"><a href="#">Best Online Pharmacy</a></li>
+					<li class="footer-nav-item"><a href="#">Best Clear Aligners</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 footer-nav-block" >
 				<!-- <div class="rs-footer-header">Quick links</div> -->
 				<ul class="footer-nav-list">
-					<li class="footer-nav-item"><a href="#">Mental Health & Wellness Treatments</a></li>
-					<li class="footer-nav-item"><a href="#">Sexual & Reproductive Health Treatments</a></li>
-					<li class="footer-nav-item"><a href="#">Appearance & Beauty Treatments</a></li>
-					<li class="footer-nav-item"><a href="#">Prescription Delivery</a></li>
+					<li class="footer-nav-item"><a href="#">Best Medical Alert Systems</a></li>
+					<li class="footer-nav-item"><a href="#">Best Anxiety Treatments</a></li>
+					<li class="footer-nav-item"><a href="#">Best Depression Treatments</a></li>
+					<li class="footer-nav-item"><a href="#">Best Insomnia Treatments</a></li>
 				</ul>
 			</div>
 		</div>

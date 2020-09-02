@@ -10,24 +10,31 @@
 
 	.h5 {
 		font-weight: 800;
-		font-size: 28px;
-		line-height: 1.2;
+		font-size: 22px;
 		text-transform: uppercase;
 		text-align: center;
 		margin-bottom: 22px;
 		padding-top: 32px;
+		@include media-breakpoint-up(md) {
+			font-size: 26px;
+		}
+		
 	}
 
-	.news-card{
+	a.news-card{
 		transition: 0.4s ease-in-out;
 		background: transparent;
 		margin: 0;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding: 10px 16px 10px 10px;
 		margin-bottom: 12px;
 		* {
 			cursor: pointer;
+			text-decoration: none;
 		}
+		&:hover{
+			text-decoration: none;
+		}
+		
 		.sidebar-info-block{
 			display: flex;
 			flex-direction: column;
@@ -38,7 +45,7 @@
 		.news-label{
 			font-weight: 600;
 			text-transform: uppercase;
-			font-size: 10px;
+			font-size: 11px;
 		}
 
 		.card-img-block {
@@ -63,8 +70,9 @@
 			font-size: 15px;
 			font-weight: 700;
 			line-height: 1.4;
-			color: $gray-900;
+			color: $rs-black-80;
 			margin-bottom:0;
+
 		}
 	}
 }

@@ -72,17 +72,17 @@ include('_module-breadcrumb.php');
             </div>
         </div>
         <div class="row  justify-content-center">
-            <ul class="provider-carousel owl-carousel col-lg-11">
+            <div class="provider-carousel owl-carousel col-lg-11">
 	            <?php
 				$style = 'provider-item-vertical';
-				$divlist = 'li';
+				$divlist = 'div';
 				foreach ($rs_providers_cards as $rs_providers_card) 
 				{ 
 					$rs_providers_card['provider_services'] = 'Doctor, Pharmacy, +2';
 					include('_card-provider.php'); 
 				} 
 				?>
-            </ul>
+            </div>
 
           <!--  <a href="#medication" class="btn-compare">Compare prices</a>-->
         </div>
@@ -121,17 +121,17 @@ include('_module-breadcrumb.php');
 			*/
 			?>
 
-            <ul class="provider-carousel owl-carousel col-lg-11 result-list">
+            <div class="provider-carousel owl-carousel col-lg-11 result-list">
 	            <?php
 				$style = 'provider-item-vertical';
-				$divlist = 'li';
+				$divlist = 'div';
 				foreach ($rs_providers_cards as $rs_providers_card) 
 				{ 
 					$rs_providers_card['provider_services'] = 'Doctor, Pharmacy, +2';
 					include('_card-provider.php'); 
 				} 
 				?>
-			</ul>
+			</div>
             <!--<a href="#medication" class="btn-compare">Compare prices</a>-->
 		</div>
 

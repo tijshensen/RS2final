@@ -3,15 +3,23 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+	
+    nav{
+      max-width: 100%;
+    }
+	
 	.breadcrumb {
+		max-width: 100%;
 	    background-color: transparent;
-	    padding-left: 20px;
+	    padding-left: 0;
 		padding-bottom: 0;
 		width: max-content;
+		/*
 	    @include media-breakpoint-up(lg) {
 	        padding-left: 0;
 			
 	    }
+		*/
 	    .breadcrumb-item,
 	    .breadcrumb-item a {
 	        font-size: 11px;
@@ -23,8 +31,9 @@
 	}
 	.rs-disclosure{
 	cursor: pointer;
-    font-size: 11px;
+    font-size: 12px;
     color: $rs-black-60;
+	margin-bottom: 8px;
     @include media-breakpoint-up(md) 
 		{
 	    font-size: 13px;
@@ -32,5 +41,11 @@
 	    font-weight: 500;
    	 	}
 	}
+}
+
+
+//breadcrumb issue
+.breadcrumb-container {
+  
 }
 

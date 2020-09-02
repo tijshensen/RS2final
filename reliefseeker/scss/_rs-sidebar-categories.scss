@@ -18,9 +18,12 @@
 		.h5 {
 			margin-bottom: 34px;
 			font-weight: 800;
-			font-size: 28px;
-			line-height: 32px;
+			font-size: 24px;
 			text-transform: uppercase;
+			@include media-breakpoint-up(md) 
+			{
+				font-size: 26px;
+			}
 		}
 	}
 

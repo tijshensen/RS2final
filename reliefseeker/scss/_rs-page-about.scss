@@ -1,12 +1,13 @@
 .rs-about 
 {
-	@include media-breakpoint-up(md) {
 	.banner-color-section .banner-caption-block .h1 
 		{
-	    font-size: 50px;
-	    line-height: 1.4;
+			font-size: 30px;
+			@include media-breakpoint-up(md) {
+    			font-size: 50px;
+    			line-height: 1.4;
+			}
 		}
-	}
 	
     .h2 {
         font-weight: 800;
@@ -20,14 +21,17 @@
     }
 
     p {
-        font-size: 14px;
-        line-height: 22px;
-        color: $rs-grey-2;
+        font-size: 16px;
+        line-height: 1.6;
+        color: $rs-black-80;
         @include media-breakpoint-up(md) {
             font-size: 16px;
-            line-height: 26px;
         }
     }
+	
+	.rs-footer-first .h2{
+		font-size: 26px;
+	}
 }
 
 .about-banner-section {
@@ -218,6 +222,9 @@
 		.card-guides{
 			background-color: $rs-white;
 		}
+		.btn-cta{
+			font-size: 16px;
+		}
 	}
 }
 
@@ -274,38 +281,26 @@
 
 .adition-block {
     background: $rs-yellow;
-    padding: 50px 35px;
-    margin-left: -15px;
-    margin-right: -15px;
-    .h3 {
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 26px;
-        color: $rs-black;
-        padding: 0;
-        margin-bottom: 10px;
-    }
-    .adition-description {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 26px;
-        color: rgba(0, 0, 0, 0.8);
-    }
-    @media (min-width: 576px) {
-        margin-left: unset;
-        margin-right: unset;
-        padding: 50px 45x;
+    padding: 32px 30px 32px;
+    margin-top: 32px;
+	
+    @include media-breakpoint-up(md) {
+        padding: 50px 45px;
     }
     @include media-breakpoint-up(lg) {
         margin-top: 32px;
-    }
-    @include media-breakpoint-up(md) {
-        margin-top: 32px;
         padding: 40px 80px;
-        .h3 {
+    }
+    .h3 {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.3;
+        color: $rs-black;
+        padding: 0;
+        margin-bottom: 10px;
+		@include media-breakpoint-up(md) {
             font-size: 28px;
-            line-height: 1.3;
-        }
+		}
     }
 }
 
@@ -331,13 +326,13 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
         flex-wrap: wrap;
         padding: 0 40px;
         // flex-direction: column;
         @include media-breakpoint-up(md) {
             padding: 0 15px;
-            // flex-direction: row;
+			margin-bottom: 60px;
             justify-content: unset;
         }
         .member-img {
@@ -528,7 +523,7 @@
             color: $rs-blue;
             border: none;
             border-radius: 30px;
-            margin-bottom: 46px;
+            margin-bottom: 32px;
 
             &::placeholder {
                 color: $rs-blue;
@@ -549,15 +544,9 @@
                 flex-direction: row;
             }
             .btn-cta-arw {
-                @include media-breakpoint-up(md) {
-                    margin-left: auto;
-                    margin-right: 0;
-                }
-                font-size: 12px;
-                width: 117px;
-                height: 40px;
-                min-width: unset;
-                background: $rs-blue;
+                margin-left: auto;
+                margin-right: auto;
+				min-width: unset;
             }
         }
     }
