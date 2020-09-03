@@ -18,6 +18,7 @@ include('_module-breadcrumb.php');
 			<div class="col-md-10">
 				<h1 class="rs-h1"><span>Depression</span> Treatment</h1>
 				<div class="rs-description">
+					<div class="rs-shortdescription">Top 15 Services (2020)</div>
 					Start treating your depression today with online healthcare providers. Discover apps, medications, therapies, and online doctors so you can start treatment from the comfort of your home
 				</div>
 				<div class="rs-button-with-number">
@@ -68,7 +69,9 @@ include('_module-breadcrumb.php');
         <div class="row dr-header">
             <div class="rs-header-block col-12">
                 <h3 class="rs-h3">Health Apps for Depression</h3>
-                <div class="description">Start treating your depression today with online telehealth providers</div>
+                <div class="description">
+					Start treating your depression today with online telehealth providers
+				</div>
             </div>
         </div>
         <div class="row  justify-content-center">
@@ -251,5 +254,25 @@ include('_module-breadcrumb.php');
 	  });
 </script>
 <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+
+<script>
+  $(function() {
+    $("[data-toggle=\"tooltip\"]").tooltip();
+  });
+</script>
+
+<script>
+  $(function() {
+    $(".match-height").matchHeight();
+  });
+
+  $(function() {
+    $(".match-heights").matchHeight();
+  });
+
+  $(function() {
+    $(".match-card-heights").matchHeight();
+  });
+</script>
 
 <?php include('_footer.php'); ?>

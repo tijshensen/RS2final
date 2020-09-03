@@ -19,7 +19,7 @@ Add the 'result-item' class to each item
 */
 ?>
 
-<<?php echo $divlist;?> class="result-item provider-item <?php if(isset($style)) { echo $style;}?> <?php echo $rs_providers_card['provider_filters']; ?>">
+<<?php echo $divlist;?> class="result-item provider-item <?php if(isset($style)) { echo $style;}?> <?php echo $rs_providers_card['provider_filters']; ?>" data-mh="match-heights">
 <?php
 	if(!isset($hidenumber)){
 		?>

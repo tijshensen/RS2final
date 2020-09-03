@@ -3,7 +3,7 @@
 <section class="module-news <?php echo $bgcolor;?>">
 	<div class="container">
 		<div class="text-center">
-			<h2 class="h2">Real people, real stories</h2>
+			<h2 class="h2">Healthcare News, Tips, & Guides</h2>
 		</div>
 <?php
 if(!isset($hide_trending)){

@@ -263,6 +263,10 @@ vertical cards: (single-small provider-card-vertical)
   border-bottom: none;
   padding-bottom: 15px;
 
+  .rs-card-logo{
+	  max-height: 35px;
+  }
+
   .description-block {
     text-align: left;
     .rs-card-title {

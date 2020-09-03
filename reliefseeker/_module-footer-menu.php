@@ -14,9 +14,9 @@
 					<li class="social-link">
 						<a href="#"><i class="icon-icon-facebook"></i></a>
 					</li>
-					<!-- <li class="social-link">
+					<li class="social-link">
 						<a href="#"><i class="icon-icon-instagram"></i></a>
-					</li> -->
+					</li>
 				</ul>
 
 				<div class="copyright-description col-md-11 col-lg-9">

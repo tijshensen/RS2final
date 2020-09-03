@@ -6,21 +6,18 @@
 	<section class="news-banner">
         <div class="container">
             <h1 class="h1">Telehealth News</h1>
+			
+			<!--
             <div class="news-banner-card bg-light-blue">
                 <div class="row">
                     <div class="col-md-6 news-banner-img-block">
                         <img src="./img/firstnewsitem.png" alt="" class="news-b-img">
-						<!--<div class="news-label purple">URGENT CARE in NYC</div>-->
+
                     </div>
                     <div class="col-md-6 news-banner-info-block">
 						<div class="info-category">COVID-19</div>
                         <h2 class="h2">List of Every Free Healthcare Offer for COVID-19 First Responders</h2>
-                       	<!--
-                        <div class="info-detail-block">
-                            <span class="author">By Jon Bon Jovi</span>
-                            <span class="data">3/25/2020  06:45 ET</span>
-                        </div>
-						-->
+
                         <div class="info-description">
 							<p>Our frontline workers and first responders need resources for managing stress and mental health now more than ever.</p>
                         </div>
@@ -28,7 +25,25 @@
                     </div>
                 </div>
             </div>
-            
+			-->
+            <a class="news-banner-card bg-light-blue" style="display: block; padding-bottom: 10px;" href="page-single-news.php">
+                <div class="row" style="padding-bottom: 0px;">
+                    <div class="col-md-6 news-banner-img-block">
+                        <img src="./img/KqB5IKbkQigfRuEpYX4erGrMJLSi4nIpYJzSQ7SA.png" style="max-width: 100%; border-radius: 10px;"/>
+                    </div>
+                    <div class="col-md-6 news-banner-info-block" style="padding-top: 20px;">
+						<div class="info-category">COVID-19</div>
+                        <h2 class="h2">List of Every Free Healthcare Offer for COVID-19 First Responders</h2>
+
+                        <div class="info-description">
+							<p>Our frontline workers and first responders need resources for managing stress and mental health now more than ever.</p>
+							<p class="fw-600">Continue reading</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+			
+			
         </div>
     </section>
     <section>
@@ -59,7 +74,7 @@
 						foreach ($rs_news_cards as $rs_news_card) 
 						{ 
 						?>
-                            <a href="#" class="row news-card">
+                            <a href="page-single-news.php" class="row news-card">
 								<?php
 								//Huzaifa: Use the img srcset option to show optimized imaged for screen resolutions
 								//For the template I used only one format.

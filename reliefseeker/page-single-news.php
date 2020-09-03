@@ -32,7 +32,6 @@
 								
 							</div>
 							<div class="author-detail" >
-								<img src="./img/checkbox.png" alt="" class="author-img"  >
 								<div class="autor-description">
 									<span class="author-role">Medically Reviewed By:</span>
 									<span class="author-name" itemprop="name">Dr. Holschman</span>
