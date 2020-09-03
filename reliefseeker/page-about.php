@@ -301,10 +301,6 @@
 	<section class="form-section" id="reach">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 form-img-block">
-					<img src="./img/stayInTuch.jpg" alt="" class="form-img">
-				</div>
-
 				<div class="col-lg-7">
 					<form class="form">
 						<h2 class="h2">How To Reach Us</h2>
@@ -316,6 +312,13 @@
 							<button class="btn btn-cta-arw">Send  <i class="icon-arrow-right-white"></i></button>
 						</div>
 					</form>
+				</div>
+				<div class="col-lg-5">
+					<div style="padding: 20px;">
+					<img src="https://reliefseeker.com/rtw-v2/svg/reliefseeker.svg" alt="" class="form-img" style="padding-bottom: 30px;">
+					<h3>Write Us</h3>
+			        <p>ReliefSeeker.com<br/>2093 Philadelphia Pike #2021,<br/>Claymont, DE 19703</p>
+					</div>
 				</div>
 			</div>
 		</div>

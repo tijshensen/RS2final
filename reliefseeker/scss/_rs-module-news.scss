@@ -12,17 +12,40 @@
 	.btn-cta {
 		margin-top: 8px;
 	}
+	
+	/*hide author and date on mobile*/
+	@include media-breakpoint-down(md) {
+		.news-date,
+		.news-author{
+			display: none;
+		}
+		/*remove left and right padding*/
+		.col-md-6{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		//move picture to the right
+		.news-image{
+		    margin: auto;
+		    margin-left: 12px;
+		}
+		.card-content{
+			padding-left: 10px;
+			margin: auto;
+		}
+	}
 
 	.card.card-news {
 		transition: 0.4s ease-in-out;
 		background: transparent;
 		margin: 0;
-		padding-top: 0px;
+		padding-top: 8px;
 		padding-bottom: 10px;
-		margin-bottom: 8px;
+		border-radius: 0;
 		* {
 			cursor: pointer;
 		}
+
 
 		@include media-breakpoint-up(lg) {
 			&:hover {
@@ -35,6 +58,7 @@
 			margin: 0 auto 25px;
 			cursor: pointer;
 			border-radius: 32px;
+			padding-top: 0px;
 			padding-bottom: 1rem;
 			box-shadow: $box-shadow-light;
 			background: $rs-white;
@@ -53,11 +77,11 @@
 		}
 
 		.news-image {
-			width: 100%;
-			height: 95px;
-			border-radius: 10px;
-			object-fit: cover;
-			margin: 12px auto auto;
+			width: 85px;
+		    height: 85px;
+		    border-radius: 10px;
+		    -o-object-fit: cover;
+		    object-fit: cover;
 
 			@include media-breakpoint-up(sm) {
 				height: 85px;
@@ -101,6 +125,11 @@
 			padding-bottom: 0;
 			}
 		}
+	}
+	
+	.col-md-6:nth-child(even) .card-news
+	{
+		background-color: $rs-white;
 	}
 }
 

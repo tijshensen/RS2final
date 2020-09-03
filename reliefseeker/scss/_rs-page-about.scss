@@ -552,9 +552,22 @@
     }
 }
 
+.rs-about{
+	.rs-address{
+		padding: 20px;
+	}
+	.form-img{
+		padding-top: 20px;
+		padding-bottom: 30px;
+		@include media-breakpoint-up(md) {
+		 padding-top: 0;	
+		}
+	}
+}
+
 .advertising-section {
     padding: 32px 15px 20px;
-    @media (min-width: 576px) {
+    @include media-breakpoint-up(md) {
         padding: 0;
         padding-top: 6px;
         padding-bottom: 32px;

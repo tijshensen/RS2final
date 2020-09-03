@@ -35,24 +35,23 @@ if(!isset($hide_trending)){
 				<div class="col-md-6 col-lg-4 " >
 					<a href="#" class="card card-news">
 						<div class="row">
-							<div class="col-4 col-md-12 card-img-block">
+							<div class="col-3 col-md-12 card-img-block">
 								<!--
-							<img srcset="
-								./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg 3019w,
-								./img/<?php echo $rs_news_card['news_img']; ?>x2.jpg 2013w,
-								./img/<?php echo $rs_news_card['news_img']; ?>x1.jpg 1006w
-								"
-								src="./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg"
-								alt="" class="news-image"/>
+								<img srcset="
+									./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg 3019w,
+									./img/<?php echo $rs_news_card['news_img']; ?>x2.jpg 2013w,
+									./img/<?php echo $rs_news_card['news_img']; ?>x1.jpg 1006w
+									"
+									src="./img/<?php echo $rs_news_card['news_img']; ?>x3.jpg"
+									alt="" class="news-image"/>
+								</div>
+										-->
+								<img src="./img/<?php echo $rs_news_card['news_img']; ?>.jpg" alt="<?php echo $rs_news_card['news_title']; ?>" class="news-image"/>	
 							</div>
-									-->
-							<img src="./img/<?php echo $rs_news_card['news_img']; ?>.jpg" alt="<?php echo $rs_news_card['news_title']; ?>" class="news-image"/>	
-							</div>
-							<div class="col-8 col-md-12 ">
+							<div class="col-9 col-md-12">
 								<div class="card-content">
 									<div class="news-category <?php echo $rs_news_card['news_label_class']; ?>"><?php echo $rs_news_card['news_label']; ?></div>
 									<h4 class="news-title"><?php echo $rs_news_card['news_title']; ?></h4>
-									<!-- </?php echo $rs_news_card['news_category']; ?> -->
 									<span class="news-date"><?php echo $rs_news_card['news_time']; ?></span> 
 									<span class="news-author"><?php echo $rs_news_card['news_author']; ?></span>
 								</div>

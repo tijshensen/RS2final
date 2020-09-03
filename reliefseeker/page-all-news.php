@@ -37,7 +37,7 @@
 
                         <div class="info-description">
 							<p>Our frontline workers and first responders need resources for managing stress and mental health now more than ever.</p>
-							<p class="fw-600">Continue reading</p>
+							<p class="fw-600">Continue reading &rarr;</p>
                         </div>
                     </div>
                 </div>
