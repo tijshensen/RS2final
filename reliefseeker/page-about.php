@@ -314,7 +314,7 @@
 					</form>
 				</div>
 				<div class="col-lg-5">
-					<div style="padding: 20px;">
+					<div class="rs-address "style="padding: 20px;">
 					<img src="https://reliefseeker.com/rtw-v2/svg/reliefseeker.svg" alt="" class="form-img" style="padding-bottom: 30px;">
 					<h3>Write Us</h3>
 			        <p>ReliefSeeker.com<br/>2093 Philadelphia Pike #2021,<br/>Claymont, DE 19703</p>
