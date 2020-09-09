@@ -116,7 +116,7 @@
 					font-size: 16px;
 					line-height: 35px;
 					text-transform: uppercase;
-					color: $rs-blue;
+					color: $style1;
 					width: 100%;
 					margin-bottom: 9px;
 					color: $rs-red-2;
@@ -553,9 +553,19 @@
 				text-align: left;
 				@include media-breakpoint-up(lg) {
 					font-size: 14px;
+					float: left;
 				}
 				.data {
 					padding-left: 5px;
+				}
+			}
+			
+			
+			.artical-disclosure .rs-disclosure{
+				cursor: pointer;
+				font-weight: 400;
+				@include media-breakpoint-up(md) {
+					float: right;
 				}
 			}
 
@@ -863,7 +873,7 @@
 		padding-left: 15px;
 		padding-right: 15px;
 		.link-info {
-			color: $rs-blue;
+			color: $style1;
 			font-weight: 600;
 			font-size: 14px;
 			line-height: 14px;

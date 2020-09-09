@@ -24,7 +24,7 @@ if(!isset($hide_trending)){
 }
 ?>
 		
-		<div class="row">
+		<div class="row md-row">
 
              <?php
 			 	$n =0;
@@ -32,7 +32,7 @@ if(!isset($hide_trending)){
 				{ 
 				?>
 				
-				<div class="col-md-6 col-lg-4 " >
+				<div class="col-md-6 col-lg-4 single-news-card" >
 					<a href="#" class="card card-news">
 						<div class="row">
 							<div class="col-3 col-md-12 card-img-block">

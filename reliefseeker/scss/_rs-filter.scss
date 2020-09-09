@@ -89,7 +89,7 @@
         z-index: 10;
 		
 		.count{
-            color: $rs-blue;
+            color: $style1;
             padding: 0 7px;
             margin-left: auto;
 		}
@@ -246,7 +246,7 @@
                     }
 
                     input:checked ~ .filter:after {
-                        background: $rs-blue;
+                        background: $style1;
                     }
                 }
             }
@@ -268,7 +268,7 @@
         transition: 0.4s;
         &:hover {
             text-decoration: none;
-            color: $rs-blue;
+            color: $style1;
         }
     }
 }
@@ -447,7 +447,7 @@
             }
 
             input:checked ~ .filter:after {
-                background: $rs-blue;
+                background: $style1;
             }
         }
     }
@@ -499,7 +499,7 @@
         line-height: 35px;
 
         .count {
-            color: #17A3E0;
+            color: $style1;
         }
     }
 }

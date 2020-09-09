@@ -7,7 +7,7 @@
   hr, .hr {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	background-color: $rs-blue;
+	background-color: $style1;
   }
 
   .footer-logo-link {
@@ -18,7 +18,7 @@
     }
     &:hover {
       svg {
-        fill: $rs-blue;
+        fill: $style1;
       }
     }
   }
@@ -45,7 +45,7 @@
         }
         &:hover {
           i {
-            color: $rs-blue;
+            color: $style1;
           }
         }
       }

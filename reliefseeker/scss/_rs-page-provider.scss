@@ -2,6 +2,47 @@
 /*Single provider*/
 
 .rs-all-providers {
+	
+	.show-more {
+	  display: block;
+	  font-weight: bold;
+	  font-size: 14px;
+	  line-height: 19px;
+	  text-transform: unset;
+	  text-align: center;
+	  margin: auto;
+	  margin-bottom: 20px;
+	  color: $rs-black-60;
+	  text-decoration: none;
+	  cursor: pointer;
+	  transition: 0.4s ease-in-out;
+	  border: none;
+	  outline: none;
+	  background: transparent;
+	  text-transform: uppercase;
+	  margin-top: 25px;
+	  .show {
+	    display: none;
+	    cursor: pointer;
+	  }
+	  .hide {
+	    display: block;
+	    cursor: pointer;
+	  }
+	  &.collapsed {
+	    .show {
+	      display: block;
+	    }
+	    .hide {
+	      display: none;
+	    }
+	  }
+	  &:hover {
+	    text-decoration: none;
+	    color: $style1;
+	  }
+	}
+	
     .top-lable{
       display: none;
     }
@@ -213,7 +254,7 @@
 	
 	.link-compare{
 		font-weight: 600;
-		color: $rs-blue;
+		color: $style1;
 		display: inline-block;	
 	}
 	
@@ -334,7 +375,7 @@
 					justify-content: center;
 					align-items: center;
 					border-radius: 50%;
-					background: $rs-blue;
+					background: $style1;
 					width: 20px;
 					height: 20px;
 					color: $rs-white;
@@ -580,7 +621,7 @@
 						font-weight: 600;
 						font-size: 18px;
 						span {
-							color: $rs-blue;
+							color: $style1;
 						}
 					}
 				}

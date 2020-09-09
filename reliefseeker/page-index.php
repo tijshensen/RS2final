@@ -91,32 +91,10 @@
 			</div>
 		</div>
 	</section>
+<?php
+	include('_module-partners.php');
+?>
 
-
-	<section class="partners-section">
-		<div class="container">
-			<h2 class="h2">Providers You Can <span>Trust</span></h2>
-			<p class="rs-description">Search by condition to compare providers and get the best treatment avaiable</p>
-			<div class="partners-container">
-				<?php
-					$x =0;
-					foreach ($rs_provider_link as $rs_provider_link) 
-					{ 
-					?>						
-						<?php	
-						include('_link_provider.php');
-						?>
-					<?php 
-					$x++;
-					if($x==10) break;
-					} 
-				?>
-			</div>
-			<div class="d-flex justify-content-center">
-				<a href="page-all-providers.php" class="btn btn-cta">See All Providers</a>
-			</div>
-		</div>
-	</section>
 
 
 	<?php 
@@ -148,27 +126,8 @@
 
 	<?php include('_modal-advertiser-disclosure.php'); ?>
 
+	<?php include('_module-checklist.php'); ?>
 
-	<section class="conditional-list-section bg-light-blue">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 conditional-list-img-block">
-					<img src="./img/list-item-img.jpg" alt="">
-				</div>
-				<div class="col-lg-7 conditional-list-block">
-					<h2 class="h2">Don’t wait another second.</h2>
-					<div class="rs-description">Get care today</div>
-					<ul class="info-list">
-						<li class="info-list-item"><div class="item-text">The <span>largest</span> collection of online healthcare providers</div></li>
-						<li class="info-list-item"><div class="item-text"><span>Quick search</span> by condition, treatment or treatment types</div></li>
-						<li class="info-list-item"><div class="item-text">Get treatment <span>today</span>, no need to leave home</div></li>
-						<li class="info-list-item"><div class="item-text"><span>Save money,</span> easily compare prices and get the best offers here</div></li>
-					</ul>
-					<a href="page-all-providers.php" class="btn btn-cta">See all providers</a>
-				</div>
-			</div>
-		</div>
-	</section>
 	<?php include('_module-email-sign-up.php'); ?>
 	<?php include('_module-footer-menu.php');?>
 

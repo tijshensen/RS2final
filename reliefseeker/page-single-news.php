@@ -18,7 +18,11 @@
 						<div class="data-publication">
 							<span class="name">Last Updated:</span><time class="data"  itemprop="datePublished" datetime="2020-01-28T15:30:00+02:00">28/01/2020</time>
 							<meta itemprop="dateModified" content="2020-01-28T15:30:00+02:00" />
-		
+						</div>
+						<div class="artical-disclosure">
+				            <a class="rs-disclosure btn-open-modal au-width" data-toggle="modal" data-target="#disclosureModal">
+				                Advertiser Disclosure
+				            </a>
 						</div>
 						<img itemprop="image" class="main-article-img" src="./img/news-banner.jpg" alt="ReliefSeeker">
 						<div class="article-detail-block" itemprop="author publisher" itemscope itemtype="https://schema.org/Organization">
@@ -95,7 +99,7 @@
 
 	<?php include('_module-email-sign-up.php'); ?>
 	<?php include('_module-footer-menu.php');?>
-
+	<?php include('_modal-advertiser-disclosure.php'); ?>  
 	<?php include('_scripts.php'); ?>
 	<?php include('_footer.php'); ?>
 

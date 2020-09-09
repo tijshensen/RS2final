@@ -8,16 +8,16 @@
 
 
 
-<section class="rs-section-hero">
-	<div class="container"> 
-		<div class="row justify-content-center">
-			<div class="col-md-10 text-center header-block">
-				<h1 class="rs-h1"><span>Telehealth</span> Guides <span>May 2020</span></h1>
-				<div class="rs-description">Review the Ultimate Telehealth Guides to Find the Best Online Treatments</div>
-			</div>	
+	<section class="rs-section-hero">
+		<div class="container"> 
+			<div class="row justify-content-center">
+				<div class="col-md-10 text-center header-block">
+					<h1 class="rs-h1"><span>Telehealth</span> Guides <span>May 2020</span></h1>
+					<div class="rs-description">Review the Ultimate Telehealth Guides to Find the Best Online Treatments</div>
+				</div>	
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 			
 
 <section class="guide-banner-section">

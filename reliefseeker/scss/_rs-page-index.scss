@@ -47,10 +47,10 @@
 
 
 .banner-color-section {
-  background-color: $rs-blue;
+  background-color: $style1;
   
  @include media-breakpoint-down(md){
-	 background: $rs-blue url('../img/mobile-background.png') 50% 50% no-repeat;
+	 background: $style1 url('../img/mobile-background.png') 50% 50% no-repeat;
  } 
   
   .banner-caption-block {
@@ -484,7 +484,6 @@
       width: calc(50% - 20px);
       @include media-breakpoint-up(md) {
         width: calc(25% - 20px);
-        text-align: unset;
       }
       @include media-breakpoint-up(lg) {
         width: calc(20% - 20px);

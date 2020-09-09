@@ -1,6 +1,3 @@
-<?php
-include('_dataset.php');
-?>
 <nav id="main-nav" class="navbar navbar-expand-lg bd-navbar <?php if(isset($notsticky) && $notsticky == 'yes'){ echo 'not-sticky';}?>">
 	<div class="container d-flex justify-content-between">
 		<a class="navbar-brand" href="page-index.php">

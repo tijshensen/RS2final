@@ -211,7 +211,7 @@ body.no-scroll {
 
 				@include media-breakpoint-up(lg) {
 					.active {
-						background-color: $rs-blue;
+						background-color: $style1;
 						color: $rs-white;
 						i {
 							color: $rs-white;
@@ -244,7 +244,7 @@ body.no-scroll {
 			.dropdown-item {
 				font-size: 16px;
 				&.blue {
-					color: $rs-blue;
+					color: $style1;
 				}
 			}
 
@@ -323,7 +323,7 @@ body.no-scroll {
 									font-size: 16px;
 								}
 								&.blue {
-									color: $rs-blue;
+									color: $style1;
 									@include media-breakpoint-up(lg) {
 										font-weight: 600;
 									}
@@ -435,7 +435,7 @@ body.no-scroll {
 				font-weight: bold;
 				font-size: 16px;
 				line-height: 1;
-				color: $rs-blue;
+				color: $style1;
 			}
 		}
 		.nav-spacer {
@@ -707,7 +707,7 @@ body.no-scroll {
 						margin: 0;
 						padding: 2px 0;
 						font-size: 11px;
-						color: $rs-blue;
+						color: $style1;
 					}
 					* {
 						cursor: pointer;
@@ -777,7 +777,7 @@ body.no-scroll {
 					z-index: -2;
 				}
 				&::after {
-					background: $rs-blue;
+					background: $style1;
 					height: 0;
 					z-index: -1;
 				}

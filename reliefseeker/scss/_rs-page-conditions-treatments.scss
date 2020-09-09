@@ -343,7 +343,7 @@ single-provider
         }
 
 		.block-number {
-			color: $rs-blue;
+			color: $style1;
 			font-size: 12px;
 			font-weight: 600;
 			@include media-breakpoint-up(md)
@@ -521,7 +521,7 @@ single-provider
             &.bg-oval-blue {
                 color: $rs-white;
                 &::before {
-                    background: $rs-blue;
+                    background: $style1;
                 }
             }
 
