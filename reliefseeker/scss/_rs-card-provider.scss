@@ -147,11 +147,12 @@ vertical cards: (single-small provider-card-vertical)
 }
 
 .rs-card-logo {
-	height: 80px;
 	margin-bottom: 10px;
-
 	object-fit: contain;
 	vertical-align: middle;
+	/*@include media-breakpoint-up(md) {
+		height: 80px;
+	}*/
 
 	img {
 		object-fit: contain;
@@ -535,9 +536,12 @@ vertical cards: (single-small provider-card-vertical)
   .provider-logo {
     width: auto;
     max-width: 100%;
-	max-height: 60px;
+	max-height: 90px;
     object-fit: contain;
     height: auto;
+    @include media-breakpoint-up(md) {
+     max-height: 60px;
+    }
   }
   .provider-name {
     font-weight: 600;
