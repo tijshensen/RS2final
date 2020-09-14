@@ -16277,6 +16277,81 @@ position: unset;
     line-height: 24px;
   }
 }
+.form-section {
+  padding: 32px 0 40px;
+}
+.form-section .form-img-block {
+  display: none;
+}
+@media (min-width: 768px) {
+  .form-section .form-img-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.form-section .form-img-block .form-img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+.form-section .form {
+  background: #F3F8FB;
+  border-radius: 30px;
+  padding: 30px 20px;
+}
+@media (min-width: 768px) {
+  .form-section .form {
+    padding: 36px 85px 65px;
+  }
+}
+.form-section .form .h2 {
+  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 27px;
+}
+.form-section .form .form-input,
+.form-section .form .form-textarea {
+  width: 100%;
+  background: #fff;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #17a3e0;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 32px;
+}
+.form-section .form .form-input::placeholder,
+.form-section .form .form-textarea::placeholder {
+  color: #17a3e0;
+}
+.form-section .form .form-textarea {
+  height: 164px;
+  resize: none;
+  padding: 22px;
+  margin-bottom: 30px;
+}
+.form-section .form .send-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .form-section .form .send-block {
+    flex-direction: row;
+  }
+}
+.form-section .form .send-block .btn-cta-arw {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: unset;
+}
+
 /*RS Sidebars*/
 .sidebar-news-card {
   background-color: #F3F8FB;
