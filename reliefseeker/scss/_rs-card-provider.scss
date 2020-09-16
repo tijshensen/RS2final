@@ -259,121 +259,13 @@ vertical cards: (single-small provider-card-vertical)
 /*vertical cards*/
 /*--------------*/
 
+.provider-carousel .owl-item img{
+	width: unset;
+	display: unset;
+}
+
 .provider-item-vertical {
-  margin: 30px 15px;
-  border-bottom: none;
-  padding-bottom: 15px;
 
-  .rs-card-logo{
-	  max-height: 35px;
-  }
-
-  .description-block {
-    text-align: left;
-    .rs-card-title {
-      font-size: 12px;
-      line-height: 22px;
-    }
-    .rs-text {
-      font-size: 13px;
-      line-height: 20px;
-    }
-  }
-  .provider-info-block{
-    .rs-card-title,.review-link {
-        margin-left: 0;
-        margin-right: 0;
-      }
-  } 
-  .provider-logo-block {
-    text-align: left;
-  }
-  .provider-logo-block .label-block {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .provider-additional-block {
-
-    border-top: 1px solid rgba(23, 163, 224, 0.2);
-    border-bottom: 1px solid rgba(23, 163, 224, 0.2);
-	border-radius: 0 0 ;
-    padding-top: 0px;
-    padding-bottom: 17px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    .aditional-item {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-  }
-
-  .provider-logo-block,
-  .provider-info-block,
-  .provider-price-block {
-    flex: 0 0 100%;
-    max-width: 100%;
-    order: 0;
-  }
-
-  .provider-name {
-    display: inline-block;
-  }
-  .rs-card-caption {
-    font-weight: bold;
-    width: 100px;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .rs-speciality .rs-text {
-    width: calc(100% - 100px);
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .rating {
-    display: inline-block;
-    .star-list .star i {
-      font-size: 13px;
-    }
-  }
-  .description-block {
-    padding-top: 12px;
-    padding-bottom: 16px;
-  }
-
-  .provider-info-block {
-    margin-bottom: 15px;
-  }
-
-  .provider-logo-block {
-    .provider-logo {
-      width: auto;
-    }
-  }
-
-  .provider-price-block {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0;
-    order: 3;
-    .promo-code {
-      display: none;
-    }
-    .price,
-    .old-price {
-      display: flex;
-      text-align: left;
-    }
-    .btn-cta-arw {
-      margin: 5px auto 0;
-    }
-    .yellow-dashed-label {
-      padding: 5px;
-    }
-  }
 }
 
 .provider-price-block {
@@ -853,48 +745,4 @@ vertical cards: (single-small provider-card-vertical)
 	}
 }
 
-/*
-Part of the expandable provider card
-single-condition
-single-provider
-single-treatment
 
-.table-price {
-    .table-row {
-        border-radius: 4px;
-        &:nth-of-type(even) {
-            background: transparent;
-        }
-        &:nth-of-type(odd) {
-            background: $rs-grey-6;
-        }
-        .table-cell {
-            font-size: 16px;
-            line-height: 22px;
-            color: $rs-black;
-            height: 36px;
-            padding: 0 5px;
-            @include media-breakpoint-up(md) {
-                padding: 0 20px;
-            }
-            .price {
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 27px;
-                color: $rs-green;
-            }
-            .period {
-                font-size: 13px;
-                line-height: 18px;
-                color: $rs-black;
-                padding-left: 8px;
-            }
-            &:nth-of-type(even) {
-                @include media-breakpoint-up(md) {
-                    width: 190px;
-                }
-            }
-        }
-    }
-}
-*/

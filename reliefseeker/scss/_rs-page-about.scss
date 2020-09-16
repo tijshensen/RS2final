@@ -21,7 +21,7 @@
     }
 
     p {
-        font-size: 16px;
+        font-size: $rs-default-font-size;
         line-height: 1.6;
         color: $rs-black-80;
         @include media-breakpoint-up(md) {
