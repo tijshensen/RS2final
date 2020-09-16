@@ -1,0 +1,81 @@
+/*healing bar */
+
+
+.healing-bar{
+	z-index: 1000;
+	display: block;
+	background-color: $rs-purple;
+    position: fixed;
+    bottom: 0;
+    padding: 14px 20px;
+	width: 100vw;
+	
+	.healing-bar-logo{
+		float: left;
+	}
+	
+	.healing-bar-link{
+		float: right;
+		padding: 10px;
+	}
+
+	.healing-bar-text,
+	.healing-bar-btn{
+		display: none;	
+	}
+}
+
+@include media-breakpoint-up(md)
+{
+	.healing-bar{
+		height: 80px;
+		position: relative;
+		
+		.healing-bar-logo{
+			padding-top: 8px;
+		}
+
+		.healing-bar-text,
+		.healing-bar-btn{
+			display: block;	
+			float: left;
+		}
+		.healing-bar-btn{
+			margin-left: 40px;
+			padding-top: 4px;
+			button{
+				background: $style1;
+				border-radius:32px;
+				border:0;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 500;
+				padding:10px 24px;
+				&:hover{
+					color: #fff;
+				}
+				img {
+					padding-left:40px;
+				}
+			}
+		}
+	
+		
+		p{
+			color: $rs-white;
+			padding: 14px 0 0 30px;
+		}
+
+		.healing-bar-link{
+			float: right;
+			padding: 14px;
+		}
+
+
+		.link-arrow-white {
+			background: url('../svg/arrow-right-white.svg') 100% 50% no-repeat;
+			padding-right: 34px;
+			transition: padding 200ms ease;
+		}
+	}
+}

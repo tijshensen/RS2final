@@ -1,0 +1,5 @@
+ @include media-breakpoint-down(md) {
+	.owl-carousel.owl-loaded{
+		padding-right: 0;
+	}
+}

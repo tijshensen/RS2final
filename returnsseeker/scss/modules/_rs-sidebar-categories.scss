@@ -1,0 +1,67 @@
+/* ----- The sidebar Category card ------*/
+
+.side-categories-card {
+	padding: 45px 15px 32px 20px;
+	background: $rs-29;
+	margin-top: 15px;
+	border-radius: 8px;
+	@include media-breakpoint-up(md) 
+	{
+		font-size: 28px;
+		line-height: 1.4;
+		border-radius: 20px;
+	}
+
+	.side-categories-card-inner {
+		padding: 0 30px;
+		text-align: center;
+		.h5 {
+			margin-bottom: 34px;
+			font-weight: 800;
+			font-size: 28px;
+			line-height: 32px;
+			text-transform: uppercase;
+		}
+	}
+
+	.card-guides {
+		display: flex;
+		flex-direction: row;
+		justify-content: unset;
+		align-items: center;
+		max-width: unset;
+		min-height: unset;
+		padding: 10px 25px;
+		margin: 15px 15px;
+		box-shadow: $box-shadow-equal-light;
+		background-color: $rs-white;
+		text-align: left;
+
+		.card-guides-img {
+			height: 43px;
+			width: 43px;
+			margin-right: 14px;
+			margin-bottom: 0;
+			text-align: left;
+		}
+
+		.card-guides-content{
+			.card-guides-name {
+				text-transform: capitalize;
+				color: $rs-black;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 1.4;
+				padding-top: 5px !important;
+				text-align: left;
+				margin: 0;
+			}
+			.card-guides-providers {
+				color: $rs-black;
+				font-weight: 400;
+				font-size: 12px;
+				text-align: left;
+			}
+		}
+	}
+}

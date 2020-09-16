@@ -6,7 +6,7 @@
   padding-top: 0;
   @include media-breakpoint-up(md) {
     font-size: 40px;
-    padding-top: 20px;
+    padding-top: 0px;
   }
 }
 
@@ -24,7 +24,7 @@
     background-color: $rs-34;
     box-shadow: none;
     padding: 30px 20px;
-    margin: 0 -10px 33px;
+    margin: 0 -10px 85px;
   }
   
   .c-card-info-block {

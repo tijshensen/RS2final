@@ -17,26 +17,6 @@
   }
 }
 
-.logo-icon {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 67px;
-  height: 67px;
-  background: $rs-white;
-  border-radius: 50%;
-  &.bg-color {
-    background: $rs-29;
-  }
- 
-  img {
-    height: 32px;
-  }
-}
-
 .breadcrumb {
   background-color: transparent;
   padding-left: 0;
@@ -47,28 +27,6 @@
     line-height: 19px;
     color: $rs-40;
     text-transform: capitalize;
-  }
-}
-
-.price-coin {
-  width: 81px;
-  height: 81px;
-  background-color: $rs-29;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-  img {
-    max-height: 51px;
-    @include media-breakpoint-up(md) {
-      max-height: 77px;
-    }
-  }
-  
-  @include media-breakpoint-up(md) {
-    width: 136px;
-    height: 136px;
   }
 }
 

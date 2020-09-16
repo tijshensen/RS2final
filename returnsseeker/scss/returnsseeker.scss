@@ -18,6 +18,7 @@
 @import "modules/rs-guides";
 
 /*RS Modules*/
+@import "modules/rs-sidebar-categories";
 @import "modules/rs-module-news";
 @import "modules/rs-single-provider-card";
 @import "modules/rs-sticky-menu";
@@ -27,9 +28,10 @@
 @import "pages/rs-page-index";
 @import "pages/rs-homepage";
 @import "pages/rs-page-about";
-@import "pages/rs-all-news";
 @import "pages/rs-single-news";
 @import "pages/rs-providers-list-page"; 
+@import "pages/rs-page-news"; 
+// @import "pages/rs-all-news";
 
 /*RS Fonts icon*/
 @import "rs-svg-font";

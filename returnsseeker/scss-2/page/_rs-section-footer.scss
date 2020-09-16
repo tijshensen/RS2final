@@ -1,0 +1,132 @@
+/*------------- Footer --------------*/
+/*--RS Footer - Footer first --*/
+
+.rs-footer-second {
+  padding: 30px 20px 40px;
+  background-color: $rs-grey-19;
+  hr, .hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: $style1;
+  }
+
+  .footer-logo-link {
+    display: block;
+    svg {
+      fill: $rs-white;
+      transition: 0.4s;
+    }
+    &:hover {
+      svg {
+        fill: $style1;
+      }
+    }
+  }
+
+  .social-links-list {
+    padding: 20px 0 17px;
+    margin: 0;
+
+    .social-link {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 12px;
+      a {
+        color: $rs-white;
+        text-decoration: none;
+        transition: 0.4s ease-in-out;
+        i {
+          font-size: 24px;
+          color: $rs-white;
+          transition: 0.4s ease-in-out;
+          &::before {
+            color: unset;
+          }
+        }
+        &:hover {
+          i {
+            color: $style1;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-nav {
+    padding-bottom: 10px;
+
+    .footer-nav-block {
+      padding-top: 0px;
+
+      .rs-footer-header {
+        color: $rs-white;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+        text-decoration: underline;
+      }
+
+      .footer-nav-list {
+        padding: 0;
+        margin-bottom: 26px;
+      }
+      .footer-nav-item {
+        list-style-type: none;
+        margin-bottom: 0px;
+        a {
+          color: $rs-white;
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 2;
+          text-decoration: underline;
+          text-decoration-color: transparent;
+          transition: 0.4s;
+          &:hover {
+            text-decoration-color: $rs-white;
+          }
+		  @include media-breakpoint-up(md) {
+		  	line-height: 1.4;
+		  }
+        }
+      }
+    }
+  }
+
+  .rs-copyright {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2;
+    padding-top: 6px;
+    color: $rs-white;
+  
+  }
+  .rs-disclaimer{
+    padding: 0;
+    font-size: 11px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: $rs-white;
+    margin-bottom: 26px;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .rs-footer-second {
+    .footer-logo {
+      padding-bottom: 40px;
+    }
+
+    .footer-nav {
+      padding-bottom: 0px;
+
+      .footer-nav-list {
+        margin-bottom: 1rem;
+      }
+      .footer-nav-item a {
+        line-height: 24px;
+      }
+    }
+  }
+}

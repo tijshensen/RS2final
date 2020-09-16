@@ -2,24 +2,24 @@
 /*--RS Footer - Footer first --*/
 
 .rs-footer-first {
-  padding: 40px 30px;
+  padding: 50px 30px 10px;
   background: $rs-24;
   .h2 {
     font-weight: 800;
-    font-size: 26px;
-    line-height: 1.5;
+    font-size: 35px;
+    line-height: 57px;
     text-align: center;
     color: $rs-black;
     margin: auto;
     @include media-breakpoint-up(sm) {
-      font-size: 35px;
-      line-height: 57px;
+      font-size: 40px;
+      line-height: 60px;
     }
   }
   .pre-footer-description {
     font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 20px;
     text-align: center;
     color: $rs-black;
     max-width: 275px;
@@ -28,13 +28,18 @@
     @include media-breakpoint-up(sm) {
       max-width: 400px;
     }
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+      line-height: 27px;
+      margin: 0 auto 0;
+    }
     @include media-breakpoint-up(lg) {
       max-width: unset;
     }
   }
 
   .subscribe-form {
-    margin: 35px auto;
+    margin: 35px auto 24px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -95,8 +100,11 @@
 }
 
 .rs-footer-second {
-  background-color: $rs-black;
+  background-color: $rs-39;
   padding: 45px 20px 40px;
+  hr {
+    margin: 8px 0;
+  }
 
   .footer-logo-link {
     display: block;
@@ -164,7 +172,7 @@
           color: $rs-white;
           text-decoration: none;
           font-size: 16px;
-          line-height: 35px;
+          line-height: 20px;
           text-decoration: underline;
           text-decoration-color: transparent;
           transition: 0.4s;
@@ -176,27 +184,14 @@
     }
   }
 
-  .copyright {
-    font-style: 400;
+  .rs-copyright {
     font-weight: 600;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 20px;
-    padding-top: 18px;
+    padding-top: 8px;
     color: $rs-white;
-    .mobile {
-      display: block;
-      @include media-breakpoint-up(md) {
-        display: none;
-      }
-    }
-    .desctop {
-      display: none;
-      @include media-breakpoint-up(md) {
-        display: block;
-      }
-    }
   }
-  .copyright-description {
+  .rs-disclaimer {
     display: none;
     padding: 0;
     font-size: 12px;
@@ -205,19 +200,21 @@
     color: $rs-white;
     @include media-breakpoint-up(md) {
       display: block;
+      font-size: 10px;
+	  line-height: 1.2;
     }
   }
 }
 
 @include media-breakpoint-up(lg) {
   .rs-footer-second {
-    padding-top: 70px;
+    padding-top: 12px;
 
     .footer-logo {
       padding-bottom: 40px;
     }
     .social-links-list {
-      padding: 20px 0 25px 0;
+      padding: 26px 0 17px 0;
     }
 
     .footer-nav {

@@ -1031,22 +1031,22 @@ $rs_provider_link = array(
     array(
         'provider_logo' => 'partner-logo-8.png',
     ),
-    // array(
-    //     'provider_logo' => 'partner-logo-1.svg',
-    // ),
-    // array(
-    //     'provider_logo' => 'partner-logo-2.png',
-    // ),
-    // array(
-    //     'provider_logo' => 'partner-logo-3.png',
-    // ),
+    array(
+   	 	'provider_logo' => 'partner-logo-9.png',
+	),
+    array(
+		'provider_logo' => 'partner-logo-10.png',
+    ),
+    array(
+		'provider_logo' => 'partner-logo-11.png',
+    ),
 );
 /*News*/
 
 $rs_news_cards = array(
     array(
         'news_img' => 'news01',
-        'news_label' => 'for new dads',
+        'news_label' => 'Micro Lending',
         'news_label_class' => 'purple',
         'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
         'news_category' => "Men's health",
@@ -1056,7 +1056,7 @@ $rs_news_cards = array(
     ),
     array(
         'news_img' => 'news02',
-        'news_label' => 'covid 19',
+        'news_label' => 'Financial advisors',
         'news_label_class' => 'red',
         'news_title' => '15 Things you haven’t heard of people believe works against COVID19',
         'news_category' => "Men's health",
@@ -1066,7 +1066,7 @@ $rs_news_cards = array(
     ),
     array(
         'news_img' => 'news03',
-        'news_label' => 'Menopause must-read',
+        'news_label' => 'Business investing',
         'news_label_class' => 'green',
         'news_title' => 'How spending more time with your children can improve your health.',
         'news_category' => "Men's health",
@@ -1076,24 +1076,14 @@ $rs_news_cards = array(
     ),
     array(
         'news_img' => 'news01',
-        'news_label' => 'Menopause',
+        'news_label' => 'Cryptocurrency',
         'news_label_class' => 'green',
-        'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
+        'news_title' => 'If Bitcoin Crashes Below $10,000 It’s All Over—Here’s Why.',
         'news_category' => "Men's health",
         'news_author' => 'By Jon Bon Jovi',
         'news_date' => '05/07/20',
         'news_time' => 'March 25th, 2020'
-    ),
-    array(
-        'news_img' => 'news02',
-        'news_label' => 'Menopause',
-        'news_label_class' => 'green',
-        'news_title' => '26 Home Products That May Trick People Into Thinking You Have Your Life Together.',
-        'news_category' => "Men's health",
-        'news_author' => 'By Jon Bon Jovi',
-        'news_date' => '05/07/20',
-        'news_time' => 'March 25th, 2020'
-    ),
+    )
 );
 
 
@@ -1102,57 +1092,57 @@ $rs_news_cards = array(
 $rs_guides_cards = array(
     array(
         'guide_title' => 'Robo Advisors',
-        'guide_svg' => 'card-1.png',
+        'guide_svg' => 'robo-advisors.svg',
         'guide_counts' => '12',
-		'guide_url' => 'list-robo-advisors.php',
+		'guide_url' => 'page-list-robo-advisors.php',
     ),
     array(
         'guide_title' => 'Real Estate',
-        'guide_svg' => 'card-2.png',
+        'guide_svg' => 'real-estate.svg',
         'guide_counts' => '22',
-		'guide_url' => 'list-real-estate-investments.php',
+		'guide_url' => 'page-list-real-estate-investments.php',
     ),
     array(
         'guide_title' => 'Savings',
-        'guide_svg' => 'card-3.png',
+        'guide_svg' => 'savings.svg',
         'guide_counts' => '2',
-		'guide_url' => 'list-savings-account.php',
+		'guide_url' => 'page-list-savings-account.php',
 	),
 	array(
-        'guide_title' => 'Micro Lending',
-        'guide_svg' => 'card-4.png',
+        'guide_title' => 'Micro Lending ',
+        'guide_svg' => 'micro-lending.svg',
         'guide_counts' => '12',
-		'guide_url' => 'list-microlending.php',
+		'guide_url' => 'page-list-microlending.php',
 	),
 	array(
         'guide_title' => 'Financial Advisors',
-        'guide_svg' => 'card-5.png',
+        'guide_svg' => 'financial-advisors.svg',
         'guide_counts' => '12',
-		'guide_url' => 'list-financial-advisors.php',
+		'guide_url' => 'page-list-financial-advisors.php',
 	),
 	array(
         'guide_title' => 'Business Investing',
-        'guide_svg' => 'card-6.png',
+        'guide_svg' => 'business-investing.svg',
         'guide_counts' => '12',
-		'guide_url' => 'list-business-investments.php',
+		'guide_url' => 'page-list-business-investments.php',
 	),
 	array(
         'guide_title' => 'Online Brokers',
-        'guide_svg' => 'card-7.png',
+        'guide_svg' => 'online-brokers.svg',
         'guide_counts' => '12',
-		'guide_url' => 'list-online-brokers.php',
+		'guide_url' => 'page-list-online-brokers.php',
 	), 
 	array(
         'guide_title' => 'Crypto Currency',
-        'guide_svg' => 'card-8.png',
+        'guide_svg' => 'crypto.svg',
         'guide_counts' => '12',
-		'guide_url' => 'list-crypto-currency.php',
+		'guide_url' => 'page-list-crypto-currency.php',
         ), 
 	array(
-        'guide_title' => 'Art investments',
-        'guide_svg' => 'card-9.png',
+        'guide_title' => 'Art',
+        'guide_svg' => 'art.svg',
         'guide_counts' => '12',
-		'guide_url' => 'list-art-investments.php',
+		'guide_url' => 'page-list-art-investments.php',
         ), 
 );
 

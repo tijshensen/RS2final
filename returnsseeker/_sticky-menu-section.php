@@ -2,7 +2,7 @@
 		<div class="sticky-menu">
 			<div class="container">
 				<div class="row align-items-center">
-                        <a class="go-home col-md-4" href="homepage.php">
+                        <a class="go-home col-md-4" href="page-index.php">
                             <img src="<?php echo $logo;?>" alt="<?php echo $title;?>">
                         </a>
                         <ul class="sticky-menu-list col-md-8">

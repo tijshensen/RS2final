@@ -1,0 +1,70 @@
+.returnsseeker{
+	
+	.navbar{
+		padding: 8px 0;
+	}
+	
+	@media (min-width: 768px){
+		.rs-description {
+			margin: 0px auto 18px;
+		}
+	}
+
+	.module-news h2{
+		padding-bottom: 24px;
+	}
+
+	@media (min-width: 992px){
+		.module-news {
+		padding: 48px 0 40px;
+		}
+	}
+	@media (min-width: 768px){
+		.banner-color-section .banner-caption-block {
+		    padding: 52px 0 40px;
+		}
+	}
+	
+	@media (min-width: 768px){
+		.card-guides {
+		    padding: 18px 0 24px;
+		}
+	}
+	
+	.conditional-list-section .conditional-list-img-block img{
+		width: unset;
+		height: unset;
+	}
+	
+	@media (min-width: 992px){
+		.navbar .nav-item .nav-link {
+		    padding: 3px 19px;
+		}
+	}
+	@media (min-width: 992px){
+		.returnsseeker .nav-spacer {
+		    padding-top: 57px;
+		}
+	}
+	@media (min-width: 992px){
+		.navbar .dropdown-menu.show.dropdown-getcare 
+		{
+		    top: 50px;
+		}
+	}
+	@media (max-width: 991.98px){
+		.navbar #navbarSupportedContent {
+		    top: 56px;
+		}
+	}
+	@media (min-width: 992px){
+		.navbar .dropdown-menu.show.dropdown-explore {
+		    top: 40px;
+		}
+	}
+	
+	.form-section .form .form-input::placeholder, 
+	.form-section .form .form-textarea::placeholder {
+	    color: #000;
+	}
+}

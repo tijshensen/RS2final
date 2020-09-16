@@ -1,6 +1,6 @@
 <section class="partners-section">
 	<div class="container">
-		<h3 class="h3">Companies you can <span>Trust</span></h3>
+		<h3 class="h2">Companies you can <span>Trust</span></h2>
 		<div class="partners-container">
 			<?php
 				$x =0;
@@ -17,7 +17,7 @@
 			?>
 		</div>
 		<div class="d-flex justify-content-center">
-			<a href="all-providers.php" class="btn btn-cta">See All Companies</a>
+			<a href="page-all-providers.php" class="btn btn-cta">See all companies</a>
 		</div>
 	</div>
 </section>

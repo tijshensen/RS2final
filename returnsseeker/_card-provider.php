@@ -36,7 +36,7 @@ if(!isset($divlist)){
 				<div class="rs-text">
 					<?php echo $rs_providers_card['provider_why']; ?>
 				</div>
-				<a href="single-provider.php" class="review-link for-full-card">Read review <i class="icon-arrow-right"></i></a>
+				<a href="page-single-provider.php" class="review-link for-full-card">Read review <i class="icon-arrow-right"></i></a>
 			</div>
 		
 							

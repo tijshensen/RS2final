@@ -1,0 +1,117 @@
+.rs-list {
+	padding: 0;
+	@include media-breakpoint-down(xs) {
+		margin-bottom: 60px;
+	}
+
+	&.providers-list {
+		.alphabet-section {
+			padding-bottom: 20px;
+		}
+	}
+
+	.result-item {
+		width: 100%;
+	}
+
+	.alphabet-section {
+		position: relative;
+		margin-left: 0;
+		margin-top: 15px;
+		padding: 0;
+		list-style: none;
+		/*border-top: 1px solid $rs-grey-5;
+		margin-top: 41px;*/
+		display: flex;
+		flex-wrap: wrap;
+
+		.name-section {
+			margin-left: -32px;
+			text-transform: uppercase;
+			border-radius: 50%;
+			width: 32px;
+			height: 32px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: $rs-grey-5;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 1;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform: translate(0, -50%);
+			@include media-breakpoint-up(sm) {
+				margin-left: 0;
+				transform: translate(-50%, -50%);
+			}
+			&.left-abs {
+				left: -50px;
+				top: 0;
+				transform: translate(0);
+				display: none;
+				@include media-breakpoint-up(md) {
+					display: flex;
+				}
+			}
+		}
+	}
+}
+
+
+
+.anchors-container {
+	padding-left: 0;
+	padding-right: 0;
+	
+    margin-top: 0;
+    padding-top: 15px;
+	
+	&.abs-right {
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			right: -40px;
+		}
+	}
+	margin-top: 30px;
+	@media (max-width: 576px) {
+		// display: none;
+	}
+	&.anchors-providers {
+		@media (max-width: 768px) {
+			// display: none;
+		}
+	}
+	.alphabet {
+		padding: 13px 0 50px;
+		.letter {
+			list-style: none;
+			display: flex;
+			justify-content: flex-end;
+
+			.letter-link {
+				border-radius: 50%;
+				width: 28px;
+				height: 28px;
+				display: flex;
+				text-transform: uppercase;
+				justify-content: center;
+				align-items: center;
+				background: $rs-white;
+				font-family: "Catamaran";
+				font-weight: 800;
+				font-size: 14px;
+				line-height: 1;
+				color: $rs-black;
+				transition: 0.2s ease-in-out;
+				text-decoration: none;
+				margin-bottom: 4px;
+
+				&:hover {
+					background: $rs-grey-5;
+				}
+			}
+		}
+	}
+}
