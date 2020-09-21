@@ -264,8 +264,85 @@ vertical cards: (single-small provider-card-vertical)
 	display: unset;
 }
 
-.provider-item-vertical {
+@include media-breakpoint-up(md) {
+	.provider-item-vertical {
 
+	    margin: 30px 15px;
+	    border-bottom: none;
+	    padding-bottom: 15px;
+		
+		.provider-info-block, 
+		.provider-logo-block, 
+		.provider-price-block {
+		    -webkit-box-flex: 0;
+		    flex: 0 0 100%;
+		    max-width: 100%;
+		    -webkit-box-ordinal-group: 1;
+		    order: 0;
+		}
+		
+		.provider-additional-block .aditional-item {
+		    -webkit-box-flex: 0;
+		    flex: 0 0 100%;
+		    max-width: 100%;
+		}
+	
+		.description-block .rs-card-title {
+		    font-size: 9pt;
+		    line-height: 22px;
+		}
+		
+		.description-block .rs-text {
+		    font-size: 13px;
+		    line-height: 20px;
+		}
+	
+		.provider-name {
+		    display: inline-block;
+		}
+		.rating {
+		    display: inline-block;
+			.star-list .star i 
+			{
+			    font-size: 13px;
+			}
+		}
+		.rs-card-caption {
+		    width: 75pt;
+		    font-weight: 700;
+		    font-size: 9pt;
+		    line-height: 1pc;
+		}
+		.rs-speciality .rs-text {
+		    width: calc(100% - 75pt);
+		    font-weight: 400;
+		    font-size: 9pt;
+		    line-height: 1;
+		}
+		.provider-price-block .btn-cta-arw {
+		    margin: 5px auto 0;
+		}
+		
+		.provider-price-block {
+		    -webkit-box-orient: horizontal;
+		    -webkit-box-direction: normal;
+		    flex-direction: row;
+		    -webkit-box-pack: justify;
+		    justify-content: space-between;
+		    -webkit-box-align: center;
+		    align-items: center;
+		    margin-top: 0;
+		    -webkit-box-ordinal-group: 4;
+		    order: 3;
+			
+			.yellow-dashed-label {
+				padding: 5px;
+			}
+			.promo-code {
+			    display: none;
+			}
+		}
+	}
 }
 
 .provider-price-block {

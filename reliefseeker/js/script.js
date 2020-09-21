@@ -438,7 +438,8 @@ jQuery(document).ready(function ($) {
   /* END FILTER */
 
   //Smooth Scrolling
-  /*$('a[href*="#"]').on('click', function (e) {
+  /*
+  $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
         var href = $(this).attr('href').toUpperCase();
         $('html, body').animate({
@@ -447,7 +448,8 @@ jQuery(document).ready(function ($) {
             500,
             'linear'
         );
-    });*/
+    });
+  */
 
   if ($.isFunction($.fn.owlCarousel)) {
     // var owl = $('.owl-carousel');
