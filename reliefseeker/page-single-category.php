@@ -23,6 +23,83 @@ include('_module-breadcrumb.php');
 		</div>
 	</div>
 </section>
+<style>
+	.quick-picks{
+		border: 1px solid #FAB03B; 
+		padding: 20px 12px;
+		margin-bottom: 30px;
+	}
+	.quick-picks .rs-h3{
+		font-size: 22px;
+	}
+	
+	.rs-quick-pick{
+		padding: 6px 0 6px 30px;
+		background: url('./svg/price.svg') no-repeat 0 9px;
+		background-size: 17px 16px;
+	}
+	.rs-quick-pick p{
+		font-size: 14px;
+		float: left;
+		text-transform: capitalize;
+		padding-right: 8px;
+		margin-bottom: 0;
+	}
+	.rs-quick-pick a{
+		font-size: 14px;
+		font-weight: 600;
+		text-decoration: underline;
+		color: #17A3E0;
+	}
+	
+	@media(min-width: 768px){
+		.quick-picks{
+			padding: 20px 20px;
+		}
+		.quick-picks .rs-h3{
+			font-size: 26px;
+		}
+		.rs-quick-pick p,
+		.rs-quick-pick a
+		{
+			font-size: 16px;
+		}
+	}
+</style>
+<section class="rs-section-quick-picks">
+	<div class="container"> 
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<div class="quick-picks">
+					<h3 class="rs-h3">Editor's Quick Picks for the Best Online Therapy</h3>
+					<div class="rs-quick-pick clearfix">
+						<p>Best live Therapy (Voice/video)</p>
+						<a href="https://betterhelp.com">Betterhelp</a>
+					</div>
+					<div class="rs-quick-pick clearfix">
+						<p>Best Couples Therapy (Messaging)</p>
+						<a href="https://betterhelp.com">Betterhelp</a>
+					</div>
+					<div class="rs-quick-pick clearfix">
+						<p>Best Couples Therapy (Messaging)</p>
+						<a href="https://betterhelp.com">Betterhelp</a>
+					</div>
+					<div class="rs-quick-pick clearfix">
+						<p>Best Couples Therapy (Messaging)</p>
+						<a href="https://betterhelp.com">Betterhelp</a>
+					</div>
+					<div class="rs-quick-pick clearfix">
+						<p>Best Couples Therapy (Messaging)</p>
+						<a href="https://betterhelp.com">Betterhelp</a>
+					</div>
+				</div>
+			</div>	
+			<div class="col-md-3 d-none d-sm-block">
+				<img src="./img/quickpicks.png"/>
+			</div>
+		</div>
+	</div>
+</section>
 			
 <!-- <section class="rs-section-filter">
 	<div class="container"> 
