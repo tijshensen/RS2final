@@ -1,0 +1,51 @@
+/*------ Review Section ----------*/
+
+.review-section {
+  padding: 50px 0;
+  .review-area {
+    padding-top: 20px;
+    .review-detail {
+      strong {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+      div {
+        font-size: 12px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+    }
+  }
+  .review-right-info {
+    padding-top: 10px;
+    .info-text {
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
+    .info-btn {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 10px;
+      border-radius: 30px;
+      box-shadow: $box-shadow-light;
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .review-section {
+    .review-area {
+      .review-box {
+        width: 75%;
+        margin: 0 auto;
+      }
+      .card {
+        border-radius: 30px;
+        box-shadow: $box-shadow-light;
+      }
+    }
+  }
+}

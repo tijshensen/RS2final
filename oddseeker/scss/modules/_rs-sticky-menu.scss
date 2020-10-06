@@ -1,0 +1,202 @@
+.sticky-menu {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 20px 0;
+  background: $rs-white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 60px;
+  
+  .go-home {
+      display: none;
+      margin: 0;
+      padding-right: 30px;
+      img {
+          max-width: 100%;
+      }
+      @include media-breakpoint-up(md) {
+        display: flex;
+    }
+  }
+  .sticky-menu-list {
+    padding: 0 15px;
+    margin: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow-y: scroll;
+    @include media-breakpoint-up(sm) {
+        overflow-y: unset;
+        flex-wrap: wrap;
+    }
+    .sticky-menu-item {
+      list-style: none;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      margin-right: 50px;
+      padding: 7px 0;
+      color: $rs-black;
+      .sticky-menu-link {
+        color: $rs-black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .sticky-menu-link-block {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
+    .sticky-menu-company-logo {
+      margin-right: 60px;
+      max-height: 30px;
+    }
+    .btn-cta {
+      margin: 0;
+      margin-right: 50px;
+    }
+  }
+}
+
+.description-section {
+  position: relative;
+  .content-title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 41px;
+    color: $rs-black;
+  }
+  .content-description-block {
+    margin-bottom: 60px;
+    &.mt-sticky {
+      margin-top: 30px;
+      @include media-breakpoint-up(lg) {
+        margin-top: -360px;
+        margin-right: 70px;
+      }
+    }
+  }
+}
+
+.sticky-section {
+  z-index: 1;   
+  display: none;
+  @include media-breakpoint-up(sm) {
+    display: block;
+  } 
+  @include media-breakpoint-up(lg) {
+    top: 150px ;
+    position: sticky;
+  }
+  .side-sticky-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px;
+
+    @include media-breakpoint-up(md) {
+      border-radius: 20px;
+    }
+    img {
+      margin-bottom: 50px;
+      max-height: 30px;
+      max-width: 100%;
+    }
+    .operator-bonus {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 9px;
+    }
+    .operator-price{
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 44px;
+      text-transform: uppercase;
+      color: $rs-9;
+      margin-bottom: 19px;
+    }
+    .operator-code {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+  }
+  
+}
+
+
+.sticky-mobile-menu {
+  position: fixed;
+  left: 0;
+  // top: calc(100% - 66px);
+  bottom: 0;
+  width: 100vw;
+  z-index: 1000;
+
+  .sticky-inner {
+    display: flex;
+    background: $rs-white;
+    padding: 13px 0;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 12;
+    box-shadow: 2px 11px 18px 0px rgba(0, 0, 0, 0.75);
+    * {
+      order: unset;
+    }
+    .logo img{
+        max-width: 120px;
+      max-height: 80px;
+        object-fit: contain;
+    }
+    
+    .bonus {
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 1;
+    }
+    .price {
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 1;
+      color: $rs-45;
+    }
+    .yellow-dashed-label {
+      display: flex;
+      font-size: 11px;
+      line-height: 16px;
+      width: max-content;
+      padding: 0 7px;
+      height: 31px;
+      margin: 0;
+    }
+    .btn-cta-arw {
+      font-size: 12px;
+      line-height: 18px;
+      width: max-content;
+      padding: 0 10px;
+      height: 35px;
+      margin: 0;
+      min-width: unset;
+      max-width: unset;
+    }
+
+    @media (min-width: 576px) {
+      display: none;
+    }
+  }
+}

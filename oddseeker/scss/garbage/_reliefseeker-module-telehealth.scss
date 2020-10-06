@@ -1,0 +1,133 @@
+/*telehealth*/
+.card-telehealth {
+  box-shadow: $box-shadow-equal;
+  margin-bottom: 1rem;
+
+  .flag {
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 0 30px 30px 0;
+    color: $rs-white;
+    font-size: 14px;
+    margin-left: -1.25rem;
+    padding: 0.5rem 1.25rem 0.4rem;
+  }
+
+  .card-body {
+    padding: 1rem 1.25rem 0.8rem;
+  }
+
+  .card-icon {
+    text-align: center;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  .card-text {
+    font-size: 12px;
+    padding: 5px 0;
+    margin-bottom: 0;
+  }
+
+  .link {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    background-color: $rs-1;
+    padding: 0.5rem 1.5rem 0.4rem 1rem;
+    border-radius: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  .right-arrow {
+    display: inline-block;
+    height: 16px;
+    width: 10px;
+    margin-left: 0.5rem;
+    background-image: url("../svg/arrow-right.svg");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    transition: padding 200ms ease;
+    float: right;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-telehealth {
+    .card-body {
+      padding: 1.5rem 1.5rem 1rem;
+    }
+
+    .flag {
+      padding: 1rem 2rem 1rem 1.5rem;
+      margin-left: -1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    svg {
+      margin: 1rem auto;
+      fill: $rs-black;
+    }
+
+    .card-text {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .col-md-12 {
+      text-align: center;
+    }
+
+    .link {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      background-color: $rs-1;
+      padding: 0.5rem 1.5rem 0.5rem 1rem;
+      background-color: $rs-1;
+      border-radius: 20px;
+      color: #000;
+      text-decoration: none;
+    }
+    .right-arrow {
+      height: 23px;
+      width: 10px;
+      background-image: url("../svg/arrow-right.svg");
+      background-position: 100% 50%;
+      background-repeat: no-repeat;
+      transition: padding 200ms ease;
+      float: right;
+    }
+
+    .card-1 svg {
+      width: 41px;
+      height: 27px;
+      margin-top: 14px;
+    }
+    .card-2 svg {
+      width: 41px;
+      height: 27px;
+      margin-top: 14px;
+    }
+
+    .card-3 svg {
+      width: 26px;
+      height: 36px;
+      margin-top: 14px;
+      margin-bottom: 8px;
+    }
+    .card-4 svg {
+      width: 37px;
+      height: 36px;
+      margin-bottom: 8px;
+      margin-top: 14px;
+    }
+  }
+  .card-telehealth:hover {
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+}

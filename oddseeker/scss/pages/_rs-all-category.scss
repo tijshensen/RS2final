@@ -1,0 +1,35 @@
+.categories-content-section {
+    padding-bottom: 60px;
+  .categories-link-title {
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
+
+  .categories-link-block {
+    padding: 40px 45px;
+    margin-bottom: 20px;
+    .categories-link-list {
+      padding: 0;
+      margin: 0;
+      .categories-list-item {
+        list-style: none;
+        padding: 0;
+        .categories-list-link {
+          display: block;
+          color: $rs-black;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+
+  .categories-content-block {
+    padding: 15px 50px; 
+    img {
+      max-width: 100%;
+    }
+  }
+}

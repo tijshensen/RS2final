@@ -1,0 +1,41 @@
+#sidebar {
+    position: sticky; 
+    top: 0; 
+}
+
+
+.anchors-container {
+	.alphabet {
+		padding-bottom: 20px;
+		padding-left: 0;
+		margin-left: 0;
+		.letter {
+			list-style: none;
+			display: flex;
+			justify-content: flex-end;
+			max-width: max-content;
+
+			.letter-link {
+				border-radius: 50%;
+				width: 28px;
+				height: 28px;
+				display: flex;
+				text-transform: uppercase;
+				justify-content: center;
+				align-items: center;
+				background: $rs-white;
+				font-weight: 800;
+				font-size: 14px;
+				line-height: 1;
+				color: $rs-black;
+				transition: 0.2s ease-in-out;
+				text-decoration: none;
+				margin-bottom: 4px;
+
+				&:hover {
+					background: $rs-23;
+				}
+			}
+		}
+	}
+}
